@@ -1,0 +1,22 @@
+#hero {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    transition: height 999999s;
+    text-align: center;
+    color: rgba(#fff,0.5);
+    xpadding: 40px 0 20px 0;
+    background: #202428 url(../../assets/images/bkg.png);
+    background-size: cover;
+    font-size: 1.2em;
+    padding: 10vh 0;
+    h2 { font-size: 3em; }
+    article {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      p { margin: 1em; }
+      img { max-width: 300px; height: auto; margin: auto 0; }
+      a { margin-right: 1em; }
+    }
+}

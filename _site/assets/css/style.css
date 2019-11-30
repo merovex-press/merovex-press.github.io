@@ -1,0 +1,102 @@
+:root { --font-system: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; --font-sans: "Source Sans Pro", -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; --font-heading: Oswald, -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; --dark-primary: #FFF; --dark-fg: #ABB2BF; --dark-gray: #3E4451; --dark-silver: #9DA5B4; --dark-mono-2: #828997; --dark-bg: #282C34; --dark-black: #21252B; --dark-midnight: #121417; --dark-highlight: #2C323C; --dark-white: #FAFAFA; --dark-red: #BE5046; --dark-green: #98C379; --dark-orange: #D19A66; --dark-blue: #61AFEF; --dark-purple: #C678DD; --lite-fg: #383A42; --lite-gray: #3E4451; --lite-silver: #9DA5B4; --lite-mono-2: #828997; --lite-bg: #FAFAFA; --lite-black: #21252B; --lite-midnight: #121417; --lite-highlight: #2C323C; --lite-white: #FAFAFA; --lite-red: #CA1243; --lite-green: #50A14F; --lite-orange: #50A14F; --lite-blue: #4078F2; --lite-purple: #7a003e; }
+
+#hero { position: relative; width: 100%; min-height: 70vh; transition: height 999999s; text-align: center; color: rgba(255, 255, 255, 0.5); xpadding: 40px 0 20px 0; background: #202428 url(../../assets/images/bkg.png); background-size: cover; font-size: 1.2em; padding: 10vh 0; }
+
+#hero h2 { font-size: 3em; }
+
+#hero article { width: 100%; max-width: 1200px; margin: 0 auto; }
+
+#hero article p { margin: 1em; }
+
+#hero article img { max-width: 300px; height: auto; margin: auto 0; }
+
+#hero article a { margin-right: 1em; }
+
+nav .brand { font-family: Oswald; font-size: 1.5em; }
+
+nav .brand svg { height: 30px; transition: 0.4s; }
+
+nav.transparent { background: none; box-shadow: none; color: rgba(255, 255, 255, 0.5); }
+
+nav.transparent svg { fill: rgba(255, 255, 255, 0.5); }
+
+nav .menu { text-transform: uppercase; }
+
+#merovex-privacy-notice { padding: 2em; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; color: #FFF; }
+
+#merovex-privacy-notice a { cursor: pointer; margin-left: 10px; color: #FFF; padding: 0.1em; border-radius: 0.2em; }
+
+@media (max-width: 767px) { #cookie-notice span { display: block; padding-top: 3px; margin-bottom: 13px; }
+  #cookie-notice a { position: relative; bottom: 4px; } }
+
+html, body { font-family: var(--font-system); font-size: 20px; }
+
+body { display: flex; flex-direction: column; }
+
+main { flex: 1 0 auto; }
+
+main a:hover { text-decoration: underline; }
+
+main article.post, main article.page { font-family: var(--font-sans); }
+
+main article.post small, main article.page small { font-family: var(--font-system); }
+
+h1, h2 { font-family: var(--font-heading); }
+
+ul.posts li { list-style-type: none; }
+
+ul.posts li time { text-align: right; font-size: 0.9em; font-family: var(--font-system); }
+
+ul.posts li a { padding-left: 1em; }
+
+.content__gdprBlock { font-size: 0.8em; }
+
+.visual { text-align: left; width: 100%; max-width: 960px; margin: 0 auto; padding: 80px 10px 10px 10px; }
+
+blockquote cite { display: block; opacity: 0.6; }
+
+#books article + article { margin-top: 10vh; }
+
+#books article img { margin: auto; max-width: 200px; }
+
+#books article a { margin: 0 0.5em 0 0; }
+
+footer { margin-top: 1in; flex-shrink: 0; }
+
+#copyright { text-align: center; font-size: 0.8em; text-transform: uppercase; padding: 4px; }
+
+a, area, button, [role="button"], input:not([type=range]), label, select, summary, textarea { -ms-touch-action: manipulation; touch-action: manipulation; }
+
+@media (prefers-color-scheme: light) { body { background: var(--lite-white); color: var(--light-fg); }
+  #copyright { background: var(--lite-silver); }
+  nav .brand svg { fill: var(--lite-purple); }
+  nav.transparent svg { fill: var(--dark-white); }
+  nav.transparent .subscribe { background: var(--dark-purple); }
+  .card { background: var(--lite-white); border-color: var(--lite-white); }
+  .subscribe, #merovex-privacy-notice { background: var(--lite-purple); }
+  input, .checkable { color: var(--lite-midnight); background: var(--dark-white); }
+  main a { color: var(--lite-blue); }
+  main .label, main [data-tooltip]:after, main button, main .button, main [type=submit], main .dropimage { background: var(--lite-blue); color: var(--lite-white); }
+  main .success { background: var(--lite-green) !important; }
+  main .warning { background: var(--lite-orange) !important; }
+  main .error, main .dangerous { background: var(--lite-red) !important; }
+  main .pseudo { background: var(--lite-mono-2); } }
+
+@media (prefers-color-scheme: dark) { body { background: var(--dark-bg); color: var(--dark-fg); }
+  #copyright { background: var(--dark-black); }
+  nav { background: var(--dark-black); }
+  nav .brand svg { fill: var(--dark-white); }
+  code, tr:nth-child(even), .toggle, figure pre { background: var(--dark-highlight); }
+  .card { background: var(--dark-gray); border-color: var(--dark-silver); }
+  .subscribe, #merovex-privacy-notice { background: var(--dark-purple); color: var(--dark-midnight); }
+  input, .checkable { background: var(--dark-white); color: var(--dark-midnight); }
+  blockquote { box-shadow: inset 5px 0 var(--dark-purple); }
+  main a { color: var(--dark-blue); }
+  main .label, main [data-tooltip]:after, main button, main .button, main [type=submit], main .dropimage { background: var(--dark-blue); color: var(--dark-midnight); }
+  main .success { background: var(--dark-green) !important; }
+  main .warning { background: var(--dark-orange) !important; }
+  main .error, main .dangerous { background: var(--dark-red) !important; }
+  main .pseudo { background: var(--dark-gray); }
+  main #hero { color: var(--dark-silver); } }
+
+/*# sourceMappingURL=style.css.map */

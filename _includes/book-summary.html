@@ -1,0 +1,22 @@
+<article class="flex two one-1200 center book-summary">
+  <img src="{{ '/assets/images/covers/' | relative_url }}{{ book.cover.angle }}" >
+  <section class='two-third'>
+    <h2>{{ book.full-title }}</h2>
+    <p>{{ book.excerpt | remove: '<p>' | remove: '</p>'}}</p>
+    {%- if book.released -%}
+    <!-- Book Purchase CTA -->
+    <div  data-toggle="buttons">
+      {%- if book.amazon.pback -%}
+    	<a class='button' href='{{book.amazon.pback}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Paperback');" target='_blank' ><i class='fa fa-book'></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Paperback</a>
+      {%- endif -%}
+      {%- if book.amazon.ebook -%}
+    	<a class='button warning' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Kindle');" target='_blank' ><i class='fa fa-mobile'></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Kindle</a>
+      {%- endif -%}
+      {%- if book.amazon.audible -%}
+      <a class='button success' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Audible');" target='_blank' ><i class='fa fa-mobile'></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Audible</a>
+      {%- endif -%}
+    </div>
+    <!-- /Book Purchase CTA -->
+    {%- endif -%}
+  </section>
+</article>
