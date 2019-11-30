@@ -40,11 +40,12 @@ main {
 h1, h2 {
   font-family: var(--font-heading);
 }
+
 ul.posts {
   li {
     list-style-type: none;
     time {
-      text-align: right;
+      @media (min-width: 600px) {text-align: right;}
       font-size: 0.9em;
       font-family: var(--font-system)
     }
@@ -101,6 +102,7 @@ footer {
   text-transform: uppercase;
   padding: 4px;
 }
+
 a,
 area,
 button,
@@ -182,6 +184,9 @@ textarea {
     background: var(--dark-black);
     .brand svg {
       fill: var(--dark-white);
+    }
+    .show:checked ~ .menu {
+      background: var(--dark-bg);
     }
   }
   code, tr:nth-child(even), .toggle, figure pre {
