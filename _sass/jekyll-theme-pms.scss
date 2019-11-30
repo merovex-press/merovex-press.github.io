@@ -65,6 +65,16 @@ blockquote {
     opacity: 0.6;
   }
 }
+.post {
+  aside {
+    margin-top: 2em;
+    a {
+      &.next {
+        text-align: right;
+      }
+    }
+  }
+}
 #books article {
   &+article {
     margin-top: 10vh;
