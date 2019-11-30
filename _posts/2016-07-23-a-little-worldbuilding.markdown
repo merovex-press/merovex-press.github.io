@@ -32,6 +32,6 @@ Part of the problem also is there's another series I want to get moving on. Not 
 
 It is that other series I have been worldbuilding. It uses a Banks Orbital concept. I spent the better part of last weekend just with the geometry and science of building one, with the accompanying dimensions, affects on pseudo-gravity and its climate.
 
-And I have that all covered. I even used [Verku](/diary/unsharpening-the-axe/) to start the documentation of said worldbuilding. This means that I can not only have a hard copy in my hand, but one day even possibly make the worldbuilding product available commercially. Not that anybody would want to buy it, but it would be the series bible or notebook for the as-yet-unamed series. Nope, not even a codename.
+And I have that all covered. I even used [Verku](/posts/unsharpening-the-axe/) to start the documentation of said worldbuilding. This means that I can not only have a hard copy in my hand, but one day even possibly make the worldbuilding product available commercially. Not that anybody would want to buy it, but it would be the series bible or notebook for the as-yet-unamed series. Nope, not even a codename.
 
 I'm hoping some of this will clear the logjam in Postal and let me go back. After all, I need to refresh the worldbuilding of that series as well. Once I feel better about how to arrange the physical and cultural, with this activity, I can perhaps switch back.

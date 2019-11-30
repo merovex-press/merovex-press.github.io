@@ -32,5 +32,5 @@ Rather than believe this lie (remember, Santa doesn't need Reggie to know that y
 <br style="clear: both;">
 
 
-  [f77bbe9c]: /diary/truth-about-santa-claus/ "The Truth about Santa article"
+  [f77bbe9c]: /posts/truth-about-santa-claus/ "The Truth about Santa article"
   [9687ec2a]: https://en.wikipedia.org/wiki/The_Elf_on_the_Shelf "Wikipedia article, Elf on the Shelf"

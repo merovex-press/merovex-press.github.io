@@ -25,7 +25,7 @@ Like any aspiring author, I've read more than my fair share of books on writing.
 
 Let me start with the caveat: I am not a bestselling author. I've written and published a few books. I'm big into understanding the craft of writing. I enjoy writing, though as a skill I have to say I am still on the windward side of learning. From time to time, I offer my naive advice to others who are starting writing. There are a few books I recommend. *Guide to Writing Fantasy and Science Fiction* is the latest that I've read, and the first I'd like to blog a review about.
 
-I am not a huge fan of Wizards of the Coast. I've never read a book by R.A. Salvatore, who has been a phenominal author within the Dungeons and Dragons universe. I loved D&D back in my teens and twenties (which should be the tweens, but that's a rant for another day.) I am not a fanboi.
+I am not a huge fan of Wizards of the Coast. I've never read a book by R.A. Salvatore, who has been a phenomenal author within the Dungeons and Dragons universe. I loved D&D back in my teens and twenties (which should be the tweens, but that's a rant for another day.) I am not a fanboi.
 
 Philip Athans is an editor for WotC novels. To me, this means he's not written a lot. But, he has a solid understanding of the craft by having read and edited a lot. He has access to some of the finer minds in world building, again from the D&D universe.
 

@@ -23,6 +23,10 @@ main {
     small {
       font-family: var(--font-system);
     }
+    pre, code {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
   }
   abbr {
 

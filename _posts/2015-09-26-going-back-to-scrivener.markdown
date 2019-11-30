@@ -20,7 +20,7 @@ created_at: 2015-09-26 11:21
 ---
 <!--Lead Paragraph-->
 
-I've discussed my [author's toolchain](/technology/toolchain/) before. This week, I find myself drawn back to Scrivener. I'd like to explain why.
+I've discussed my [author's toolchain](/posts/toolchain/) before. This week, I find myself drawn back to Scrivener. I'd like to explain why.
 
 <!-- more -->
 
