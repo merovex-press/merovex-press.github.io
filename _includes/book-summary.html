@@ -1,5 +1,5 @@
-<article class="flex two one-1200 center book-summary">
-  <img src="{{ '/assets/images/covers/' | relative_url }}{{ book.cover.angle }}" >
+<article class="flex three one-1200 center book-summary">
+  <img class='one-third' src="{{ '/assets/images/covers/' | relative_url }}{{ book.cover.angle }}" >
   <section class='two-third'>
     <h2>{{ book.full-title }}</h2>
     <p>{{ book.excerpt | remove: '<p>' | remove: '</p>'}}</p>
