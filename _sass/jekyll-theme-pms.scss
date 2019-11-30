@@ -23,10 +23,19 @@ main {
     small {
       font-family: var(--font-system);
     }
+    pre, code {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
   }
   abbr {
 
   }
+}
+.footnotes {
+  border-top: 2px solid var(--dark-red);
+  font-size: 0.8em;
+  font-family: var(--font-system);
 }
 h1, h2 {
   font-family: var(--font-heading);
@@ -58,6 +67,16 @@ blockquote {
   cite {
     display: block;
     opacity: 0.6;
+  }
+}
+.post {
+  aside {
+    margin-top: 2em;
+    a {
+      &.next {
+        text-align: right;
+      }
+    }
   }
 }
 #books article {
@@ -98,6 +117,9 @@ textarea {
   body {
     background: var(--lite-white);
     color: var(--light-fg);
+  }
+  .footnotes {
+    border-color: var(--light-red);
   }
   #copyright {
     background: var(--lite-silver);
