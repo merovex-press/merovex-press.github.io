@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 permalink: /posts/
+title: News & Random Thoughts
 ---
 
 <article class="visual">
