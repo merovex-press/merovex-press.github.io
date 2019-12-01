@@ -4,13 +4,13 @@
     min-height: 70vh;
     transition: height 999999s;
     text-align: center;
-    color: rgba(#fff,0.5);
-    xpadding: 40px 0 20px 0;
-    background: #202428 url(../../assets/images/bkg.png);
-    background-size: cover;
+    background-image: url(/assets/images/stardust.png);
     font-size: 1.2em;
     padding: 10vh 0;
     h2 { font-size: 3em; }
+    h2, p {
+      text-shadow: 1px 1px 2px #000;
+    }
     article {
       width: 100%;
       max-width: 1200px;

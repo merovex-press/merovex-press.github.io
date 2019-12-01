@@ -10,6 +10,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+
 }
 main {
   flex: 1 0 auto;
@@ -116,6 +117,10 @@ textarea {
       touch-action: manipulation;
 }
 @media (prefers-color-scheme: light) {
+  #hero {
+    background-color: var(--lite-black);
+    color: var(--dark-white);
+  }
   body {
     background: var(--lite-white);
     color: var(--light-fg);
@@ -126,6 +131,7 @@ textarea {
   #copyright {
     background: var(--lite-silver);
   }
+
   nav {
     .brand svg {
       fill: var(--lite-purple);
@@ -173,6 +179,9 @@ textarea {
 }
 
 @media (prefers-color-scheme: dark) {
+  #hero {
+    background-color: var(--dark-midnight);
+  }
   body {
     background: var(--dark-bg);
     color: var(--dark-fg);
