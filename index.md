@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+title: Ben Wilson, Author
 ---
 <div id='hero'>
 {%- assign books = site.books | sort: 'series' -%}
