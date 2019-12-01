@@ -12,8 +12,8 @@ amazon:
   ebook: http://amzn.to/1hAocWl
   pback: http://amzn.to/1PpTr3Z
 cover:
-  thumbnail: Scintilla-cover.png
-  angle: Scintilla-cover.png
+  thumbnail: Scintilla-cover.webp
+  angle: Scintilla-cover.webp
 ---
 
 On the verge of earning a plum job in government, pampered Mondennio Rownzal Clin-Khotaigra is is kicked out of university after being falsely accused of cheating.
