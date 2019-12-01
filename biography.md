@@ -1,68 +1,25 @@
 ---
 permalink: /bio/
 layout: page
-title: Ben's Biography
+title: About Ben Wilson
 ---
 
-Merovex is the imprint for some of the worst science fiction you will ever read. I’ll just leave it at that.
+**In about 50 characters.** Ben Wilson is a science fiction writer, husband, father, project manager, lover of the divine, & human nature student.
 
-## About Ben Wilson
-
-### Me in 140 Characters
-
-Ben Wilson is a science fiction writer, husband, father, project manager, lover of the divine, human nature student. On twitter @merovex.
-
-### Ben in 50-ish Words
-
-Ben Wilson is a science fantasy writer. He’s into history, human nature and religious studies. He is the author of the Stranded Series, though he eventually wants to write four novel series. His books are available on Amazon. Ben lives in Tysons, Virginia with his wife, three children, and two rabid attack cats. He pays bills by frustrating people through ineffective change management.
+Ben Wilson is a science fantasy writer. He’s into history, human nature and religious studies. He is the author of the Postal Marines Series. He served in the US Army through his 20s and got to meet some great people there. Now he does routine IT project management for customers who should know better; he pays the bills through their frustration. Ben lives in Northern Virginia with his wife, three of his four children, and two rabid attack cats. (The other child has a family of his own.)
 
 ## Why I write
 
 > My life is about telling stories.
 > <cite>Ben Wilson</cite>
 
-When friends and co-workers find that I write novels, I explain that I am a poor writer of bad Science Fiction. I don’t pretend to write the Great American Novel, or even the most provocative. I just write and try to improve.
+When friends and co-workers find that I write novels, I explain that I am a poor writer of bad Science Fiction. I don’t pretend to write the Great American Novel, or even the most provocative. I just write and try to improve. I was raised by a storytelling father and served in a storytelling culture. I love telling stories, and I thought I should write a few of them down.
 
-I’ve had the yen for storytelling my whole life. It started listening to my dad tell funny stories when I was a boy. I picked up his talent for oral story telling. My first career was in the military, which is a story-telling culture, where I honed my talent. I’ve yearned to write for decades and began to more seriously apply myself in recent years. It’s not the easiest process in the world, but I enjoy putting the words to screen. I hope you enjoy what you read. If you’d like to share with me ways you think the story could be improved, I’d love to have you in my community.
+## Who is my audience?
 
-Who is my audience
+You are my audience. We are a lot alike. I spent my 20s in the Army, so I had my share of hurry-up-and-wait, make-work details, and time away from family. Even though I reenlisted a couple times, I counted every day until I separated. Now, I recall with nostalgia the good times and some friends who never made it to separation. Most my Facebook friends are former veterans I was honored to serve with. We are protectors, and we know there is more to this life than we're able to lead alone. We have (or want to have) families, and we are doing our best to lead them in an uncertain world. We both want fiction that feeds our need to serve.
 
-Seth Godin suggests defining my minimum viable audience.
+## What Others Say About My Novels
 
-I think of my audience is similar to me. We’re Christians who know there is something more to this life than we’re able to lead. We have deep flaws and know only God can help us move beyond them. We have (or want to have) families and are doing our best to lead them into an uncertain world. We recognize reality is God-centered, and yearn for fiction that feeds our worldview.
-
-What Others Say About My Novels
-I like Mondennio, but sometimes I want to slap some sense in him.
-
-Dennis about Mondennio in Scintilla
-
-Colophon
-The site is written in HTML5 with Cascading Style Sheets (CSS) and delivered using Hugo. Google Firebase provides the Platform as a Service (PaaS), which lets one host for free when the traffic is light.
-
-The style was designed by Ben Wilson, using Bootstrap as its foundation, borrowing from Bootswatch rendered in SASS. Non-standard web fonts are provided courtesy of Google.
-
-Site content is authored on my local computer using Atom. Hugo lets me use Markdown in all its glory.
-
-Accessibility
-I strive to make this website accessible for all users, including people with disabilities. This website complies with best practices and standards as defined by the Web Content Accessibility Guidelines (WCAG 2.0) of the World Wide Web Consortium Web Accessibility Initiative (W3C WAI).
-
-Accessibility features included on the site are:
-
-Skip links, ARIA landmarks and headings are defined to aid in page navigation.
-Alternative text details for non-decorative images and other non-text elements.
-Structural markup is used appropriately to indicate headings, paragraphs and lists to aid in page comprehension and navigation.
-Form labels are programmatically associated with form fields.
-Data cells are associated in a data table with their headers.
-JavaScript and style sheets to enhance the appearance and functionality of the site. If these technologies are not available, alternative content is provided where necessary to ensure graceful degradation.
-Embedded documents and multimedia have been made accessible.
-Responsive design techniques have been used to optimize the experience for users who access the site at different screen resolutions and magnification levels.
-I value your opinions. If you have comments, suggestion for improvement or questions, you can contact me on Facebook.
-
-
-Uplifting, optimistic entertainment.
-
-Useful Links
-Stay Current
-I'd like to share new book releases and occasional news via my newsletter the "Merovex Dispatch."
-
-Copyright © 1998–2019 — Ben Wilson — All Rights Reserved.
+> I like Mondennio, but sometimes I want to slap some sense in him.
+> <cite>Dennis about Mondennio in Scintilla</cite>
