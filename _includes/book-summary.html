@@ -7,13 +7,13 @@
     <!-- Book Purchase CTA -->
     <div  data-toggle="buttons">
       {%- if book.amazon.pback -%}
-    	<a class='button' href='{{book.amazon.pback}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Paperback');" target='_blank' ><i class='fa fa-book'></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Paperback</a>
+    	<a class='button' href='{{book.amazon.pback}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Paperback');" target='_blank' ><i class="fad fa-books"></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Paperback</a>
       {%- endif -%}
       {%- if book.amazon.ebook -%}
-    	<a class='button warning' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Kindle');" target='_blank' ><i class='fa fa-mobile'></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Kindle</a>
+    	<a class='button success' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Kindle');" target='_blank' ><i class="fad fa-tablet-android-alt"></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Kindle</a>
       {%- endif -%}
       {%- if book.amazon.audible -%}
-      <a class='button success' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Audible');" target='_blank' ><i class='fa fa-mobile'></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Audible</a>
+      <a class='button warning' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Audible');" target='_blank' ><i class="fab fa-audible"></i></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Audible</a>
       {%- endif -%}
     </div>
     <!-- /Book Purchase CTA -->

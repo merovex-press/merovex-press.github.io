@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/picnic.min.css' | relative_url }}">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
+    <script src="https://kit.fontawesome.com/2f758798a8.js" crossorigin="anonymous"></script>
     <link rel="canonical" href="{{site.url}}"/>
     <title>{{page.title}}</title>
   </head>
@@ -138,6 +138,7 @@
   </script>
   {% if page.diceware == true %}
       <!-- load the primary wordlist synchronously -->
+      <!-- Creates things like vogel-harvey-novak-cp-tot-trim -->
       <script src="{{site.cdn_url}}/d/big.min.js"></script>
       <script src="{{site.cdn_url}}/d/lists/special-min.js"></script>
       <script src="{{site.cdn_url}}/d/lists/diceware-min.js"></script>
