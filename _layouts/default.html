@@ -2,17 +2,17 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="css, library, picnic, picnicss, light">
-    <meta name="description" content="A lightweight CSS library">
-    <link rel="stylesheet" href="https://unpkg.com/picnic">
+    <meta name="description" content="Website for author Ben Wilson">
+    <link rel="stylesheet" href="{{ '/assets/css/picnic.min.css' | relative_url }}">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  </head>
 
+    <link rel="canonical" href="{{site.url}}"/>
+    <title>{{page.title}}</title>
+  </head>
   <body>
     <header>
       <nav>
