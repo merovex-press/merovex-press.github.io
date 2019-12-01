@@ -16,9 +16,6 @@ category: Technology
 description: Ben Wilson, author, discusses how he writes, edits and publishes a novel.
 author: Ben Wilson
 tags:
-- Ruby
-- Markdown
-- LaTeX
 - Toolchain
 ---
 

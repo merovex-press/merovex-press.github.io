@@ -16,7 +16,10 @@ layout: default
   <small>{{ page.date | date: "%-d %B %Y" }}</small>
   <h1>{{ page.title }}</h1>
   {% if page.tags %}
-    <small>Tagged: <span class="label">{{ page.tags | join: "</span>, <span class='label'>" }}</span></small>
+    <small>Tagged:</small>
+    {% for tag in page.tags %}
+    {% include tag-link.html %}
+    {% endfor %}
   {% endif %}
   {{content}}
 <aside class="blog-nav flex two">
