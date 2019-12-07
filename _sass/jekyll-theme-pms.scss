@@ -20,7 +20,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-
 }
 main {
   flex: 1 0 auto;
@@ -31,6 +30,12 @@ main {
     font-family: var(--font-sans);
     small {
       font-family: var(--font-system);
+    }
+    table {
+      table-layout:fixed;
+      width:100%;
+      overflow-x: scroll;
+      scroll-behavior: auto;
     }
     pre, code {
       white-space: pre-wrap;
