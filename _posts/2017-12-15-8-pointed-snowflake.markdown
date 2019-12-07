@@ -87,7 +87,7 @@ A few years ago I wrote that a story is [not three acts but four](/posts/its-not
     <td>Lie Believed</td>
   </tr>
   <tr>
-    <th>S2.</th>
+    <th scope='row'>S2.</th>
     <td>Fails Re-Establishing Ordinary World</td>
     <td>Predicament</td>
     <td>Lie Proved</td>
