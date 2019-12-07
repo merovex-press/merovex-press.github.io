@@ -24,10 +24,8 @@ body {
 }
 main {
   flex: 1 0 auto;
-  a {
-    &:hover {
-      text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
   }
   article.post, article.page {
     font-family: var(--font-sans);
@@ -40,6 +38,7 @@ main {
     }
     .tag {
       font-size: 0.9em;
+      margin-bottom: 0.5em;
     }
   }
   abbr {
