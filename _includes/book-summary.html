@@ -1,11 +1,11 @@
-<article class="flex three one-1200 center book-summary">
-  <img class='one-third' src="{{ '/assets/images/covers/' | relative_url }}{{ book.cover.angle }}" loading='lazy'>
-  <section class='two-third'>
+<article class="flex one three-900 center book-summary">
+  <img class='one-third-900 full' src="{{ '/assets/images/covers/' | relative_url }}{{ book.cover.angle }}" loading='lazy'>
+  <section class='two-third-900 full'>
     <h2>{{ book.full-title }}</h2>
     <p>{{ book.excerpt | remove: '<p>' | remove: '</p>'}}</p>
     {%- if book.released -%}
     <!-- Book Purchase CTA -->
-    <div  data-toggle="buttons">
+    <div data-toggle="buttons" class='cta-buttons'>
       {%- if book.amazon.pback -%}
     	<a class='button' href='{{book.amazon.pback}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Paperback');" target='_blank' ><i class="fad fa-book-open"></i><span class='sr-only'>Buy {{book['title']}} as </span>&nbsp;Paperback</a>
       {%- endif -%}
