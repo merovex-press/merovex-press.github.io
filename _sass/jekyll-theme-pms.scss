@@ -129,14 +129,19 @@ textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
+th[scope=row] {
+  background: transparent;
+}
 @media (prefers-color-scheme: light) {
   #hero {
     background-color: var(--lite-black);
     color: var(--dark-white);
+    ::selection { background-color: var(--dark-primary); color: var(--dark-white) }
   }
+  th[scope=row] { color: var(--lite-fg); }
   body {
     background: var(--lite-white);
-    color: var(--light-fg);
+    color: var(--lite-fg);
   }
   .footnotes {
     border-color: var(--light-red);
@@ -144,7 +149,7 @@ textarea {
   #copyright {
     background: var(--lite-silver);
   }
-
+  ::selection { background-color: var(--lite-primary); color: var(--lite-white) }
   nav {
     .brand svg {
       fill: var(--lite-purple);
@@ -153,7 +158,7 @@ textarea {
     &.transparent {
       svg {fill: var(--dark-white);}
       .subscribe {
-        background: var(--dark-purple);
+        background: var(--lite-primary);
       }
     }
   }
@@ -168,6 +173,7 @@ textarea {
     color: var(--lite-midnight);
     background: var(--dark-white);
   }
+
   main {
     a {
       color: var(--lite-blue);
@@ -199,13 +205,14 @@ textarea {
     background: var(--dark-bg);
     color: var(--dark-fg);
   }
+  th[scope=row] { color: var(--dark-fg); }
   #copyright {
     background: var(--dark-black);
   }
   nav {
     background: var(--dark-black);
     .brand svg {
-      fill: var(--dark-white);
+      fill: var(--dark-primary);
     }
     .show:checked ~ .menu {
       background: var(--dark-bg);
@@ -253,4 +260,5 @@ textarea {
       color: var(--dark-silver);
     }
   }
+  ::selection { background-color: var(--dark-primary); color: var(--dark-white) }
 }

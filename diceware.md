@@ -7,10 +7,24 @@ permalink: /diceware/
 
 [Diceware](https://web.archive.org/web/20161025134230/http://world.std.com/~reinhold/diceware.html) is used to create cryptographically strong passphrases. It is based on the principle that the truly random selection, based on rolls of dice, of words in a [wordlist](https://web.archive.org/web/20161025134230/http://world.std.com/~reinhold/diceware.wordlist.asc) can result in easily memorable passwords that are also extremely resistant to attack by even the most powerful adversaries. Passwords that are [six words or longer](https://web.archive.org/web/20161025134230/http://world.std.com/~reinhold/dicewarefaq.html#howlong) are thought to be safe for high security applications.
 
-### Automatically Generated Words
+## Manually Rolled Words
+
+If you don't trust the Javascript randomization, you can roll your own. Just roll 5d6 to arrive at a number in the range of 11111 to 66666. Type that number into the text field below and hit enter.
+
+<form id='addFiveDieRollWordForm' class='form-inline' data-toggle='validator'>
+  <div class='form-group'>
+    <label class='sr-only' for='addFiveDieRollWord'>Add Two or Five Die Roll</label>
+    <div class='input-group'>
+      <div class='input-group-addon'>#</div>
+      <input type='text' class='form-control' id='addFiveDieRollWord' placeholder='+ 2 or 5 die roll word' maxlength='5' pattern='^[1-6]{2,5}$'>
+    </div>
+    <span class='help-block with-errors'></span>
+  </div>
+</form>
+
+## Automatically Generated Words
 
 Selecting one of these buttons will automatically generate the number of words selected.
-
 
 <div class='btn-group' role='group' aria-label='Add random words group'>
   <button type='button' class='btn btn-warning genWordsButton' data-words='4' data-rolls='5' data-reset='1'>
@@ -42,28 +56,13 @@ Selecting one of these buttons will automatically generate the number of words s
   </button>
 </div>
 
-### Manually Rolled Words
-
-If you don't trust the Javascript randomization, you can roll your own. Just roll 5d6 to arrive at a number in the range of 11111 to 66666. Type that number into the text field below and hit enter.
-
-<form id='addFiveDieRollWordForm' class='form-inline' data-toggle='validator'>
-  <div class='form-group'>
-    <label class='sr-only' for='addFiveDieRollWord'>Add Two or Five Die Roll</label>
-    <div class='input-group'>
-      <div class='input-group-addon'>#</div>
-      <input type='text' class='form-control' id='addFiveDieRollWord' placeholder='+ 2 or 5 die roll word' maxlength='5' pattern='^[1-6]{2,5}$'>
-    </div>
-    <span class='help-block with-errors'></span>
-  </div>
-</form>
-
+## Copyable Text Variations
 <div class='row'>
-<div id='diceWordsCopyableContainer' class='col-8'>
-  <h3 class='card-title'>Copyable Text Variations</h3>
+<div id='diceWordsCopyableContainer'>
   <ul>
   <li><code id='diceWordsCopyableSpace'></code></li>
   <li><code id='diceWordsCopyableDash'></code></li>
-  <li><code id='diceWordsCopyableNoGap'></code></li>
+  <!-- <li><code id='diceWordsCopyableNoGap'></code></li> -->
   </ul>
 </div>
 <div class='col'>
@@ -71,8 +70,9 @@ If you don't trust the Javascript randomization, you can roll your own. Just rol
 </div>
 </div>
 
+## Entropy
 <div id='entropyEstimateContainer' class='card card-block'>
-  <h3 class='card-title'>Entropy</h3>
+
   <p class='card-text'>There are <code id='totalWords'></code> words in your password, which is
   ~<code id='totalEntropy'></code>
   bits of entropy

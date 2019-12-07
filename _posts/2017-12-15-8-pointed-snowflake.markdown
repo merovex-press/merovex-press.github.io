@@ -4,7 +4,8 @@ title: "Eight-Pointed Snowflake"
 author: Ben Wilson
 description: "Summary for RSS Feed"
 category: 'writing-craft'
-tags: []
+tags:
+  - Technique
 photo:
   image: 2017-09-11-06-30-53.jpg
   creator: Unknown
@@ -66,8 +67,7 @@ David Lean was a prolific screenplay writer, known for such movies as *Lawrence 
 
 ## Applying Snowflake & Story Equation to Segments
 
-A few years ago I wrote that a story is [not three acts but four](/posts/its-not-really-three-acts/), in part because
-there's always that "sagging middle" that punctuates the middle of the second act, which is itself twice as long as the first or last act. The problem is the three verses four acts is not sufficiently informative. It also ignores the lower-level structure. Lean's Eight Segments gets down to a sufficiently atomic level that helps sustain both plot and story.
+A few years ago I wrote that a story is [not three acts but four](/posts/its-not-really-three-acts/), in part because there's always that "sagging middle" that punctuates the middle of the second act, which is itself twice as long as the first or last act. The problem is the three verses four acts is not sufficiently informative. It also ignores the lower-level structure. Lean's Eight Segments gets down to a sufficiently atomic level that helps sustain both plot and story.
 
 <table class='table table-striped table-sm'>
   <caption>Lean's Eight Segments Mashed with Randy's Snowflake and Susie May's Story Equation</caption>
@@ -135,6 +135,7 @@ there's always that "sagging middle" that punctuates the middle of the second ac
 Snowflake expands the Summary sentences to paragraphs, then expands those paragraphs to pages. Mashing with Segments means we will have an 8-paragraph Synopsis, and 8-page Treatment. Snowflake 8 would then list each sentence in the Treatment as a Scene. Then it is up to you whether you want to expand each scene into a paragraph which would give you a fully developed story.
 
 **Evan's Marshall Plan Speaks to Segment Length.** What about Evan? He advises that each section (his term for scene) is roughly 1,250 words long. There is a side-effect to an eight-segment plan with 1,250 word segments, because <span style='white-space: nowrap'>8 &times; 1,250 = 10,000</span>. That is, there are as many sections in a segment as there are 10k words in a novel. In other words:
+
 * 60k word novel = 6-section segments
 * 80k word novel = 8-section segments
 * 100k word novel = 10-section segments
