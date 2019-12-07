@@ -13,7 +13,7 @@ photo:
   caption: "Reggie - Elf on Shelf"
 ---
 
-A few Christmasses ago, I revealed the cold, [dark truth about Santa][f77bbe9c]: he is alive and active, but will not visit your home (or mine) any time soon. Since then, I've explored other sinister facts about the world we live in. It is time you knew about Reggie, the Elf on the Shelf, and how he contributes to pervasive surveillance.
+A few Christmases ago, I revealed the cold, [dark truth about Santa][f77bbe9c]: he is alive and active, but will not visit your home (or mine) any time soon. Since then, I've explored other sinister facts about the world we live in. It is time you knew about Reggie, the Elf on the Shelf, and how he contributes to pervasive surveillance.
 
 <!--more-->
 

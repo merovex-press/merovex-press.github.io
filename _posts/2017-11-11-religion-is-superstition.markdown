@@ -37,7 +37,7 @@ The Bible has a passage that neatly describes the nature of reality.
 > By taking a long and thoughtful look at what God has created, people have always been able to see what their eyes as such can’t see: eternal power, for instance, and the mystery of his divine being. So nobody has a good excuse. What happened was this: People knew God perfectly well, but when they didn’t treat him like God, refusing to worship him, they trivialized themselves into silliness and confusion so that there was neither sense nor direction left in their lives. They pretended to know it all, but were illiterate regarding life. They traded the glory of God who holds the whole world in his hands for cheap figurines you can buy at any roadside stand.
 > <cite>Romans 1:18-23</cite>
 
-Here Paul asserts a reality based in a recognition of God and evident in his Creation. The less one accepts God, Paul says, the more detatched from reality one is and the more meaningless it becomes. Of course, this is a truth claim, which needs to be proved.
+Here Paul asserts a reality based in a recognition of God and evident in his Creation. The less one accepts God, Paul says, the more detached from reality one is and the more meaningless it becomes. Of course, this is a truth claim, which needs to be proved.
 
 ## Scientific Causality
 
@@ -52,7 +52,7 @@ This worldview embraces what Paul said would happen in rejecting the reality of 
 
 ## Christian Consistency
 
-Christianity as a philosophy does not require causality because it accepts an eternal[^eternal] God who is not caused. That is, Christianity is more intellectually consistent. The Big Bang model supports theism[^genesis], and it is supported by multiple recent discoveries.[^quantum] Further, there are over 100 examples of constants that must be selected within a narrow range in order for the universe to support the minimal requirements for life, and our planet is fine-tuned for life. Science cannot provide a meaningful answer here either and is reduced to [hypothesis](https://www.merriam-webster.com/dictionary/hypothesis). That is, it is conclusory.
+Christianity as a philosophy does not require causality because it accepts an eternal[^eternal] God who is not caused. Christianity is more intellectually consistent. The Big Bang model supports theism[^genesis], and it is supported by multiple recent discoveries.[^quantum] Further, there are over 100 examples of constants that must be selected within a narrow range in order for the universe to support the minimal requirements for life, and our planet is fine-tuned for life. Science cannot provide a meaningful answer here either and is reduced to [hypothesis](https://www.merriam-webster.com/dictionary/hypothesis). It is conclusory.
 
 [^eternal]: Specifically, when God created in Genesis 1, he created both Space and Time and is therefore not governed by Time as we would consider it.
 [^quantum]: Conversely, the quantum gravity model supports atheism, but it pure theory and has never been tested or confirmed by experiment and observation.
@@ -60,7 +60,7 @@ Christianity as a philosophy does not require causality because it accepts an et
 
 Faced with this evidence, I am persuaded in theism. Faced with other evidence, I am further persuaded in the Christian God, Salivation in Christ and the consequences and opportunities implied by it. Christianity states that each of us is unique and special in God's eye and each fitted for a purpose. This provides hope.
 
-Does this mean that I and other Christians fully understand the nature of reality? There certainly seem to be a lot of different philosophies in Christianity. I find myself agreeing with Paul that we don't have the answers. However, we are on a more intellectually fulfilling path. Part of the confusion that remains is based more in our nature and desire to inject into God's message what we want, rather than let God be in control.
+Does this mean that I and other Christians fully understand the nature of reality? There seems to be a lot of different philosophies in Christianity. I agree with Paul that we don't have the answers. However, we are on a more intellectually fulfilling path. Part of the confusion that remains is based more in our nature and desire to inject into God's message what we want, rather than let God be in control.
 
 >We know only a portion of the truth, and what we say about God is always incomplete. But when the Complete arrives, our incompletes will be canceled.
 > We don’t yet see things clearly. We’re squinting in a fog, peering through a mist. But it won’t be long before the weather clears and the sun shines bright! We’ll see it all then, see it all as clearly as God sees us, knowing him directly just as he knows us!
@@ -68,11 +68,11 @@ Does this mean that I and other Christians fully understand the nature of realit
 > But for right now, until that completeness, we have three things to do to lead us toward that consummation: Trust steadily in God, hope unswervingly, love extravagantly. And the best of the three is love.
 > <cite>1 Corinthians 13:9-13</cite>
 
-C.S. Lewis was raised an atheist. As a youth he boarded with and was tutored by a powerfully intellecual atheist. Works he wrote before his conversion bear out his lack of Christianness. He served in the trenches of the First World War and came away shaken, yet still not Christian. In time, however, his intellect and atheism could not overcome what he experienced in life and reality. He came in time to be a theist then a Christian. Thus as a Christian, he addressed the [intellectual richness of Christianity](http://amzn.to/2hl0Ypy).
+C.S. Lewis was raised an atheist. As a youth he boarded with and was tutored by a powerfully intellectual atheist. Works he wrote before his conversion bear out his lack of Christianness. He served in the trenches of the First World War and came away shaken, yet still not Christian. In time, however, his intellect and atheism could not overcome what he experienced in life and reality. He came in time to be a theist then a Christian. Thus as a Christian, he addressed the [intellectual richness of Christianity](http://amzn.to/2hl0Ypy).
 
 ## Beliefs Have Consequences
 
-I wish I could say I don't care whether an atheist agrees with me or not. However, the reality of God carries a death sentence for those who reject him. It frustrates me that I alone cannot persuade an atheist of the merciless tyranny they serve under, and the freedom I experience as a Christian. Sin can't tell me how to live. I'm living in the freedom of God.[^freedom] There's a joy and purpose there an atheist lacks, but I cannot explain it. I cannot use clear evidence as one always finds an alternative interpretation. I can only strongly hope that the atheist may be given this same freedom.
+I wish I could say I don't care whether an atheist agrees with me. However, the reality of God carries a death sentence for those who reject him. It frustrates me that I alone cannot persuade an atheist of the merciless tyranny they serve under, and the freedom I experience as a Christian. Sin can't tell me how to live. I'm living in the freedom of God.[^freedom] There's a joy and purpose there an atheist lacks, but I cannot explain it. I cannot use clear evidence as one always finds an alternative interpretation. I can only strongly hope that the atheist may be given this same freedom.
 
 I've read the Bible throughly. I've lived a life fully. I've faced reality. My faith is battle-earned. I'm not trying to persuade the reader that Christianity is truth. I merely assert that the one who asserts that religion is superstition does not have the faintest notion of what they are saying.
 
