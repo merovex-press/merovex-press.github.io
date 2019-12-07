@@ -41,9 +41,6 @@ main {
       margin-bottom: 0.5em;
     }
   }
-  abbr {
-
-  }
 }
 .text-center {
   text-align: center !important;
@@ -51,11 +48,14 @@ main {
 }
 @media all and (max-width: 60em) {
   h1, aside.tags, aside.related a { text-align: center !important;}
-  ul.posts { time { text-align: right; } }
+
   nav .show ~ .menu {
     background: var(--dark-bg);
     color: var(--dark-fg);
   }
+}
+@media all and (min-width: 60em) {
+  ul.posts { time { text-align: right; } }
 }
 .footnotes {
   border-top: 2px solid var(--dark-red);
@@ -110,7 +110,6 @@ blockquote {
 #books article {
   &+article {
     margin-top: 10vh;
-
   }
   img {
     margin: auto;
