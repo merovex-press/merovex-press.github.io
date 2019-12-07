@@ -94,9 +94,13 @@ blockquote {
     }
   }
 }
+.cta-buttons {
+  text-align: center;
+}
 #books article {
   &+article {
     margin-top: 10vh;
+
   }
   img {
     margin: auto;
