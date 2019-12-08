@@ -3,6 +3,19 @@
     background-color: var(--lite-black);
     color: var(--dark-white);
     ::selection { background-color: var(--dark-primary); color: var(--dark-white) }
+    .button {
+      background: var(--dark-blue);
+      color: var(--lite-midnight);
+    }
+    .success {
+      background: var(--dark-green) !important;
+    }
+    .warning {
+      background: var(--dark-orange) !important;
+    }
+    .error, .dangerous {
+      background: var(--dark-red) !important;
+    }
   }
   th[scope=row] { color: var(--lite-fg); }
   body {
@@ -17,7 +30,7 @@
   }
   nav {
     .brand svg {
-      fill: var(--lite-purple);
+      fill: var(--lite-primary);
 
     }
     i {
