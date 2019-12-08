@@ -28,6 +28,7 @@ body {
   flex-direction: column;
 }
 main {
+  background: red;
   flex: 1 0 auto;
   a:hover {
     text-decoration: underline;
