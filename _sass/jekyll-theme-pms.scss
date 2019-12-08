@@ -112,7 +112,7 @@ main {
   li {
     @extend .flex;
     @extend .three-600;
-    @extend .one-500;
+    @extend .one;
     @extend .center;
     list-style-type: none;
     time {
