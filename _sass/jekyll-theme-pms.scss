@@ -19,30 +19,34 @@
   text-align: center !important;
   display: block;
 }
-html, body {
+body {
   font-family: var(--font-system);
   font-size: 20px;
-}
-body {
   display: flex;
   flex-direction: column;
 }
 main {
-  background: red;
   flex: 1 0 auto;
   a:hover {
     text-decoration: underline;
   }
-  .footnotes {
-    border-top: 2px solid var(--dark-red);
-    font-size: 0.8em;
-    font-family: var(--font-system);
-  }
+
   h1, h2 {
     font-family: var(--font-heading);
   }
-  article.post, article#page {
+  article {
+    text-align: left;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 80px 10px 10px 10px;
     font-family: var(--font-sans);
+    blockquote {
+      cite {
+        display: block;
+        opacity: 0.6;
+      }
+    }
     small {
       font-family: var(--font-system);
     }
@@ -51,21 +55,45 @@ main {
       width:100%;
       overflow-x: scroll;
       scroll-behavior: auto;
+      th[scope=row] {
+        background: transparent;
+      }
     }
     pre, code {
       white-space: pre-wrap;
       word-wrap: break-word;
     }
-    .tag {
-      font-size: 0.9em;
-      margin-bottom: 0.5em;
+    .footnotes {
+      border-top: 2px solid var(--dark-red);
+      font-size: 0.8em;
+      font-family: var(--font-system);
+    }
+    .related {
+      margin: 1em 0;
+      a {
+        &.next {
+          text-align: right;
+        }
+      }
+    }
+    .tags {
+      margin: 1em 0;
+      @extend .one;
+      @extend .two-600;
+      a {
+        @extend .label;
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+      }
     }
   }
 }
 
 @media all and (max-width: 60em) {
-  h1, aside.tags, aside.related a { text-align: center !important;}
-
+  h1, .tags, .related a { text-align: center !important;}
+  article {
+    margin: 1em;
+  }
   nav .show ~ .menu {
     background: var(--dark-bg);
     color: var(--dark-fg);
@@ -75,8 +103,7 @@ main {
   ul.posts { time { text-align: right; } }
 }
 
-
-ul.posts {
+.posts {
   li {
     list-style-type: none;
     time {
@@ -91,29 +118,7 @@ ul.posts {
 .content__gdprBlock {
   font-size: 0.8em;
 }
-.visual {
-    text-align: left;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 80px 10px 10px 10px;
-}
-blockquote {
-  cite {
-    display: block;
-    opacity: 0.6;
-  }
-}
-.post {
-  aside.related {
-    margin-top: 2em;
-    a {
-      &.next {
-        text-align: right;
-      }
-    }
-  }
-}
+
 .cta-buttons {
   text-align: center;
 }
@@ -132,12 +137,12 @@ blockquote {
 footer {
   margin-top: 1in;
   flex-shrink: 0;
-}
-#copyright {
-  text-align: center;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  padding: 4px;
+  #copyright {
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 4px;
+  }
 }
 
 a,
@@ -151,7 +156,4 @@ summary,
 textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
-}
-th[scope=row] {
-  background: transparent;
 }

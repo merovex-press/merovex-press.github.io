@@ -2,23 +2,19 @@
 layout: default
 ---
 
-<article id='page' class="visual">
+<article>
  {%include related-posts.html %}
-  <time class='none one-600' datetime="{{ page.date | date: "%Y-%m-%d" }}">
-    {{ page.date | date: "%e %B %Y" }}
-  </time>
-  <h1>{{ page.title }}</h1>
-  <time class='none-600 text-center' datetime="{{ page.date | date: "%Y-%m-%d" }}">
-    {{ page.date | date: "%e %B %Y" }}
-  </time>
-  {% if page.tags %}<aside class='tags one two-600'>
-    <small>Tagged:</small>
-    <div>
+  <header>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    <time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%e %B %Y" }}
+    </time>
+    <div class="tags">
       {% for tag in page.tags %}
         {% include tag-link.html %}
       {% endfor %}
     </div>
-  </aside>{% endif %}
+  </header>
   {{content}}
   {%include related-posts.html %}
 </article>
