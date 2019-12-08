@@ -27,8 +27,8 @@
     border-color: var(--dark-silver);
   }
   .subscribe, #merovex-privacy-notice {
-    background: var(--dark-primary);
-    color: var(--dark-white);
+    background: var(--dark-primary) !important;
+    color: var(--dark-white) !important;
   }
   input, .checkable {
     background: var(--dark-white);

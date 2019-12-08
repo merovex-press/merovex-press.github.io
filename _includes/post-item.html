@@ -1,6 +1,8 @@
-  <li class='flex three-600 one-500 center'>
-    <time class='one-third-600' datetime="{{ post.date | date: "%Y-%m-%d" }}">
-      {{ post.date | date: "%e %B %Y" }}
+  <li>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+      {{- post.date | date: "%e %B %Y" -}}
     </time>
-    <a class='two-third-600' href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      {{- post.title -}}
+    </a>
   </li>
