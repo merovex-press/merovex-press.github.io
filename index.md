@@ -5,20 +5,20 @@
 layout: default
 title: Ben Wilson, Author
 ---
-<div id='hero'>
-{%- assign books = site.books | sort: 'series' -%}
+<section id='hero'>
+{% assign books = site.books | sort: 'series' %}
 {%- for book in books -%}
 {%- if book.featured -%}
 {% include book-summary.html %}
 {%- endif -%}
 {%- endfor -%}
-</div>
+</section>
 
-<div class="visual" id='books'>
-  {%- assign books = site.books | sort: 'series' -%}
+<article id='books'>
+  {% assign books = site.books | sort: 'series' %}
   {%- for book in books -%}
   {%- unless book.hidden -%}
   {% include book-summary.html %}
   {%- endunless -%}
   {%- endfor -%}
-</div>
+</article>

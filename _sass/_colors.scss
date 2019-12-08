@@ -1,6 +1,7 @@
 :root {
   --font-system: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
   --font-sans: "Source Sans Pro", -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+  --font-serif: "Source Serif Pro", -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
   --font-heading: Oswald, -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
 
   --dark-primary: #BE5046;
@@ -14,10 +15,10 @@
   --dark-highlight: #2C323C;
   --dark-white: #FAFAFA;
   --dark-red: #BE5046;
-  --dark-green: #98C379;
-  --dark-orange: #D19A66;
-  --dark-blue: #61AFEF;
-  --dark-purple: #C678DD;
+  --dark-green: #46BE80;
+  --dark-orange: #E67F47;
+  --dark-blue: #8AA0D6;
+  --dark-purple: #D27FA1;
 
   --lite-fg: #383A42;
   --lite-gray: #3E4451;
@@ -28,10 +29,10 @@
   --lite-midnight: #121417;
   --lite-highlight: #2C323C;
   --lite-white: #FAFAFA;
-  --lite-red: #CA1243;
-  --lite-green: #50A14F;
-  --lite-orange: #C18401;
-  --lite-blue: #4078F2;
-  --lite-purple: #7a003e;
-  --lite-primary: #7A003E;
+  --lite-red: #BE5046;
+  --lite-green: #2C7D53;
+  --lite-orange: #B85119;
+  --lite-blue: #4A6BBF;
+  --lite-purple: #BD4275;
+  --lite-primary: #BE5046;
 }

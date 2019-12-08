@@ -29,7 +29,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 twitter: merovex
 facebook: MerovexPress
 cdn_url: https://d1czp97ry8if6j.cloudfront.net
-
+sass:
+  style: compressed
 collections:
   books:
     output: true

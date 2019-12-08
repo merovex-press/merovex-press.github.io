@@ -1,0 +1,35 @@
+.book-summary {
+  @extend .flex;
+  @extend .one;
+  @extend .three-900;
+  @extend .center;
+  &+.book-summary {
+    margin-top: 10vh;
+  }
+  img {
+    @extend .third-900;
+    @extend .full;
+    margin: auto;
+    max-width: 200px;
+  }
+  section {
+    @extend .two-third-900;
+    @extend .full;
+  }
+  a {
+    margin: 0 0.5em 0 0;
+    i {
+      margin-right: 0.3em;
+    }
+    span {
+      @extend .sr-only;
+    }
+  }
+  .cta-buttons {
+    text-align: center;
+    a {
+      @extend .button;
+      margin: 0.5em;
+    }
+  }
+}
