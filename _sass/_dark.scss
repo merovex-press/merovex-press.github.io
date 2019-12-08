@@ -1,0 +1,65 @@
+@media (prefers-color-scheme: dark) {
+  #hero {
+    background-color: var(--dark-midnight);
+  }
+  body {
+    background: var(--dark-bg);
+    color: var(--dark-fg);
+  }
+  th[scope=row] { color: var(--dark-fg); }
+  #copyright {
+    background: var(--dark-black);
+  }
+  nav {
+    background: var(--dark-black);
+    .brand svg {
+      fill: var(--dark-primary);
+    }
+    .show:checked ~ .menu {
+      background: var(--dark-bg);
+    }
+  }
+  code, tr:nth-child(even), .toggle, figure pre {
+    background: var(--dark-highlight);
+  }
+  .card {
+    background: var(--dark-gray);
+    border-color: var(--dark-silver);
+  }
+  .subscribe, #merovex-privacy-notice {
+    background: var(--dark-primary);
+    color: var(--dark-white);
+  }
+  input, .checkable {
+    background: var(--dark-white);
+    color: var(--dark-midnight);
+  }
+  blockquote {
+    box-shadow: inset 5px 0 var(--dark-purple);
+  }
+  main {
+    a {
+      color: var(--dark-blue);
+    }
+    .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
+      background: var(--dark-blue);
+      color: var(--dark-midnight);
+    }
+    .success {
+      background: var(--dark-green) !important;
+    }
+    .warning {
+      background: var(--dark-orange) !important;
+    }
+    .error, .dangerous {
+      background: var(--dark-red) !important;
+    }
+    .pseudo {
+      background: var(--dark-gray);
+    }
+    #hero {
+      color: var(--dark-silver);
+    }
+  }
+  ::selection { background-color: var(--dark-primary); color: var(--dark-white) }
+}
