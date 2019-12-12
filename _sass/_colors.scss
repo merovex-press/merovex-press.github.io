@@ -2,37 +2,45 @@
   --font-system: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
   --font-sans: "Source Sans Pro", -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
   --font-serif: "Source Serif Pro", -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-  --font-heading: Oswald, -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+  --font-heading: Oswald, "Avenir Next Condensed",system-ui,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
 
-  --dark-primary: #BE5046;
-  --dark-fg: #ABB2BF;
-  --dark-gray: #3E4451;
-  --dark-silver: #9DA5B4;
-  --dark-mono-2: #828997;
-  --dark-bg: #282C34;
-  --dark-black: #21252B;
-  --dark-midnight: #121417;
-  --dark-highlight: #2C323C;
-  --dark-white: #FAFAFA;
-  --dark-red: #BE5046;
-  --dark-green: #46BE80;
-  --dark-orange: #E67F47;
-  --dark-blue: #8AA0D6;
-  --dark-purple: #D27FA1;
+  --foreground: #383A42;
+  --gray: #3E4451;
+  --silver: #9DA5B4;
+  --mono-2: #828997;
+  --background: #FAFAFA;
+  --navbar-background: #FAFAFA;
+  --card-background: darken(#FAFAFA,5%);
+  --black: #21252B;
+  --midnight: #121417;
+  --highlight: #2C323C;
+  --white: #FAFAFA;
+  --red: #BE5046;
+  --green: #2C7D53;
+  --orange: #B85119;
+  --blue: #4A6BBF;
+  --purple: #BD4275;
+  --primary: #BE5046;
+}
 
-  --lite-fg: #383A42;
-  --lite-gray: #3E4451;
-  --lite-silver: #9DA5B4;
-  --lite-mono-2: #828997;
-  --lite-bg: #FAFAFA;
-  --lite-black: #21252B;
-  --lite-midnight: #121417;
-  --lite-highlight: #2C323C;
-  --lite-white: #FAFAFA;
-  --lite-red: #BE5046;
-  --lite-green: #2C7D53;
-  --lite-orange: #B85119;
-  --lite-blue: #4A6BBF;
-  --lite-purple: #BD4275;
-  --lite-primary: #BE5046;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #BE5046;
+    --foreground: #ABB2BF;
+    --gray: #3E4451;
+    --silver: #9DA5B4;
+    --mono-2: #828997;
+    --background: #282C34;
+    --navbar-background: #21252B;
+    --card-background: #2C323C;
+    --black: #21252B;
+    --midnight: #121417;
+    --highlight: #2C323C;
+    --white: #FAFAFA;
+    --red: #BE5046;
+    --green: #46BE80;
+    --orange: #E67F47;
+    --blue: #8AA0D6;
+    --purple: #D27FA1;
+  }
 }
