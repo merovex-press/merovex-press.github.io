@@ -19,4 +19,20 @@
       img { max-width: 300px; height: auto; margin: auto 0; }
       a { margin-right: 1em; }
     }
+    background-color: var(--black);
+    color: var(--white);
+    ::selection { background-color: var(--primary); color: var(--white) }
+    .button {
+      background: var(--blue);
+      color: var(--midnight);
+    }
+    .success {
+      background: var(--green) !important;
+    }
+    .warning {
+      background: var(--orange) !important;
+    }
+    .error, .dangerous {
+      background: var(--red) !important;
+    }
 }

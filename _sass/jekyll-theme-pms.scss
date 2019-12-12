@@ -1,6 +1,4 @@
 @import "colors";
-@import "dark";
-@import "light";
 @import "hero";
 @import "navbar";
 @import "privacy-notice";
@@ -25,13 +23,35 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  background: var(--background);
+  color: var(--foreground);
 }
 main {
+  ::selection { background-color: var(--primary); color: var(--white) }
   flex: 1 0 auto;
-  a:hover {
-    text-decoration: underline;
+  a {
+    color: var(--blue);
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
+  .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .success {
+    background: var(--green) !important;
+  }
+  .warning {
+    background: var(--orange) !important;
+  }
+  .error, .dangerous {
+    background: var(--red) !important;
+  }
+  .pseudo {
+    background: var(--mono-2);
+  }
   h1, h2 {
     font-family: var(--font-heading);
   }
@@ -58,6 +78,7 @@ main {
       scroll-behavior: auto;
       th[scope=row] {
         background: transparent;
+        color: var(--foreground);
       }
     }
     pre, code {
@@ -65,12 +86,11 @@ main {
       word-wrap: break-word;
     }
     .footnotes {
-      border-top: 2px solid var(--dark-red);
+      border-top: 2px solid var(--red);
       font-size: 0.8em;
       font-family: var(--font-system);
     }
     .related {
-
       @extend .flex;
       @extend .one;
       @extend .two-600;
@@ -100,8 +120,8 @@ main {
     margin: 1em;
   }
   nav .show ~ .menu {
-    background: var(--dark-bg);
-    color: var(--dark-fg);
+    background: var(--background);
+    color: var(--foreground);
   }
 }
 @media all and (min-width: 60em) {
@@ -134,11 +154,19 @@ footer {
   margin-top: 1in;
   flex-shrink: 0;
   #copyright {
+    background: var(--silver);
     text-align: center;
     font-size: 0.8em;
     text-transform: uppercase;
     padding: 4px;
   }
+}
+.subscribe, #merovex-privacy-notice {
+  background: var(--primary) !important;
+}
+.card {
+  background: var(--card-background);
+  border-color: var(--card-background);
 }
 
 a,
@@ -152,4 +180,8 @@ summary,
 textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
+}
+input, .checkable {
+  color: var(--midnight);
+  background: var(--white);
 }
