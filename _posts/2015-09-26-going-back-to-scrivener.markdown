@@ -3,10 +3,10 @@ tags:
 - Scrivener
 - Toolchain
 photo:
-  image: going-back-to-scrivener.png
-  creator: Ben Wilson
-  url: http://dausha.net
-  license: Rights Reserved
+  image: 35056889503_801fb426f8_o.jpg
+  creator: Benbenben11/Flickr
+  url: https://flic.kr/p/VpRHTn
+  license: BY-2.0
   caption: Screenshot of Scrivener Series
 layout: post
 title: Going Back to Scrivener

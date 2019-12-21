@@ -7,9 +7,9 @@ tags:
  - Humor
 photo:
     license: "CC BY 2.0"
-    image: 29995380264-ab8bbfa329-o.jpg
-    creator: Prestonbot/Flickr
-    url: https://www.flickr.com/photos/116451027@N08/29995380264/
+    image: halloween-2905531_1920.jpg
+    creator: brenkee-2021352/Pixabay
+    url: https://pixabay.com/photos/halloween-spooky-jack-o-lantern-2905531/
     caption: "A pumpkin dreams of Halloween"
 description: "Have you ever had a time when you wanted to just snap from the stress? I have. And I did. What I did next was fun."
 date: 2016-10-30T09:14:29-04:00
