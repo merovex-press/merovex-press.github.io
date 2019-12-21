@@ -6,6 +6,14 @@ layout: default
  {%include related-posts.html %}
   <header>
     <h1 itemprop="headline">{{ page.title }}</h1>
+    <figure>
+      <img src="/assets/images/articles/{{page.photo['image'] | replace: "jpg", "webp" | replace: "png", "webp" }}">
+      <figcaption>
+        {{page.photo['caption']}}
+        <a href='{{page.photo['url']}}'>{{page.photo['creator']}}</a>
+        {{page.photo['license']}}
+      </figcaption>
+    </figure>
     <time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%e %B %Y" }}
     </time>

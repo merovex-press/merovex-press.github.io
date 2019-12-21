@@ -5,10 +5,10 @@ description: I've used a safety razor for a decade, with some pleasant results.
 categories: ["Diary"]
 tags: [Life Hacks, Bad Advice]
 photo:
-  image: 858748400-c5bb4d9325-o.jpg
-  creator: Matt Thompson/Flickr
-  url: https://www.flickr.com/photos/mthomps/858748400
-  license: under CC BY-SA 2.0
+  image: blade-2328705_1920.jpg
+  creator: eroyka-3731342/Pixabay
+  url: https://pixabay.com/photos/blade-shaving-foam-brush-shave-2328705/
+  license: Public Domain
   caption: Classic Safety Razor
 date: 2017-06-17T13:42:00-04:00
 created_at: 2017-06-17 11:28
