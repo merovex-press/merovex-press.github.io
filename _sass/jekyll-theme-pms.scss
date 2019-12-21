@@ -101,15 +101,15 @@ main {
         }
       }
     }
-    .tags {
-      margin: 1em 0;
-      @extend .one;
-      @extend .two-600;
-      a {
-        @extend .label;
-        font-size: 0.9em;
-        margin-bottom: 0.5em;
-      }
+  }
+  pre {
+    font-family: var(--font-monospace);
+    background: var(--navbar-background);
+    border: 1px solid;
+    border-color: var(--silver);
+    line-height: 1.2;
+    code {
+      background: var(--navbar-background);
     }
   }
   figure {
@@ -117,6 +117,7 @@ main {
     margin: 0;
     padding-top: 56.25%;
     position: relative;
+    border-radius: 3px;
     img {
       position: absolute;
       top: 50%;
@@ -128,12 +129,13 @@ main {
       position: absolute;
       bottom: 0;
       width: 100%;
-      background-color: var(--black);
+      background-color: var(--foreground);
       padding: 0px 8px;
       font-size: 0.9rem;
-      color: var(--white);
+      color: var(--background);
       a {
-        color: var(--blue);
+        color: var(--background);
+        text-decoration: underline;
       }
     }
   }
@@ -182,11 +184,16 @@ footer {
   margin-top: 1in;
   flex-shrink: 0;
   #copyright {
-    background: var(--silver);
+    background: var(--foreground);
     text-align: center;
     font-size: 0.8em;
     text-transform: uppercase;
     padding: 4px;
+    color: var(--background);
+    a {
+      color: var(--background);
+      text-decoration: underline;
+    }
   }
 }
 .subscribe, #merovex-privacy-notice {

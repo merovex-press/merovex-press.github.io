@@ -9,19 +9,22 @@ layout: default
     <figure>
       <img src="/assets/images/articles/{{page.photo['image'] | replace: "jpg", "webp" | replace: "png", "webp" }}">
       <figcaption>
-        {{page.photo['caption']}}
-        <a href='{{page.photo['url']}}'>{{page.photo['creator']}}</a>
+        {{page.photo['caption']}},
+        <a href='{{page.photo['url']}}'>{{page.photo['creator']}}</a>,
         {{page.photo['license']}}
       </figcaption>
     </figure>
-    <time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-      {{ page.date | date: "%e %B %Y" }}
-    </time>
-    <div class="tags">
-      {% for tag in page.tags %}
-        {% include tag-link.html %}
-      {% endfor %}
-    </div>
+    <p>
+      Ben Wilson &middot;
+      <time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+        {{ page.date | date: "%e %B %Y" }}
+      </time>
+      <span class="tags">
+        {% for tag in page.tags %}
+          {% include tag-link.html %}
+        {% endfor %}
+      </span>
+    </p>
   </header>
   {{content}}
   {%include related-posts.html %}
