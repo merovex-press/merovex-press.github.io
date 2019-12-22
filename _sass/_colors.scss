@@ -25,7 +25,7 @@ $light-background: $gray-900;
   --font-heading: Oswald,#{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 
-  --foreground: #{$gray-200};
+  --foreground: #{contrast($gray-500, $light-background,7)};
   --gray: #{$gray-300};
   --silver: #{$gray-700};
   --mono-2: #{$gray-600};
@@ -49,7 +49,7 @@ $light-background: $gray-900;
   $dark-background: $gray-200;
   :root {
     --primary: #{contrast(#BE5046, $dark-background, 1.0)};
-    --foreground: #{$gray-800};
+    --foreground: #{contrast($gray-500, $dark-background,7)};
     --gray: #{$gray-400};
     --silver: #{$gray-700};
     --mono-2: #{$gray-500};
