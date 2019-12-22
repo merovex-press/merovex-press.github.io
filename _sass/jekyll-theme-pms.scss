@@ -23,7 +23,7 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  background: var(--background);
+  background: var(--background) !important;
   color: var(--foreground);
 }
 main {
@@ -38,7 +38,7 @@ main {
 
   .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
     background: var(--blue);
-    color: var(--white);
+    color: var(--button-text);
   }
   .success {
     background: var(--green) !important;
