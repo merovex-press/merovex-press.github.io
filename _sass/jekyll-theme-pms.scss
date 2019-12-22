@@ -76,6 +76,9 @@ main {
       width:100%;
       overflow-x: scroll;
       scroll-behavior: auto;
+      th {
+        background: var(--blue);
+      }
       th[scope=row] {
         background: transparent;
         color: var(--foreground);
