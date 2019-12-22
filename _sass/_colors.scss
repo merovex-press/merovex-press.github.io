@@ -17,13 +17,14 @@ $orange: #B85119;
 $blue: #4A6BBF;
 $purple: #BD4275;
 $light-background: $gray-900;
+$dark-background: $gray-200;
 
 :root {
-  --font-system: #{$system-fonts};
-  --font-sans: "Source Sans Pro",#{$system-fonts};
-  --font-serif: "Source Serif Pro",#{$system-fonts};
   --font-heading: Oswald,#{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  --font-sans: "Source Sans Pro",#{$system-fonts};
+  --font-serif: "Source Serif Pro",#{$system-fonts};
+  --font-system: #{$system-fonts};
 
   --foreground: #{contrast($gray-500, $light-background,7)};
   --gray: #{$gray-300};
@@ -36,17 +37,16 @@ $light-background: $gray-900;
   --black: #{$gray-200};
   --highlight: #{$gray-500};
   --white: #{$gray-900};
-  --red: #{contrast(red, $light-background)};
-  --green:  #{contrast($green, $light-background)};
-  --orange: #{contrast($orange, $light-background)};
-  --blue: #{contrast($blue, $light-background)};
-  --purple: #{contrast($purple, $light-background)};
+  --red: #{contrast(red, $light-background, 6)};
+  --green:  #{contrast($green, $light-background, 6)};
+  --orange: #{contrast($orange, $light-background, 6)};
+  --blue: #{contrast($blue, $light-background, 6)};
+  --purple: #{contrast($purple, $light-background, 6)};
   --primary: #BE5046;
   --button-text: #{$gray-900};
 }
 
 @media (prefers-color-scheme: dark) {
-  $dark-background: $gray-200;
   :root {
     --primary: #{contrast(#BE5046, $dark-background, 1.0)};
     --foreground: #{contrast($gray-500, $dark-background,7)};
@@ -60,11 +60,11 @@ $light-background: $gray-900;
     --midnight: #{$gray-100};
     --highlight: #{$gray-500};
     --white: #{$gray-900};
-    --red: #{contrast(red, $dark-background)};
-    --green:  #{contrast($green, $dark-background)};
-    --orange: #{contrast($orange, $dark-background)};
-    --blue: #{contrast($blue, $dark-background)};
-    --purple: #{contrast($purple, $dark-background)};
+    --red: #{contrast(red, $dark-background,4)};
+    --green:  #{contrast($green, $dark-background,4)};
+    --orange: #{contrast($orange, $dark-background,4)};
+    --blue: #{contrast($blue, $dark-background,4)};
+    --purple: #{contrast($purple, $dark-background,4)};
     --button-text: #{$gray-100};
   }
 }
