@@ -26,6 +26,14 @@ body {
   background: var(--background) !important;
   color: var(--foreground);
 }
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+  body {
+    font-weight: 450;
+  }
+}
 main {
   ::selection { background-color: var(--primary); color: var(--white) }
   flex: 1 0 auto;
