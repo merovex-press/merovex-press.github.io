@@ -7,17 +7,6 @@ permalink: /writing-craft/marketing
 
 Marketing is a critical component of building an author's readership. I buy into the theory that one's email subscriber list is the core component for driving sales. Whether you run ads, leverage social media, or whatever, your goal should be to grow your email subscriber list. Facebook and Twitter can cancel you in an instant; even if you are reinstated, you may lose your list.
 
-<!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-	- [Advertizements](#advertizements)
-	- [Email Newsletter](#email-newsletter)
-		- [Mailchimp, etc.](#mailchimp-etc)
-		- [Reader Magnets](#reader-magnets)
-		- [In-Book Newsletter Promotion](#in-book-newsletter-promotion)
-	- [Swaps](#swaps)
-
-<!-- /TOC -->
-
 ## Advertizements
 
 * Facebook
