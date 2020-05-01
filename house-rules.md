@@ -1,7 +1,7 @@
 ---
 title: "House Rules"
-date: May 1, 2020 8:38 AM
-permalink: /house-rules/
+date: 2020-05-01 09:00
+permalink: /family-rules/
 layout: page
 ---
 
