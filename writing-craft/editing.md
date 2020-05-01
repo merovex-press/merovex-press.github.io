@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Craft: Editing
+title: "Craft: Editing"
 diceware: true
 permalink: /writing-craft/editing
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Craft: Marketing
+title: "Craft: Marketing"
 diceware: true
 permalink: /writing-craft/marketing
 ---
