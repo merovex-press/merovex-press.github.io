@@ -1,5 +1,5 @@
 ---
-title: "Clan Wilson Family Rules"
+title: "Clan Wilson Rules"
 date: 2020-05-01 09:00
 permalink: /family-rules/
 layout: page
@@ -32,7 +32,7 @@ Children are expected to satisfy daily hygiene requirements each morning.
    1. Daily showers that involves the use of shampoo and soap on all relevant body parts; deodorant.
    2. Daily teeth brushing, and other oral hygiene requirements specific to the child's needs.
    1. Children with facial hair are expected to shave weekly while that hair is still developing, or daily when it becomes noticeable.
-   3. Children will express the puss from mother's boils fortnightly.
+   3. 
    2. Feminine hygiene will be discreet.
 
 ## Dinner
@@ -67,5 +67,5 @@ Children are expected to satisfy daily cleanliness requirements:
 Children are expected to:
 
    1. Be ready for bed by 9:00pm. This includes appropriate bedtime clothes (no sleeping in daytime clothes.)
-   2. In bed no later than 10:00pm Reading may continue no later than 2300, provided this does not cause problems with sleep.
-   2. Be awake by 9:00AM, unless circumstances dictate an earlier wake time.
+   2. In bed no later than 10:00pm. Reading may continue no later than 2300, provided this does not cause problems with sleep.
+   2. Be awake by 9:00am, unless circumstances dictate an earlier wake time.
