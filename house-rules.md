@@ -5,8 +5,6 @@ permalink: /family-rules/
 layout: page
 ---
 
-These are the house rules for the Wilson Family.
-
 ## Electronics
 
 Electronics use is a privilege.
