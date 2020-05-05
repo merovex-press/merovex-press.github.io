@@ -10,11 +10,11 @@ layout: page
 Electronics use is a privilege.
 Children's core electronics time runs from 1:00-3:00pm every day, and will not start until all expected of them is completed. (Example: They finish work at 2:00pm, then they may be allowed on electronics from 2:00pm to 3:00pm.)
 
-   1. Exceptions may be made to give additional time based on extenuating circumstances as agreed upon by both parents. No exception is permitted if all work is not finished by 1:00pm
    2. No electronics permitted after 9:00pm.
    3. No use of electronics during study times unless directly related to that study or helping study (in the parents' opinion).
    4. Using electronics outside these parameters will result in loss of electronics for at least one day.
    5. Failure of any child to support this rule will lose electronics for the same duration as the malefactor.
+   6. Additional time may be given based on extenuating circumstances as agreed upon by both parents, provided all work is completed by 1:00pm
 
 
 ## School Work
@@ -32,7 +32,7 @@ Children are expected to satisfy daily hygiene requirements each morning.
    1. Daily showers that involves the use of shampoo and soap on all relevant body parts; deodorant.
    2. Daily teeth brushing, and other oral hygiene requirements specific to the child's needs.
    1. Children with facial hair are expected to shave weekly while that hair is still developing, or daily when it becomes noticeable.
-   3. 
+   3.
    2. Feminine hygiene will be discreet.
 
 ## Dinner
