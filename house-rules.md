@@ -9,13 +9,15 @@ These are the house rules for the Wilson Family.
 
 ## Electronics
 
-Children's core electronics time runs from 1:00-3:00 PM hours every day, and will not start until all expected of them is completed. (Example: They finish work at 2:00PM, then they may be allowed on electronics from 2:00PM to 3:00PM.)
+Electronics use is a privilege.
+Children's core electronics time runs from 1:00-3:00 PM every day, and will not start until all expected of them is completed. (Example: They finish work at 2:00PM, then they may be allowed on electronics from 2:00PM to 3:00PM.)
 
    1. Exceptions may be made to give additional time based on extenuating circumstances as agreed upon by both parents. No exception is permitted if all work is not finished by 1:00PM
-   2. No electronics permitted after 9:00PM hours.
+   2. No electronics permitted after 9:00PM.
    3. No use of electronics during study times unless directly related to that study or helping study (in the parents' opinion).
    4. Using electronics outside these parameters will result in loss of electronics for at least one day.
    5. Failure of any child to support this rule will lose electronics for the same duration as the malefactor.
+
 
 ## School Work
 
@@ -24,6 +26,7 @@ Children are expected to complete all school work before it is due, and have all
 1. Elective electronics use will be denied should any child's grade fall below 80.0% for the period that a child's grade remains below that threshold.
 2. At year's end, if the grade remains below 80.0%, the child will lose an additional 14 consecutive calendar days of electronics.
 
+{:.pagebreak}
 ## Hygiene
 
 Children are expected to satisfy daily hygiene requirements each morning.
@@ -36,6 +39,7 @@ Children are expected to satisfy daily hygiene requirements each morning.
 ## Dinner
 
 Each child should prepare one meal per week for family consumption.
+
 
 ## Cleanliness
 
@@ -56,6 +60,7 @@ Children are expected to satisfy daily cleanliness requirements:
    4. **Weekly Trash.** Nathan will ensure trash and recycling has been moved to the appropriate containers in the garage, and that those containers are at the curb by bedtime Thursday night.
    4. **Vacuum.** All rooms of the house (except Dad's office & master bedroom) at least weekly.
    5. **Bathrooms.** Clean all fixtures of upstairs bathrooms (sink, toilet, tub, mirrors) at least weekly, using the appropriate cleaning product.
+
 
 ## Sleep
 

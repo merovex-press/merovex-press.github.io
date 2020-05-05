@@ -18,13 +18,15 @@
   text-align: center !important;
   display: block;
 }
-body {
-  font-family: var(--font-system);
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  background: var(--background) !important;
-  color: var(--foreground);
+@media screen {
+  body {
+    font-family: var(--font-system);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background: var(--background) !important;
+    color: var(--foreground);
+  }
 }
 @media
 (-webkit-min-device-pixel-ratio: 2),
@@ -231,3 +233,4 @@ input, .checkable {
   color: var(--midnight);
   background: var(--white);
 }
+@import "print";
