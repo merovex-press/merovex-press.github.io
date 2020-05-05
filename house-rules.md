@@ -45,7 +45,7 @@ Each child should prepare one meal per week for family consumption.
 Children are expected to satisfy daily cleanliness requirements:
 
    1. **Clothes.**
-      1. Dirty clothes to the laundry room daily, before Noon.
+      1. Dirty clothes to the laundry room daily, before noon.
       2. Clean clothes folded by the appropriate child, and put in the appropriate place in their room.
       3. Bedsheets will be replaced monthly.
    2. **Bedtime.**
