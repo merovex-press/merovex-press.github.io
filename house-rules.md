@@ -66,5 +66,5 @@ Children are expected to satisfy daily cleanliness requirements:
 Children are expected to:
 
    1. Be ready for bed by 9:00pm. This includes appropriate bedtime clothes (no sleeping in daytime clothes.)
-   2. In bed no later than 10:00pm. Reading may continue no later than 2300, provided this does not cause problems with sleep.
+   2. In bed no later than 10:00pm. Reading may continue no later than 11:00pm, provided this does not cause problems with sleep.
    2. Be awake by 9:00am, unless circumstances dictate an earlier wake time.
