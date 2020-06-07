@@ -23,11 +23,11 @@
     color: var(--white);
     ::selection { background-color: var(--primary); color: var(--white) }
     .button {
-      background: var(--blue);
-      color: var(--midnight);
+      background: var(--hero-button);
+      color: var(--hero-button-text);
     }
     .success {
-      background: var(--green) !important;
+      background: var(--hero-success) !important;
     }
     .warning {
       background: var(--orange) !important;

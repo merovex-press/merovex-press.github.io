@@ -45,7 +45,6 @@ main {
       text-decoration: underline;
     }
   }
-
   .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
     background: var(--blue);
     color: var(--button-text);
@@ -65,9 +64,21 @@ main {
   h1, h2 {
     font-family: var(--font-heading);
   }
+  .lost {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5;
+    h1 {
+      border-right: 0.1rem solid var(--foreground);
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+  }
   #page, #books {
     text-align: left;
-    width: 100%;
+    width: 90%;
     max-width: 960px;
     margin: 0 auto;
     padding: 80px 10px 10px 10px;

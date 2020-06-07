@@ -2,7 +2,21 @@
 
 $system-fonts: -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
 
-$gray-300: #394450;
+
+// $primary: #4C586F;
+// https://www.canva.com/learn/brand-color-palette/
+// Morning mist
+$gray-300: #2E323C;
+$primary: #45415E;
+$purple: #45415E;
+$blue: #2E4661;
+$green: #234C3E;
+// Nordic Woods
+// $gray-300: #3C455C;
+// $primary: #B37C57;
+// $blue: lighten($gray-300, 40%);
+
+$gray-300: #394450 !default;
 $gray-100: darken($gray-300, 15%);
 $gray-200: darken($gray-300, 10%);
 $gray-400: lighten($gray-300, 20%);
@@ -11,13 +25,15 @@ $gray-600: lighten($gray-300, 40%);
 $gray-700: lighten($gray-300, 50%);
 $gray-800: lighten($gray-300, 60%);
 $gray-900: lighten($gray-300, 70%);
-$red: #BE5046;
-$green: #2C7D53;
-$orange: #B85119;
-$blue: #4A6BBF;
-$purple: #BD4275;
+$red: #BE5046 !default;
+$green: #2C7D53 !default;
+$orange: #B85119 !default;
+$blue: #4A6BBF !default;
+$purple: #BD4275 !default;
 $light-background: $gray-900;
 $dark-background: $gray-200;
+$primary: #BE5046 !default;
+
 
 :root {
   --font-heading: Oswald,#{$system-fonts};
@@ -42,29 +58,32 @@ $dark-background: $gray-200;
   --orange: #{contrast($orange, $light-background, 6)};
   --blue: #{contrast($blue, $light-background, 6)};
   --purple: #{contrast($purple, $light-background, 6)};
-  --primary: #BE5046;
+  --primary:    #{contrast($primary, $light-background, 7)};
   --button-text: #{$gray-900};
+  --hero-button: #{contrast($blue, $dark-background, 4)};;
+  --hero-success: #{contrast($green, $dark-background, 4)};
+  --hero-button-text: contrast(#777,contrast($blue, $dark-background, 4), 7);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #{contrast(#BE5046, $dark-background, 1.0)};
+    --primary:    #{contrast($primary, $dark-background, 4.5)};
     --foreground: #{contrast($gray-500, $dark-background,7)};
-    --gray: #{$gray-400};
-    --silver: #{$gray-700};
-    --mono-2: #{$gray-500};
+    --gray:       #{$gray-400};
+    --silver:     #{$gray-700};
+    --mono-2:     #{$gray-500};
     --background: #{$gray-200};
     --navbar-background: #{$gray-100};
     --card-background: #{$gray-300};
-    --black: #{$gray-200};
-    --midnight: #{$gray-100};
+    --black:     #{$gray-200};
+    --midnight:  #{$gray-100};
     --highlight: #{$gray-500};
-    --white: #{$gray-900};
-    --red: #{contrast(red, $dark-background,4)};
-    --green:  #{contrast($green, $dark-background,4)};
-    --orange: #{contrast($orange, $dark-background,4)};
-    --blue: #{contrast($blue, $dark-background,4)};
-    --purple: #{contrast($purple, $dark-background,4)};
+    --white:     #{$gray-900};
+    --red:       #{contrast(red, $dark-background,4)};
+    --green:     #{contrast($green, $dark-background,4)};
+    --orange:    #{contrast($orange, $dark-background,4)};
+    --blue:      #{contrast($blue, $dark-background,4)};
+    --purple:    #{contrast($purple, $dark-background,4)};
     --button-text: #{$gray-100};
   }
 }
