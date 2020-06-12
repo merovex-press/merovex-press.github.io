@@ -51,6 +51,7 @@ main {
   .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
     background: var(--blue);
     color: var(--button-text);
+    box-shadow: 3px 3px 3px var(--highlight);
   }
   .success {
     background: var(--green) !important;
