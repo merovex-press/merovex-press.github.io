@@ -14,6 +14,9 @@
   padding: 0;
   position: absolute;
 }
+.mc_embed_signup_scroll {
+  border: 1em solid red;
+}
 .text-center {
   text-align: center !important;
   display: block;
@@ -52,10 +55,13 @@ main {
   .success {
     background: var(--green) !important;
   }
+  .lead {
+    font-size: 1.5rem;
+  }
   .warning {
     background: var(--orange) !important;
   }
-  .error, .dangerous {
+  .error, .dangerous, .subscribe {
     background: var(--red) !important;
   }
   .pseudo {
@@ -201,7 +207,7 @@ main {
   }
 }
 .content__gdprBlock {
-  font-size: 0.8em;
+  xfont-size: 0.8em;
 }
 
 footer {
