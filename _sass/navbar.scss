@@ -9,12 +9,18 @@ nav {
       fill: var(--primary)
     }
   }
+  .subscribe {
+    background: var(--primary) !important;
+  }
   &.transparent {
-    background: none;
+    background: rgba(#000, 0.8);
     box-shadow: none;
-    color: rgba(#FFF, 0.5);
+    color: rgba(#FFF, 0.7);
     svg {
       fill: var(--white);
+    }
+    .subscribe {
+      background: var(--red) !important;
     }
   }
   .burger {

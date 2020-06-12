@@ -14,9 +14,7 @@
   padding: 0;
   position: absolute;
 }
-.mc_embed_signup_scroll {
-  border: 1em solid red;
-}
+
 .text-center {
   text-align: center !important;
   display: block;
@@ -227,7 +225,7 @@ footer {
     }
   }
 }
-.subscribe, #merovex-privacy-notice {
+#merovex-privacy-notice {
   background: var(--primary) !important;
 }
 .card {
