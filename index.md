@@ -11,6 +11,7 @@ title: Ben Wilson, Author
 {%- endfor -%}
 </section>
 
+<h2 class="sr-only">Books</h2>
 <section id='books'>
   {% assign books = site.books | sort: 'series' %}
   {%- for book in books -%}
