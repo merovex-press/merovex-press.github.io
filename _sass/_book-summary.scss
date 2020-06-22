@@ -6,6 +6,9 @@
   &+.book-summary {
     margin-top: 10vh;
   }
+  h3 {
+    font-family: var(--font-heading);
+  }
   img {
     @extend .third-900;
     @extend .full;
