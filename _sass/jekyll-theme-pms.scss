@@ -14,6 +14,7 @@
   padding: 0;
   position: absolute;
 }
+
 .text-center {
   text-align: center !important;
   display: block;
@@ -45,18 +46,21 @@ main {
       text-decoration: underline;
     }
   }
-
   .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
     background: var(--blue);
     color: var(--button-text);
+    box-shadow: 3px 3px 3px var(--highlight);
   }
   .success {
     background: var(--green) !important;
   }
+  .lead {
+    font-size: 1.5rem;
+  }
   .warning {
     background: var(--orange) !important;
   }
-  .error, .dangerous {
+  .error, .dangerous, .subscribe {
     background: var(--red) !important;
   }
   .pseudo {
@@ -65,9 +69,21 @@ main {
   h1, h2 {
     font-family: var(--font-heading);
   }
+  .lost {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5;
+    h1 {
+      border-right: 0.1rem solid var(--foreground);
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+  }
   #page, #books {
     text-align: left;
-    width: 100%;
+    width: 90%;
     max-width: 960px;
     margin: 0 auto;
     padding: 80px 10px 10px 10px;
@@ -190,7 +206,7 @@ main {
   }
 }
 .content__gdprBlock {
-  font-size: 0.8em;
+  xfont-size: 0.8em;
 }
 
 footer {
@@ -210,7 +226,7 @@ footer {
     text-decoration: underline;
   }
 }
-.subscribe, #merovex-privacy-notice {
+#merovex-privacy-notice {
   background: var(--primary) !important;
 }
 .card {
