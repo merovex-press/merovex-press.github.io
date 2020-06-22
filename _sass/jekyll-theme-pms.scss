@@ -210,8 +210,8 @@ main {
 }
 
 footer {
-  background: rgba(#777, 0.5);
-  color: var(--black);
+  background: rgba(#333, 0.5);
+  color: var(--white);
   display: flex;
   flex-shrink: 0;
   font-size: 0.85rem;
@@ -222,7 +222,7 @@ footer {
   text-transform: uppercase;
   width: 100%;
   a {
-    xcolor: var(--background);
+    color: var(--primary);
     text-decoration: underline;
   }
 }
