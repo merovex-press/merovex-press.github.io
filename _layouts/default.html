@@ -43,7 +43,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="css, library, picnic, picnicss, light">
+    <meta name="keywords" content="">
     <meta name="description" content="Website for author Ben Wilson">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -131,7 +131,7 @@
         <div class="menu">
           <a class='pseudo' href="/" id='home-link'><i class="fad fa-home"></i>Home</a>
           <a class='pseudo' href="{{ '/#books' | relative_url }}"><i class="fad fa-books"></i> Books</a>
-          <a class='pseudo' href="{{ '/bio' | relative_url }}"><i class="fad fa-id-card"></i>Bio</a>
+          <a class='pseudo' href="{{ '/#about' | relative_url }}"><i class="fad fa-id-card"></i>Bio</a>
           <a class='pseudo' href="{{ '/posts' | relative_url }}"><i class="fad fa-newspaper"></i>News</a>
           <a style='display:none;' href="{{ '/contact' | relative_url }}"><i class="fad fa-user-edit"></i>Contact</a>
           <a href="{{ '/subscribe' | relative_url }}" class="subscribe"><i class="fad fa-inbox-in"></i>Subscribe</a>
@@ -142,8 +142,15 @@
       {{ content }}
     </main>
     <footer>
-      <div id='copyright'>
-        Copyright 1998&ndash;2020 &copy; Ben Wilson &mdash; <a href='{{'/permissions/' | relative_url}}'>All Rights Reserved</a>
+      <div>Hello from Virginia.</div>
+      <div>
+        <a href='{{'/privacy/' | relative_url}}'>Privacy</a>
+      </div>
+      <div>
+        <a href='{{'/permissions/' | relative_url}}'>Terms of Use</a>
+      </div>
+      <div>
+        &copy; 1998&ndash;2020 Ben Wilson
       </div>
     </footer>
   </body>

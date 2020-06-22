@@ -1,7 +1,7 @@
 @import 'contrast';
 
 $system-fonts: -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-
+$serif-fonts: Georgia,Times,"Times New Roman",serif;
 
 // $primary: #4C586F;
 // https://www.canva.com/learn/brand-color-palette/
@@ -39,7 +39,7 @@ $primary: #BE5046 !default;
   --font-heading: Oswald,#{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   --font-sans: "Source Sans Pro",#{$system-fonts};
-  --font-serif: "Source Serif Pro",#{$system-fonts};
+  --font-serif: "Source Serif Pro",#{$serif-fonts};
   --font-system: #{$system-fonts};
 
   --foreground: #{contrast($gray-500, $light-background,7)};
