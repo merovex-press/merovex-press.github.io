@@ -1,87 +1,182 @@
 @import "colors";
 @import "hero";
-@import "navbar";
+@import "article";
+@import "footer";
 @import "privacy-notice";
-
-html, body {
-  font-family: var(--font-system);
-  font-size: 20px;
+@import "book-summary";
+@import "navbar";
+html {
+  scroll-behavior: smooth;
 }
-body {
-  display: flex;
-  flex-direction: column;
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.text-center {
+  text-align: center !important;
+  display: block;
+}
+@media screen {
+  body {
+    font-family: var(--font-system);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background: var(--background) !important;
+    color: var(--foreground);
+    a {
+      color: var(--blue);
+    }
+  }
+}
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+  body {
+    font-weight: 450;
+  }
 }
 main {
+  ::selection { background-color: var(--primary); color: var(--white) }
   flex: 1 0 auto;
   a {
+    color: var(--blue);
     &:hover {
       text-decoration: underline;
     }
   }
-  article.post, article.page {
-    font-family: var(--font-sans);
-    small {
-      font-family: var(--font-system);
+  .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
+    background: var(--blue);
+    color: var(--button-text);
+    box-shadow: 3px 3px 3px var(--highlight);
+  }
+  .success {
+    background: var(--green) !important;
+  }
+  .lead {
+    font-size: 1.5rem;
+  }
+  .warning {
+    background: var(--orange) !important;
+  }
+  .error, .dangerous, .subscribe {
+    background: var(--red) !important;
+  }
+  .pseudo {
+    background: var(--mono-2);
+  }
+  h1, h2 {
+    font-family: var(--font-heading);
+  }
+  .zebra {
+    padding-bottom: 3em;
+    background: var(--zebra-bg);
+    // box-shadow: 0 2em 2em -2em  rgba(0,0,0,0.5) inset,
+    //             0 -1em 1em -1em rgba(0,0,0,0.5) inset;
+  }
+  .lost {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5;
+    h1 {
+      border-right: 0.1rem solid var(--foreground);
+      padding-right: 1rem;
+      margin-right: 1rem;
     }
   }
-  abbr {
-
+  pre {
+    font-family: var(--font-monospace);
+    background: var(--navbar-background);
+    border: 1px solid;
+    border-color: var(--silver);
+    line-height: 1.2;
+    code {
+      background: var(--navbar-background);
+    }
+  }
+  figure {
+    overflow: hidden;
+    margin: 0;
+    padding-top: 56.25%;
+    position: relative;
+    border-radius: 3px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+    }
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--foreground);
+      padding: 0px 8px;
+      font-size: 0.9rem;
+      color: var(--background);
+      a {
+        color: var(--background);
+        text-decoration: underline;
+      }
+    }
   }
 }
-h1, h2 {
-  font-family: var(--font-heading);
+
+@media all and (max-width: 60em) {
+  h1, .tags, .related a { text-align: center !important;}
+  article {
+    margin: 1em;
+  }
+  nav .show ~ .menu {
+    background: var(--background);
+    color: var(--foreground);
+  }
+  .posts {
+    li { text-align: center;}
+  }
 }
-ul.posts {
+@media all and (min-width: 60em) {
+  ul.posts { time { text-align: right; } }
+}
+
+.posts {
   li {
+    @extend .flex;
+    @extend .three-600;
+    @extend .one;
+    @extend .center;
     list-style-type: none;
     time {
-      text-align: right;
+      @extend .third-600;
       font-size: 0.9em;
       font-family: var(--font-system)
     }
     a {
+      @extend .two-third-600;
       padding-left: 1em;
     }
   }
 }
-.content__gdprBlock {
-  font-size: 0.8em;
+
+#merovex-privacy-notice {
+  background: var(--primary) !important;
 }
-.visual {
-    text-align: left;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 80px 10px 10px 10px;
+.card {
+  background:   var(--card-bg);
+  border-color: var(--card-bg);
 }
-blockquote {
-  cite {
-    display: block;
-    opacity: 0.6;
-  }
-}
-#books article {
-  &+article {
-    margin-top: 10vh;
-  }
-  img {
-    margin: auto;
-    max-width: 200px;
-  }
-  a {
-    margin: 0 0.5em 0 0;
-  }
-}
-footer {
-  margin-top: 1in;
-  flex-shrink: 0;
-}
-#copyright {
-  text-align: center;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  padding: 4px;
-}
+
 a,
 area,
 button,
@@ -94,114 +189,8 @@ textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
-@media (prefers-color-scheme: light) {
-  body {
-    background: var(--lite-white);
-    color: var(--light-fg);
-  }
-  #copyright {
-    background: var(--lite-silver);
-  }
-  nav {
-    .brand svg {
-      fill: var(--lite-purple);
-
-    }
-    &.transparent {
-      svg {fill: var(--dark-white);}
-      .subscribe {
-        background: var(--dark-purple);
-      }
-    }
-  }
-  .card {
-    background: var(--lite-white);
-    border-color: var(--lite-white);
-  }
-  .subscribe, #merovex-privacy-notice {
-    background: var(--lite-purple);
-  }
-  input, .checkable {
-    color: var(--lite-midnight);
-    background: var(--dark-white);
-  }
-  main {
-    a {
-      color: var(--lite-blue);
-    }
-    .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
-      background: var(--lite-blue);
-      color: var(--lite-white);
-    }
-    .success {
-      background: var(--lite-green) !important;
-    }
-    .warning {
-      background: var(--lite-orange) !important;
-    }
-    .error, .dangerous {
-      background: var(--lite-red) !important;
-    }
-    .pseudo {
-      background: var(--lite-mono-2);
-    }
-  }
+input, .checkable {
+  color: var(--midnight);
+  background: var(--white);
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: var(--dark-bg);
-    color: var(--dark-fg);
-  }
-  #copyright {
-    background: var(--dark-black);
-  }
-  nav {
-    background: var(--dark-black);
-    .brand svg {
-      fill: var(--dark-white);
-    }
-  }
-  code, tr:nth-child(even), .toggle, figure pre {
-    background: var(--dark-highlight);
-  }
-  .card {
-    background: var(--dark-gray);
-    border-color: var(--dark-silver);
-  }
-  .subscribe, #merovex-privacy-notice {
-    background: var(--dark-purple);
-    color: var(--dark-midnight);
-  }
-  input, .checkable {
-    background: var(--dark-white);
-    color: var(--dark-midnight);
-  }
-  blockquote {
-    box-shadow: inset 5px 0 var(--dark-purple);
-  }
-  main {
-    a {
-      color: var(--dark-blue);
-    }
-    .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
-      background: var(--dark-blue);
-      color: var(--dark-midnight);
-    }
-    .success {
-      background: var(--dark-green) !important;
-    }
-    .warning {
-      background: var(--dark-orange) !important;
-    }
-    .error, .dangerous {
-      background: var(--dark-red) !important;
-    }
-    .pseudo {
-      background: var(--dark-gray);
-    }
-    #hero {
-      color: var(--dark-silver);
-    }
-  }
-}
+@import "print";

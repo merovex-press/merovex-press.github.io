@@ -1,22 +1,38 @@
-#hero {
+#featured {
     position: relative;
     width: 100%;
     min-height: 70vh;
     transition: height 999999s;
     text-align: center;
-    color: rgba(#fff,0.5);
-    xpadding: 40px 0 20px 0;
-    background: #202428 url(../../assets/images/bkg.png);
-    background-size: cover;
+    background-image: url(/assets/images/hero/94410ad08b9abc64c1ab6d215c1a4449a5a0ef9c.webp);
     font-size: 1.2em;
     padding: 10vh 0;
     h2 { font-size: 3em; }
+    h2, p {
+      text-shadow: 1px 1px 2px #000;
+    }
     article {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       p { margin: 1em; }
-      img { max-width: 300px; height: auto; margin: auto 0; }
+      img { width: 300px; height: auto; margin: auto 0; }
       a { margin-right: 1em; }
+    }
+    background-color: var(--black);
+    color: var(--white);
+    ::selection { background-color: var(--primary); color: var(--white) }
+    .button {
+      background: var(--hero-button);
+      color: var(--black);
+    }
+    .success {
+      background: var(--hero-success) !important;
+    }
+    .warning {
+      background: var(--orange) !important;
+    }
+    .error, .dangerous {
+      background: var(--red) !important;
     }
 }

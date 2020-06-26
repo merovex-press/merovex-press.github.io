@@ -1,21 +1,41 @@
 nav {
+  background: var(--navbar-bg);
   .brand {
     font-family: Oswald;
     font-size: 1.5em;
     svg {
       height: 30px;
       transition: 0.4s;
+      fill: var(--primary);
     }
   }
+  .subscribe {
+    background: var(--primary) !important;
+  }
   &.transparent {
-    background: none;
+    background: rgba(#000, 0.8);
     box-shadow: none;
-    color: rgba(#FFF, 0.5);
+    color: rgba(#FFF, 0.7);
     svg {
-      fill: rgba(#FFF, 0.5);
+      fill: var(--white);
     }
+    .subscribe {
+      background: var(--red) !important;
+    }
+  }
+  .burger {
+    font-size: 2em;
   }
   .menu {
     text-transform: uppercase;
+    a {
+      @extend .button;
+    }
+    i {
+      margin-right: 0.3em;
+    }
+    #home-link {
+      @extend .none-900;
+    }
   }
 }

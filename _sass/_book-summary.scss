@@ -1,0 +1,40 @@
+.book-summary {
+  // border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &+.book-summary {
+    margin-top: 5vh;
+  }
+  aside {
+    // border: 1px solid red;
+    flex: 1 0 25%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 360px;
+    }
+  }
+  section {
+    flex: 1 0 60%;
+    width: 900px;
+    // border: 1px solid red;
+  }
+  a {
+    margin: 0 0.5em 0 0;
+    i {
+      margin-right: 0.3em;
+    }
+    span {
+      @extend .sr-only;
+    }
+  }
+  .cta-buttons {
+    text-align: center;
+    a {
+      @extend .button;
+      margin: 0.5em;
+    }
+  }
+}
