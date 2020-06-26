@@ -6,6 +6,7 @@
   &+.book-summary {
     margin-top: 5vh;
   }
+<<<<<<< HEAD
   aside {
     // border: 1px solid red;
     flex: 1 0 25%;
@@ -15,6 +16,16 @@
       width: 200px;
       height: 360px;
     }
+=======
+  h3 {
+    font-family: var(--font-heading);
+  }
+  img {
+    @extend .third-900;
+    @extend .full;
+    margin: auto;
+    max-width: 200px;
+>>>>>>> 38c3742f39103848267e5b0820f557ed03be33a0
   }
   section {
     flex: 1 0 60%;
