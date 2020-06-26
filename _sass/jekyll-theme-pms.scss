@@ -1,9 +1,13 @@
 @import "colors";
 @import "hero";
-@import "navbar";
+@import "article";
+@import "footer";
 @import "privacy-notice";
 @import "book-summary";
-
+@import "navbar";
+html {
+  scroll-behavior: smooth;
+}
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -27,6 +31,9 @@
     flex-direction: column;
     background: var(--background) !important;
     color: var(--foreground);
+    a {
+      color: var(--blue);
+    }
   }
 }
 @media
@@ -69,6 +76,12 @@ main {
   h1, h2 {
     font-family: var(--font-heading);
   }
+  .zebra {
+    padding-bottom: 3em;
+    background: var(--zebra-bg);
+    // box-shadow: 0 2em 2em -2em  rgba(0,0,0,0.5) inset,
+    //             0 -1em 1em -1em rgba(0,0,0,0.5) inset;
+  }
   .lost {
     min-height: 65vh;
     display: flex;
@@ -79,56 +92,6 @@ main {
       border-right: 0.1rem solid var(--foreground);
       padding-right: 1rem;
       margin-right: 1rem;
-    }
-  }
-  #page, #books {
-    text-align: left;
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 80px 10px 10px 10px;
-    font-family: var(--font-sans);
-    blockquote {
-      cite {
-        display: block;
-        opacity: 0.6;
-      }
-    }
-    small {
-      font-family: var(--font-system);
-    }
-    table {
-      table-layout:fixed;
-      width:100%;
-      overflow-x: scroll;
-      scroll-behavior: auto;
-      th {
-        background: var(--blue);
-      }
-      th[scope=row] {
-        background: transparent;
-        color: var(--foreground);
-      }
-    }
-    pre, code {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
-    .footnotes {
-      border-top: 2px solid var(--red);
-      font-size: 0.8em;
-      font-family: var(--font-system);
-    }
-    .related {
-      @extend .flex;
-      @extend .one;
-      @extend .two-600;
-      margin: 1em 0;
-      a {
-        &.next {
-          text-align: right;
-        }
-      }
     }
   }
   pre {
@@ -205,33 +168,13 @@ main {
     }
   }
 }
-.content__gdprBlock {
-  xfont-size: 0.8em;
-}
 
-footer {
-  background: rgba(#777, 0.5);
-  color: var(--black);
-  display: flex;
-  flex-shrink: 0;
-  font-size: 0.85rem;
-  justify-content: space-around;
-  margin-top: 1in;
-  padding: 0.5em 0;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  a {
-    xcolor: var(--background);
-    text-decoration: underline;
-  }
-}
 #merovex-privacy-notice {
   background: var(--primary) !important;
 }
 .card {
-  background: var(--card-background);
-  border-color: var(--card-background);
+  background:   var(--card-bg);
+  border-color: var(--card-bg);
 }
 
 a,

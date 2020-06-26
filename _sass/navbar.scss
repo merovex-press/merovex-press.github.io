@@ -1,12 +1,12 @@
 nav {
-  background: var(--navbar-background);
+  background: var(--navbar-bg);
   .brand {
     font-family: Oswald;
     font-size: 1.5em;
     svg {
       height: 30px;
       transition: 0.4s;
-      fill: var(--primary)
+      fill: var(--primary);
     }
   }
   .subscribe {

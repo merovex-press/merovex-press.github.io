@@ -98,7 +98,7 @@
   <body>
     <header>
       <nav>
-        <a href="{{ '/' | relative_url }}" class="brand">
+        <a href="{{ '/#featured' | relative_url }}" class="brand">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 450.000000 450.000000"
              preserveAspectRatio="xMidYMid meet">
@@ -129,12 +129,12 @@
         <input id="bmenub" type="checkbox" class="show">
         <label for="bmenub" class="burger pseudo button">&#8801;<span class='sr-only'>menu</span></label>
         <div class="menu">
-          <a class='pseudo' href="/" id='home-link'><i class="fad fa-home"></i>Home</a>
+          <a class='pseudo' href="/#featured" id='home-link'><i class="fad fa-home"></i>Home</a>
           <a class='pseudo' href="{{ '/#books' | relative_url }}"><i class="fad fa-books"></i> Books</a>
-          <a class='pseudo' href="{{ '/#about' | relative_url }}"><i class="fad fa-id-card"></i>Bio</a>
-          <a class='pseudo' href="{{ '/posts' | relative_url }}"><i class="fad fa-newspaper"></i>News</a>
+          <a class='pseudo' href="{{ '/#bio' | relative_url }}"><i class="fad fa-id-card"></i>Bio</a>
+          <a class='pseudo' href="{{ '/posts' | relative_url }}"><i class="fad fa-newspaper"></i>Blog</a>
           <a style='display:none;' href="{{ '/contact' | relative_url }}"><i class="fad fa-user-edit"></i>Contact</a>
-          <a href="{{ '/subscribe' | relative_url }}" class="subscribe"><i class="fad fa-inbox-in"></i>Subscribe</a>
+          <a href="{{ '/subscribe' | relative_url }}" class="subscribe"><i class="fad fa-inbox-in"></i>Become an Insider</a>
         </div>
       </nav>
     </header>

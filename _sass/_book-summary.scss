@@ -1,21 +1,25 @@
 .book-summary {
-  @extend .flex;
-  @extend .one;
-  @extend .three-900;
-  @extend .center;
+  // border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   &+.book-summary {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
-  img {
-    @extend .third-900;
-    @extend .full;
-    margin: auto;
-    max-width: 200px;
+  aside {
+    // border: 1px solid red;
+    flex: 1 0 25%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 360px;
+    }
   }
   section {
-    @extend .two-third-900;
-    @extend .full;
-    padding: 0 2rem;
+    flex: 1 0 60%;
+    width: 900px;
+    // border: 1px solid red;
   }
   a {
     margin: 0 0.5em 0 0;

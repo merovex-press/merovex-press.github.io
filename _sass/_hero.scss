@@ -1,4 +1,4 @@
-#hero {
+#featured {
     position: relative;
     width: 100%;
     min-height: 70vh;
@@ -16,7 +16,7 @@
       max-width: 1200px;
       margin: 0 auto;
       p { margin: 1em; }
-      img { max-width: 300px; height: auto; margin: auto 0; }
+      img { width: 300px; height: auto; margin: auto 0; }
       a { margin-right: 1em; }
     }
     background-color: var(--black);
@@ -24,7 +24,7 @@
     ::selection { background-color: var(--primary); color: var(--white) }
     .button {
       background: var(--hero-button);
-      color: var(--hero-button-text);
+      color: var(--black);
     }
     .success {
       background: var(--hero-success) !important;
