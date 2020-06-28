@@ -8,7 +8,9 @@ layout: default
     <h1 itemprop="headline">{{ page.title }}</h1>
     <figure>
       <picture>
-        <source srcset="/assets/images/articles/{{page.photo['image'] | replace: "jpg", "webp" | replace: "png", "webp" }}" type="image/webp">
+        {%- assign ext = page.photo['image'] | split: "." | last %}
+        <source srcset="/assets/images/articles/{{page.photo['image'] | replace: ext, "webp" }}" type="image/webp">
+        <source srcset="/assets/images/articles/{{page.photo['image'] }}" type="image/{{ext | replace: 'jpg', 'jpeg'}}">
         <img src="/assets/images/articles/{{page.photo['image']}}" alt="" />
       </picture>
       <figcaption>
@@ -23,9 +25,9 @@ layout: default
         {{ page.date | date: "%e %B %Y" }}
       </time>
       <span class="tags">
-        {% for tag in page.tags %}
-          {% include tag-link.html %}
-        {% endfor %}
+        {%- for tag in page.tags %}
+          {% include tag-link.html -%}
+        {%- endfor %}
       </span>
     </p>
   </header>
