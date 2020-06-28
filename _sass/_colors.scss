@@ -80,13 +80,13 @@ $dark-bg: $gray-200;
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --red:         #{contrast($red,    $dark-bg,0)};
-    --orange:      #{contrast($orange, $dark-bg,0)};
-    --yellow:      #{contrast($yellow, $dark-bg,0)};
-    --green:       #{contrast($green,  $dark-bg,0)};
-    --blue:        #{contrast($blue,   $dark-bg,0)};
-    --indigo:      #{contrast($indigo, $dark-bg,0)};
-    --violet:      #{contrast($violet, $dark-bg,0)};
+    --red:         #{contrast($red,    $dark-bg,4)};
+    --orange:      #{contrast($orange, $dark-bg,4)};
+    --yellow:      #{contrast($yellow, $dark-bg,4)};
+    --green:       #{contrast($green,  $dark-bg,4)};
+    --blue:        #{contrast($blue,   $dark-bg,4)};
+    --indigo:      #{contrast($indigo, $dark-bg,4)};
+    --violet:      #{contrast($violet, $dark-bg,4)};
 
     --primary:     #{contrast($primary,  $dark-bg,4)};
     --foreground:  #{contrast($gray-500, $dark-bg,7)};
