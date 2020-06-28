@@ -4,6 +4,7 @@
 
 layout: default
 title: Ben Wilson, Author
+regenerate: true
 ---
 <section id='featured'>
   <article>
@@ -17,6 +18,7 @@ title: Ben Wilson, Author
 </section>
 <section class='zebra'>
   <article id='books'>
+    <h2>Postal Marines Series</h2>
     {% assign books = site.books | sort: 'series' %}
     {%- for book in books -%}
     {%- unless book.hidden -%}
@@ -34,7 +36,6 @@ title: Ben Wilson, Author
 <section class="zebra">
   <article id='social-proof'>
     <h2>What Others Say About My Novels</h2>
-
     <blockquote>
       <p>I like Mondennio, but sometimes I want to slap some sense in him.</p>
       <cite>Dennis about Mondennio in Scintilla</cite>

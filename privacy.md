@@ -188,7 +188,7 @@ This website is owned and operated by Ben Wilson.
 
 Our principal place of business is at [address].
 
-You can contact us by email, using `ben at merovex.com`
+You can contact us by email via [hello@merovex.com](mailto:hello@merovex.com)
 
 ## Contact Us
 

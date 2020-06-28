@@ -11,13 +11,14 @@ $primary: #45415E;
 $purple: #45415E;
 $blue: #2E4661;
 $green: #234C3E;
-$hsl: 248;
+$hsl: 245;
 // Nordic Woods
 // $gray-300: #3C455C;
 // $primary: #B37C57;
 // $blue: lighten($gray-300, 40%);
 
 $primary:  hsl($hsl, 30, 40);
+$primary-drk:  hsl($hsl, 20, 15);
 $black:    hsl($hsl, 8, 5);
 $gray-100: hsl($hsl, 8, 10); // darken($gray-300, 15%);
 $gray-200: hsl($hsl, 8, 20); // darken($gray-300, 10%);
@@ -42,19 +43,19 @@ $lite-bg: $gray-900;
 $dark-bg: $gray-200;
 
 :root {
-  --font-heading: Oswald,#{$system-fonts};
+  --font-heading: "Merriweather Sans",#{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   --font-sans: "Source Sans Pro",#{$system-fonts};
   --font-serif: "Source Serif Pro",#{$serif-fonts};
   --font-system: #{$system-fonts};
 
-  --red:              #{contrast($red,      $lite-bg,5)};
-  --orange:           #{contrast($orange,   $lite-bg,5)};
-  --yellow:           #{contrast($yellow,   $lite-bg,5)};
-  --green:            #{contrast($green,    $lite-bg,5)};
-  --blue:             #{contrast($blue,     $lite-bg,5)};
-  --indigo:           #{contrast($indigo,   $lite-bg,5)};
-  --violet:           #{contrast($violet,   $lite-bg,5)};
+  --red:              #{contrast($red,      $lite-bg,0)};
+  --orange:           #{contrast($orange,   $lite-bg,0)};
+  --yellow:           #{contrast($yellow,   $lite-bg,0)};
+  --green:            #{contrast($green,    $lite-bg,0)};
+  --blue:             #{contrast($blue,     $lite-bg,0)};
+  --indigo:           #{contrast($indigo,   $lite-bg,0)};
+  --violet:           #{contrast($violet,   $lite-bg,0)};
 
   --primary:          #{contrast($primary,  $lite-bg,4)};
   --foreground:       #{contrast($gray-500, $lite-bg,7)};
@@ -79,13 +80,13 @@ $dark-bg: $gray-200;
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --red:         #{contrast($red,    $dark-bg,5)};
-    --orange:      #{contrast($orange, $dark-bg,5)};
-    --yellow:      #{contrast($yellow, $dark-bg,5)};
-    --green:       #{contrast($green,  $dark-bg,5)};
-    --blue:        #{contrast($blue,   $dark-bg,5)};
-    --indigo:      #{contrast($indigo, $dark-bg,5)};
-    --violet:      #{contrast($violet, $dark-bg,5)};
+    --red:         #{contrast($red,    $dark-bg,0)};
+    --orange:      #{contrast($orange, $dark-bg,0)};
+    --yellow:      #{contrast($yellow, $dark-bg,0)};
+    --green:       #{contrast($green,  $dark-bg,0)};
+    --blue:        #{contrast($blue,   $dark-bg,0)};
+    --indigo:      #{contrast($indigo, $dark-bg,0)};
+    --violet:      #{contrast($violet, $dark-bg,0)};
 
     --primary:     #{contrast($primary,  $dark-bg,4)};
     --foreground:  #{contrast($gray-500, $dark-bg,7)};
