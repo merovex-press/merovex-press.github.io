@@ -11,16 +11,17 @@
   }
   aside {
     // border: 1px solid red;
-    flex: 1 0 25%;
+    flex: 1 0 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
     img {
       width: 200px;
       height: 360px;
     }
   }
   section {
-    flex: 1 0 60%;
+    flex: 1 0 50%;
     width: 900px;
     // border: 1px solid red;
   }
@@ -40,4 +41,9 @@
       margin: 0.5em;
     }
   }
+}
+main .book-summary {
+  box-shadow: 0em 1em 1em rgba(#111,0.1);
+  border-radius: 0.3rem;
+  padding: 2em;
 }

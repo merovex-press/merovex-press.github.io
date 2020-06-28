@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '"Religion is Superstition"'
+title: 'Religion is "Superstition"'
 author: Ben Wilson
 description: This goes to RSS Feed & Frontpage
 category: 'philosophy'

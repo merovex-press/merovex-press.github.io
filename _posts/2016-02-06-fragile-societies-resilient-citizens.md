@@ -54,7 +54,7 @@ In Brin's perspective, the Protector Caste should only be powerful enough to han
 
 In World War 2, our military was small, and only held off long enough for the Resilient Citizen soldier to be trained and applied to action; which explains why the early period for the Americans and the British felt so desperate. We have since tended toward having a military that is capable of acting without engaging the resilient citizen; causing some resentment.
 
-## Technology Enables Positive-Sum Societies.
+## Technology Enables Positive-Sum Societies
 
 Electric companies act in their self-interests by restricting broad implementation of residential solar power. They seek regulations under the guise of the danger residential solar poses to the linemen. Conversely, <abbr title="non-ignorant">mindful</abbr> implementation of this technology would safeguard the linemen without the need for constrictive regulation---broad implementation sans endangerment. The result of the Zero-Sum regulation is a brittle electrical infrastructure that could not withstand a catastrophe.
 

@@ -4,22 +4,23 @@
     min-height: 70vh;
     transition: height 999999s;
     text-align: center;
-    background-image: url(/assets/images/hero/94410ad08b9abc64c1ab6d215c1a4449a5a0ef9c.webp);
+    background: $primary-drk url(/assets/images/hero/asfalt-light.png);
     font-size: 1.2em;
     padding: 10vh 0;
-    h3 { font-size: 3em; }
+    h3 { font-size: 3em; text-align: center;}
     h3, p {
       text-shadow: 1px 1px 2px #000;
+    }
+    aside {
+      img { width: 300px; height: auto; margin: auto 0; }
     }
     section {
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
       p { margin: 1em; }
-      img { width: 300px; height: auto; margin: auto 0; }
       a { margin-right: 1em; }
     }
-    background-color: var(--black);
     color: var(--white);
     ::selection { background-color: var(--primary); color: var(--white) }
     .button {

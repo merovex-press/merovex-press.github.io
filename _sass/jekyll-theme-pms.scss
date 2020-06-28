@@ -18,7 +18,9 @@ html {
   padding: 0;
   position: absolute;
 }
-
+.far {
+  color: var(--primary);
+}
 .text-center {
   text-align: center !important;
   display: block;
@@ -26,7 +28,7 @@ html {
 @media screen {
   body {
     font-family: var(--font-system);
-    font-size: 20px;
+    font-size: 21px;
     display: flex;
     flex-direction: column;
     background: var(--background) !important;
@@ -73,9 +75,31 @@ main {
   .pseudo {
     background: var(--mono-2);
   }
-  h1, h2 {
+  .ghost {
+    font-size: 80vh;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: -0.7in;
+    color: rgba(#000,0.1);
+    font-family: "Merriweather Sans";
+    z-index: -500;
+  }
+  h1 {
+  font-family: Oswald, var(--font-heading);
+  }
+  h2, h3 {
     font-family: var(--font-heading);
   }
+  h3 {
+    font-size: 2rem;
+  }
+  h1 {font-size: 3.125em;}
+  h2 {font-size: 2.618em;}
+  h3 {font-size: 1.931em;}
+  h4 {font-size: 1.618;}
+  h5 {font-size: 1.194em;}
+  h6 {font-size: 1em;}
   .zebra {
     padding-bottom: 3em;
     background: var(--zebra-bg);
