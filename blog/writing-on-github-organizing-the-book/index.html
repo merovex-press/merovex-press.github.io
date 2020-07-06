@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>Ben Wilson Writes</title>
+    <link rel="stylesheet" href="https://benwilsonwrites.com/merovex.css">
+    <link rel="stylesheet" href="https://benwilsonwrites.com/style.css">
+    <script src="https://kit.fontawesome.com/2f758798a8.js" crossorigin="anonymous"></script>
+
+    </head>
+  <body>
+    <header>
+      <a href="/" class="brand">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 450.000000 450.000000"
+   preserveAspectRatio="xMidYMid meet">
+  <text x="350" y="80" font-size="40">®</text>
+  <g transform="translate(0.000000,450.000000) scale(0.100000,-0.100000)" stroke="none">
+    <path d="M1990 4070 c-367 -78 -672 -314 -839 -648 -38 -76 -83 -211 -102
+    -307 -20 -99 -18 -380 3 -465 9 -36 15 -67 13 -69 -7 -6 -188 68 -250 103
+    l-60 34 2 58 c6 154 120 385 267 542 27 29 46 55 43 58 -9 10 -332 -123 -477
+    -197 -241 -122 -388 -237 -439 -342 -31 -64 -27 -169 9 -241 170 -337 1099
+    -650 2000 -673 836 -21 1798 237 2116 569 79 82 106 135 112 220 4 59 1 75
+    -22 122 -57 116 -216 237 -471 361 -158 77 -434 189 -442 181 -3 -3 16 -29 42
+    -58 126 -140 231 -357 268 -556 8 -42 -14 -65 -110 -111 -54 -27 -244 -101
+    -257 -101 -1 0 6 37 16 83 70 314 5 654 -177 928 -179 269 -469 459 -784 514
+    -118 21 -352 19 -461 -5z"/>
+    <path d="M1213 1722 c59 -66 114 -125 122 -132 8 -7 72 -21 142 -32 71 -11
+    134 -23 142 -27 26 -13 153 -228 246 -416 103 -207 187 -440 227 -627 l23
+    -108 48 0 47 0 0 368 0 369 -25 13 c-24 13 -65 83 -65 111 0 8 9 33 20 57 15
+    34 29 47 66 64 40 17 52 19 85 9 20 -6 51 -27 68 -46 26 -30 31 -44 31 -87 0
+    -45 -4 -54 -40 -90 l-40 -40 0 -364 0 -364 45 0 c41 0 45 3 51 28 94 411 230
+    738 434 1042 l57 85 122 19 c68 10 131 20 141 23 20 5 245 251 237 259 -3 3
+    -67 -8 -144 -25 -357 -77 -618 -105 -983 -106 -365 0 -604 24 -955 97 -82 17
+    -163 33 -180 36 -26 4 -19 -7 78 -116z"/>
+  </g>
+</svg>
+
+        <span>Ben Wilson Writes</span>
+      </a>
+      <nav>
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">&#9776;</label>
+        <div class='menu'>
+          <a href="/#books">
+            
+  <i class="fad fa-books"></i>
+            Books
+          </a>
+          <a href="/#bio">
+            
+  <i class="fad fa-id-card"></i>
+            Bio
+          </a>
+          <a href="/blog">
+            
+  <i class="fad fa-newspaper"></i>
+            Blog
+          </a>
+          <a class='subscribe' href=/subscribe>
+            
+  <i class="fad fa-inbox-in"></i>
+            Become an Insider
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      
+<article class="post">
+  <header>
+    <h1>Writing on Github: Organizing the Book</h1>
+    <figure>
+      
+  <picture>
+    <source srcset="/images/articles/Rimsky-Korsakov_Serow_crop.webp" type="image/webp">
+    <source srcset="/images/articles/Rimsky-Korsakov_Serow_crop.jpg" type="image/jpeg">
+    <img src="/images/articles/Rimsky-Korsakov_Serow_crop.jpg" alt="" />
+  </picture>
+      <figcaption>
+        Portrait of Nikolai Rimsky-Korsakov in 1898,
+        <a href='https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov#/media/File:Rimsky-Korsakov_Serow_crop.png'>Public Domain</a>,
+        Public Domain
+      </figcaption>
+    </figure>
+  </header>
+  <p>With another NaNoWriMo looming, plotting authors should be well on the way to organizing their novel. If you're considering using Verku for creating your paper and electronic output, you might consider using GitHub's best practices in organizing your novel.</p>
+<span id="continue-reading"></span>
+<p>I'm about to take a hard right turn in my writing, postponing the Postal Marine series to take on a different project to try to reprime my pump. This includes using NaNoWriMo to give me a deadline.
+I have previously discussed <a href="/posts/writing-on-github/">GitHub for organizing a novel series</a> and my use of a Ruby gem <a href="/posts/unsharpening-the-axe/">Verku for converting Markdown text files into paperback and Kindle formats</a>.</p>
+<p><strong>But what about the single novel?</strong></p>
+<p>GitHub's best practices provides me as an author all I need to organize my project. I started with the Verku project structure, then added a few folders outside the project's content (/text) file. To keep track of my TODOs, I used the project's Issues.</p>
+<p>I remain a fan of the <a href="http://www.advancedfictionwriting.com/art/snowflake.php">Snowflake Method</a>, and this will be revealed in this post. I also break my stories into <a href="/posts/its-not-really-three-acts/">four acts</a>. Beyond showing how I'm organizing this book, there's not much more to say. Let me know if you find this helpful.</p>
+<p><strong>README.md</strong>
+: GitHub has built-in features that are designed for organization. The basic one is the README.md file. If you look at any GitHub repository, you will see that the README.md file is displayed right below the file listing. This is intended to be the summary of the entire project. It's written in Markdown and compiled into HTML. I won't explain this file as there are many who have done a better job than I can. Below I provide a sample of what I'm using for my book.</p>
+<p><strong>Plot</strong>
+: Snowflake 1, 2, 4, and 6 cover the plot. I chose to keep this content on the README.md.</p>
+<p><strong>Characters</strong>
+: Snowflake 3, 5 and 7 focus on Character development. I created a folder for the characters and one file for each one named character. From the README.md, I linked to the (/characters/character-name.md). If you have other aspects of your novel (settings, etc.) that you want to track, you can do it this way as well.</p>
+<p><strong>Issues</strong>
+: As I said above, I used the Issues to track my TODOs. I created Milestones for each of the major phases of the project (design, first &amp; subsequent drafts). I created an issue for each of the Snowflake plot steps (1,2,4,6,8), and three steps for each of character steps (3,5,7). I previously discussed <a href="/posts/korektu/">Korektu</a>, my way of soliciting feedback from readers. This all dovetails together.</p>
+<h2 id="readme-md">README.md</h2>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">
+# Book Title
+
+## Book Info
+
+**Genre**
+: Lorem ipsum dolor
+
+**Length**
+: XX,000 words
+
+**Target Reader**
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+**Tagline**
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+**Summary**
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac fringilla lorem, eget venenatis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam malesuada blandit feugiat. Fusce eget placerat tortor. Donec id enim nec justo imperdiet rutrum ut sed mi. Nam eu consectetur libero. Morbi vestibulum malesuada posuere. Cras interdum posuere orci.
+
+**Themes:**
+
+</span><span style="color:#bf616a;">* Etiam mollis leo quis orci ullamcorper blandit.
+* Aliquam at dolor gravida, aliquam nisl vitae, congue augue.
+
+## Characters
+
+* </span><span style="color:#d08770;">[Hero](#)
+</span><span style="color:#bf616a;">* </span><span style="color:#d08770;">[Villain](#)
+</span><span style="color:#bf616a;">* </span><span style="color:#d08770;">[Confidant](#)
+
+</span><span style="color:#bf616a;">## Plot Summary
+
+Four paragraphs here
+
+## Plot Treatment
+
+### Act 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac fringilla lorem, eget venenatis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam malesuada blandit feugiat. Fusce eget placerat tortor. Donec id enim nec justo imperdiet rutrum ut sed mi. Nam eu consectetur libero. Morbi vestibulum malesuada posuere. Cras interdum posuere orci.
+
+### Act 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac fringilla lorem, eget venenatis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam malesuada blandit feugiat. Fusce eget placerat tortor. Donec id enim nec justo imperdiet rutrum ut sed mi. Nam eu consectetur libero. Morbi vestibulum malesuada posuere. Cras interdum posuere orci.
+
+### Act 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac fringilla lorem, eget venenatis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam malesuada blandit feugiat. Fusce eget placerat tortor. Donec id enim nec justo imperdiet rutrum ut sed mi. Nam eu consectetur libero. Morbi vestibulum malesuada posuere. Cras interdum posuere orci.
+
+### Act 4
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac fringilla lorem, eget venenatis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam malesuada blandit feugiat. Fusce eget placerat tortor. Donec id enim nec justo imperdiet rutrum ut sed mi. Nam eu consectetur libero. Morbi vestibulum malesuada posuere. Cras interdum posuere orci.
+
+</span></code></pre><h2 id="character-sheet">Character Sheet</h2>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#8fa1b3;"># &lt;NAME&gt;
+
+</span><span style="color:#65737e;">&lt;!-- Snowflake 3.
+
+For each of your major characters, take an hour and write a one-page summary sheet. --&gt;
+</span><span style="color:#c0c5ce;">
+&lt;NAME&gt; is the sort of person who describes himself/herself as (DESCRIPTIVE PHRASE). If called on to use a single adjective to describe they’d use (ADJECTIVE). Friends, family and co-workers say they’re best known for (ACCOMPLISHMENT). When people first meet them, they notice their (PHYSICAL TRAITS AND PERSONALITY), then they notice that (TRAITS THAT ADD OR POSSIBLY CONTRADICT DOMINANT TRAITS). Because of his/her, he/she needs to prove that (EMOTIONAL NEED IN THE STORY). Also because of the past, he/she fears that (DREADED ALTERNATIVE) and will (PLAN OF ACTION, GOALS) to prevent it.
+
+**Role**
+: Confidant
+
+**Convictions (1 or 2)**
+: What would &lt;hero&gt; do anything to have or avoid? Which of them change through the series?
+
+</span><span style="color:#bf616a;">* Nothing is more important than ...
+* Nothing is more important than ...
+* Nothing is more important than ...
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Ambition**
+</span><span style="color:#bf616a;">: Lorem ipsum dolor sit met, consectetur adipiscing elit. Duis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Goal**
+</span><span style="color:#bf616a;">: Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Conflict**
+</span><span style="color:#bf616a;">: Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.him over the verge of insanity.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Epiphany**
+</span><span style="color:#bf616a;">: Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.
+
+|Positive Trait | 5 | 4 | 3 | 2 | 1 |  Negative Trait
+|+++++++++++++++++++++++++++++++++++++++|
+|Tough Guy      |   |   |   |   |   |  Whiner
+|Team Guy       |   |   |   |   |   |  Rebel
+|Artist         |   |   |   |   |   |  Dreamer
+|Smarty         |   |   |   |   |   |  Dummy
+|Blooming Rose  |   |   |   |   |   |  Wallflower
+|Grinder        |   |   |   |   |   |  Lazy Dog
+|Goody          |   |   |   |   |   |  Baddy
+|Believer       |   |   |   |   |   |  Doubter
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**One-Sentence Summary**
+</span><span style="color:#bf616a;">: Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**One-Paragraph Summary**
+</span><span style="color:#bf616a;">: Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.Lorem ipsum dolor sit met, consectetur adipiscing elit. Diis pulvinar diam ac bibendum tempor. Vivamus porttutor turpis ac elit tempor semper. Donec vulputate ullamcorper augue.
+
+## Physical Description
+
+</span><span style="color:#65737e;">&lt;!-- Snowflake 7. --&gt;
+
+</span><span style="color:#bf616a;">* Age: Numerical value
+* Sex: Male/Female
+* Eyes: Description
+* Hair: Description
+* Build: Description
+
+## Backstory
+
+</span><span style="color:#65737e;">&lt;!-- Snowflake 5.
+
+For each important character defined in Snowflake 3, write a character sketch in one paragraph or a few paragraphs (up to a page for the most important characters). Summarize the character&#39;s backstory. Explain his values, ambitions, and story goals to show how they all fit together into the story.
+
+The character sketch is immensely valuable, mainly by focusing on back story and values, and adding details to the front story. Also, the character sketch fills in a lot of details missing from Snowflake 3 that are critical to understanding your characters.
+--&gt;
+
+</span><span style="color:#bf616a;">### Personality
+
+</span><span style="color:#65737e;">&lt;!-- Snowflake 7. We&#39;ll get into a little more detail For each of the parenthetical, write one sentence (&lt;= 25 words)
+--&gt;
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Emotional/ Family Life**
+</span><span style="color:#bf616a;">: (Personality); (Sense of Humor); (Faith); (Politics); (Upbringing)
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Intellectual/ Work Life**
+</span><span style="color:#bf616a;">: (Education); (Work History); (Interests); (Philosophy)
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Fear/Hope/Dreams**
+</span><span style="color:#bf616a;">: (Fear); (Hope); (Dream);
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Best Memory/Worst Memory**
+</span><span style="color:#bf616a;">:(Best); (Worst)
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Family**
+</span><span style="color:#bf616a;">: What&#39;s the character&#39;s family like? Describe it, including parents, siblings, and children. You may include grandparents, cousins, a spouse, or anyone else relevant.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Friends**
+</span><span style="color:#bf616a;">: What are the character&#39;s friends like? Describe them, including your character&#39;s best male friend and best female friend.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Enemies**
+</span><span style="color:#bf616a;">: Who are your character&#39;s enemies? Explain how they came to be enemies.
+
+</span><span style="font-weight:bold;color:#ebcb8b;">**Social Veil**
+</span><span style="color:#bf616a;">: How would your character describe himself? How would your character&#39;s friends describe him?
+
+</span></code></pre>
+</article>
+
+    </main>
+    <footer>
+      <div>
+        
+  <i class="far fa-laugh"></i>
+        Hello from Virginia
+      </div>
+      <div><a href="/privacy">Privacy</a></div>
+      <div><a href="/terms">Terms</a></div>
+      <div>
+        
+  <i class="far fa-copyright"></i>
+        1997-2020 Ben Wilson
+      </div>
+    </footer>
+  </body>
+</html>
