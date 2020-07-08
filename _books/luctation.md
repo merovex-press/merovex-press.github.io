@@ -12,7 +12,7 @@ amazon:
   ebook: http://amzn.to/1PpTfSi
   pback: http://amzn.to/1K4jaYV
 cover:
-  thumbnail: Luctation-cover.png
+  image: luctation-epub.png
   angle: Luctation-cover.png
 ---
 

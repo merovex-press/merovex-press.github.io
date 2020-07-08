@@ -15,7 +15,7 @@ amazon:
   ebook: http://amzn.to/1PpTfSi
   pback: http://amzn.to/1K4jaYV
 cover:
-  thumbnail: Bellicose-cover.png
+  image: bellicose-epub.png
   angle: Bellicose-cover.png
 ---
 

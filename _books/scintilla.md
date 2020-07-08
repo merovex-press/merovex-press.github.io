@@ -12,7 +12,7 @@ amazon:
   ebook: http://amzn.to/1hAocWl
   pback: http://amzn.to/1PpTr3Z
 cover:
-  thumbnail: Scintilla-cover.png
+  image: scintilla-epub.png
   angle: Scintilla-cover.png
 ---
 
