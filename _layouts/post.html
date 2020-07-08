@@ -10,12 +10,8 @@ layout: default
     </div>
     <h1 itemprop="headline">{{ page.title }}</h1>
     <figure>
-      <picture>
-        {%- assign ext = page.photo['image'] | split: "." | last %}
-        <source srcset="/assets/images/articles/{{page.photo['image'] | replace: ext, "webp" }}" type="image/webp">
-        <source srcset="/assets/images/articles/{{page.photo['image'] }}" type="image/{{ext | replace: 'jpg', 'jpeg'}}">
-        <img src="/assets/images/articles/{{page.photo['image']}}" alt="" />
-      </picture>
+      {%- assign image = page.photo['image'] %}
+      {%- include picture.html klass='articles' image=image %}
       <figcaption>
         {{page.photo['caption']}},
         <a href='{{page.photo['url']}}'>{{page.photo['creator']}}</a>,
@@ -28,8 +24,8 @@ layout: default
         {{ page.date | date: "%e %B %Y" }}
       </time>
       <span class="tags">
-        {%- for tag in page.tags %}
-          {% include tag-link.html -%}
+        {% for tag in page.tags %}
+          {%- include tag-link.html %}
         {%- endfor %}
       </span>
     </p>
