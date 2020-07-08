@@ -1,0 +1,221 @@
+@import "colors";
+@import "hero";
+@import "article";
+@import "footer";
+@import "privacy-notice";
+@import "book-summary";
+@import "navbar";
+html {
+  scroll-behavior: smooth;
+}
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+.far {
+  color: var(--primary);
+}
+.text-center {
+  text-align: center !important;
+  display: block;
+}
+@media screen {
+  body {
+    font-family: var(--font-system);
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    background: var(--background) !important;
+    color: var(--foreground);
+    a {
+      color: var(--blue);
+    }
+  }
+}
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+  body {
+    font-weight: 450;
+  }
+}
+main {
+  ::selection { background-color: var(--primary); color: var(--white) }
+  flex: 1 0 auto;
+  a {
+    color: var(--blue);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .label, [data-tooltip]:after, button, .button, [type=submit], .dropimage {
+    background: var(--blue);
+    color: var(--button-text);
+    box-shadow: 3px 3px 3px var(--highlight);
+  }
+  .success {
+    background: var(--green) !important;
+  }
+  .lead {
+    font-size: 1.5rem;
+  }
+  .warning {
+    background: var(--orange) !important;
+  }
+  .error, .dangerous, .subscribe {
+    background: var(--red) !important;
+  }
+  .pseudo {
+    background: var(--mono-2);
+  }
+  .ghost {
+    font-size: 80vh;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: -0.7in;
+    color: rgba(#000,0.1);
+    font-family: "Merriweather Sans";
+    z-index: -500;
+  }
+  h1 {
+  font-family: Oswald, var(--font-heading);
+  }
+  h2, h3 {
+    font-family: var(--font-heading);
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h1 {font-size: 3.125em;}
+  h2 {font-size: 2.618em;}
+  h3 {font-size: 1.931em;}
+  h4 {font-size: 1.618;}
+  h5 {font-size: 1.194em;}
+  h6 {font-size: 1em;}
+  .zebra {
+    padding-bottom: 3em;
+    background: var(--zebra-bg);
+    // box-shadow: 0 2em 2em -2em  rgba(0,0,0,0.5) inset,
+    //             0 -1em 1em -1em rgba(0,0,0,0.5) inset;
+  }
+  .lost {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5;
+    h1 {
+      border-right: 0.1rem solid var(--foreground);
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  pre {
+    font-family: var(--font-monospace);
+    background: var(--navbar-background);
+    border: 1px solid;
+    border-color: var(--silver);
+    line-height: 1.2;
+    code {
+      background: var(--navbar-background);
+    }
+  }
+  figure {
+    overflow: hidden;
+    margin: 0;
+    padding-top: 56.25%;
+    position: relative;
+    border-radius: 3px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+    }
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--foreground);
+      padding: 0px 8px;
+      font-size: 0.9rem;
+      color: var(--background);
+      a {
+        color: var(--background);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 60em) {
+  h1, .tags, .related a { text-align: center !important;}
+  article {
+    margin: 1em;
+  }
+  nav .show ~ .menu {
+    background: var(--background);
+    color: var(--foreground);
+  }
+  .posts {
+    li { text-align: center;}
+  }
+}
+@media all and (min-width: 60em) {
+  ul.posts { time { text-align: right; } }
+}
+
+.posts {
+  li {
+    @extend .flex;
+    @extend .three-600;
+    @extend .one;
+    @extend .center;
+    list-style-type: none;
+    time {
+      @extend .third-600;
+      font-size: 0.9em;
+      font-family: var(--font-system)
+    }
+    a {
+      @extend .two-third-600;
+      padding-left: 1em;
+    }
+  }
+}
+
+
+#merovex-privacy-notice {
+  background: var(--primary) !important;
+}
+.card {
+  background:   var(--card-bg);
+  border-color: var(--card-bg);
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type=range]),
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+input, .checkable {
+  color: var(--midnight);
+  background: var(--white);
+}
+@import "print";

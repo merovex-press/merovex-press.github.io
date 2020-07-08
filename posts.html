@@ -1,0 +1,13 @@
+---
+layout: page
+permalink: /posts/
+title: News & Random Thoughts
+---
+
+<article id='page'>
+  <ul class="posts">
+    {% for post in site.posts %}
+{% include post-item.html %}
+    {%- endfor -%}
+  </ul>
+</article>
