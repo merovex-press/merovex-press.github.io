@@ -1,5 +1,5 @@
 .book-summary {
-  // border: 1px solid red;
+  border: 1px solid red;
   h3 {
     font-family: var(--font-heading);
   }
@@ -10,18 +10,18 @@
     margin-top: 5vh;
   }
   aside {
-    // border: 1px solid red;
-    flex: 1 0 50%;
+    border: 1px solid red;
+    flex: 1 0 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
-      max-width: 300px;
+      // max-width: 250px;
       max-height: 450px;
     }
   }
   section {
-    flex: 1 0 50%;
+    flex: 1 0 75%;
     width: 900px;
     // border: 1px solid red;
   }
@@ -43,7 +43,7 @@
   }
 }
 main .book-summary {
-  box-shadow: 0em 1em 1em rgba(#111,0.1);
+
   border-radius: 0.3rem;
   padding: 2em;
 }
