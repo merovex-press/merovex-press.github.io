@@ -102,7 +102,8 @@ main {
   h6 {font-size: 1em;}
   .zebra {
     padding-bottom: 3em;
-    background: var(--zebra-bg);
+    // background: var(--zebra-bg);
+    background: rgba(#808080,0.1);
     // box-shadow: 0 2em 2em -2em  rgba(0,0,0,0.5) inset,
     //             0 -1em 1em -1em rgba(0,0,0,0.5) inset;
   }

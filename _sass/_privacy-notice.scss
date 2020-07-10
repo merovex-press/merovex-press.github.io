@@ -1,27 +1,25 @@
 #merovex-privacy-notice {
-  padding: 2em;
-  display: none;
+  background: var(--primary);
+  color: var(--white);
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  color: #FFF;
-  a {
-    cursor: pointer;
-    margin-left: 10px;
-    color: #FFF;
-    padding: 0.1em;
-    border-radius: 0.2em;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 20em;
+    a {
+      margin: 0.5em;
+      color: var(--white);
+      text-decoration: underline;
+      &.button {
+        text-decoration: none;
+      }
+    }
   }
-}
-@media (max-width: 767px) {
-    #cookie-notice span {
-      display: block;
-      padding-top: 3px;
-      margin-bottom: 13px;
-    }
-    #cookie-notice a {
-      position: relative;
-      bottom: 4px;
-    }
 }
