@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="Website for author Ben Wilson">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather+Sans|Oswald|Source+Sans+Pro&display=swap">
+    <link rel="canonical" href="{{site.url}}"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Oswald|Source+Sans+Pro&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <script src="https://kit.fontawesome.com/2f758798a8.js" crossorigin="anonymous"></script>
-    <link rel="canonical" href="{{site.url}}"/>
     <title>{{page.title}}</title>
     {% include favicon.html %}
     {% include social-applications.html %}
@@ -59,10 +60,10 @@
           <a class='pseudo' href="{{ '/#bio' | relative_url }}">
             {% include icon.html icon='fad fa-id-card' %}            Bio
           </a>
-          <a class='pseudo' href="{{ '/posts' | relative_url }}">
+          <a class='pseudo' href="{{ '/posts/' | relative_url }}">
             {% include icon.html icon='fad fa-newspaper' %}            Blog
           </a>
-          <a href="{{ '/subscribe' | relative_url }}" class="subscribe">
+          <a href="{{ '/subscribe/' | relative_url }}" class="subscribe">
             {% include icon.html icon='fad fa-inbox-in' %}            Become an Insider
           </a>
         </div>
