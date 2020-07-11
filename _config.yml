@@ -57,6 +57,7 @@ defaults:
 permalink: /posts/:title
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo
 # Markdown Processing
 kramdown:
