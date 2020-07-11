@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="Website for author Ben Wilson">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather+Sans|Oswald|Source+Sans+Pro">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather+Sans|Oswald|Source+Sans+Pro&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <script src="https://kit.fontawesome.com/2f758798a8.js" crossorigin="anonymous"></script>
     <link rel="canonical" href="{{site.url}}"/>
@@ -50,12 +50,21 @@
         <input id="bmenub" type="checkbox" class="show">
         <label for="bmenub" class="burger pseudo button">&#8801;<span class='sr-only'>menu</span></label>
         <div class="menu">
-          <a class='pseudo' href="/#featured" id='home-link'><i class="fad fa-home"></i>Home</a>
-          <a class='pseudo' href="{{ '/#books' | relative_url }}"><i class="fad fa-books"></i> Books</a>
-          <a class='pseudo' href="{{ '/#bio' | relative_url }}"><i class="fad fa-id-card"></i>Bio</a>
-          <a class='pseudo' href="{{ '/posts' | relative_url }}"><i class="fad fa-newspaper"></i>Blog</a>
-          <a style='display:none;' href="{{ '/contact' | relative_url }}"><i class="fad fa-user-edit"></i>Contact</a>
-          <a href="{{ '/subscribe' | relative_url }}" class="subscribe"><i class="fad fa-inbox-in"></i>Become an Insider</a>
+          <a class='pseudo' href="/#featured" id='home-link'>
+            {% include icon.html icon='fad fa-home' %}            Home
+          </a>
+          <a class='pseudo' href="{{ '/#books' | relative_url }}">
+            {% include icon.html icon='fad fa-books' %}            Books
+          </a>
+          <a class='pseudo' href="{{ '/#bio' | relative_url }}">
+            {% include icon.html icon='fad fa-id-card' %}            Bio
+          </a>
+          <a class='pseudo' href="{{ '/posts' | relative_url }}">
+            {% include icon.html icon='fad fa-newspaper' %}            Blog
+          </a>
+          <a href="{{ '/subscribe' | relative_url }}" class="subscribe">
+            {% include icon.html icon='fad fa-inbox-in' %}            Become an Insider
+          </a>
         </div>
       </nav>
     </header>
@@ -63,10 +72,10 @@
       {{ content }}
     </main>
     <footer>
-      <div><i class="far fa-laugh"></i> Hello from Virginia.</div>
+      <div>{% include icon.html icon='far fa-laugh' %} Hello from Virginia.</div>
       <div><a href='{{'/privacy/' | relative_url}}'>Privacy</a></div>
       <div><a href='{{'/permissions/' | relative_url}}'>Terms of Use</a></div>
-      <div><i class="far fa-copyright"></i> 1998&ndash;2020 Ben Wilson</div>
+      <div>{% include icon.html icon='far fa-copyright' %} 1998&ndash;2020 Ben Wilson</div>
     </footer>
     <div id="merovex-privacy-notice" class=''>
       <span>We use cookies to improve your experience on our website</span>

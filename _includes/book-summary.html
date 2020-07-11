@@ -12,19 +12,19 @@
     <div data-toggle="buttons" class='cta-buttons'>
       {%- if book.amazon.pback -%}
     	<a href='{{book.amazon.pback}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Paperback');" target='_blank' >
-        <i class="fad fa-book-open"></i>
+        {% include icon.html icon='fad fa-book-open' -%}
         <span>Buy {{book['title']}} as </span>Paperback
       </a>
       {% endif %}
       {%- if book.amazon.ebook -%}
     	<a class='success' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Kindle');" target='_blank' >
-        <i class="fad fa-tablet-android-alt"></i>
+        {% include icon.html icon='fad fa-tablet-android-alt' -%}
         <span>Buy {{book['title']}} as </span>Kindle
       </a>
       {% endif %}
       {%- if book.amazon.audible -%}
       <a class='warning' href='{{book.amazon.ebook}}' onClick="ga('send', 'event', 'Button', 'Click', 'Amazon: {{book['title']}} Audible');" target='_blank' >
-        <i class="fab fa-audible"></i>
+        {% include icon.html icon='fab fa-audible' -%}
         <span>Buy {{book['title']}} as </span>Audible
       </a>
       {%- endif -%}
