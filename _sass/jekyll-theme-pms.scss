@@ -7,6 +7,15 @@
 @import "navbar";
 html {
   scroll-behavior: smooth;
+  // .fa-w-18, .fa-w-14, .fa-w-16 {
+  //   display: inline-block;
+  //   // border: 1px solid red;
+  //   width: 1.3em;
+  //   &::before {
+  //     content: '\00a0';
+  //     border: 1px solid red;
+  //   }
+  // }
 }
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
@@ -28,7 +37,7 @@ html {
 @media screen {
   body {
     font-family: var(--font-system);
-    font-size: 21px;
+    font-size: clamp(16px, 2vw, 20px);
     display: flex;
     flex-direction: column;
     background: var(--background) !important;
@@ -76,14 +85,18 @@ main {
     background: var(--mono-2);
   }
   .ghost {
-    font-size: 80vh;
+    font-size: 40vw;
     line-height: 1;
     position: absolute;
-    top: 0;
-    left: -0.7in;
-    color: rgba(#000,0.1);
+    top: 10vh;
+    left: 5vw;
+    color: rgba(#808080,0.1);
     font-family: "Merriweather Sans";
     z-index: -500;
+  }
+  h1, h2, h3 {
+    line-height: 1.2;
+    padding: 1em 0 0.5em 0;
   }
   h1 {
   font-family: Oswald, var(--font-heading);
@@ -91,21 +104,14 @@ main {
   h2, h3 {
     font-family: var(--font-heading);
   }
-  h3 {
-    font-size: 2rem;
-  }
-  h1 {font-size: 3.125em;}
-  h2 {font-size: 2.618em;}
-  h3 {font-size: 1.931em;}
-  h4 {font-size: 1.618;}
-  h5 {font-size: 1.194em;}
-  h6 {font-size: 1em;}
+  h1 {font-size: clamp(2.0rem, 3.5vw, 2.5rem);}
+  h2 {font-size: clamp(1.5rem, 3.5vw, 2.0rem);}
+  h3 {font-size: clamp(1.3rem, 3.5vw, 1.7rem);}
+  h4 {font-size: clamp(1.2rem, 2.5vw, 1.5rem);}
+  h5, h6 { font-size: 1.0rem; }
   .zebra {
     padding-bottom: 3em;
-    // background: var(--zebra-bg);
     background: rgba(#808080,0.1);
-    // box-shadow: 0 2em 2em -2em  rgba(0,0,0,0.5) inset,
-    //             0 -1em 1em -1em rgba(0,0,0,0.5) inset;
   }
   .lost {
     min-height: 65vh;
