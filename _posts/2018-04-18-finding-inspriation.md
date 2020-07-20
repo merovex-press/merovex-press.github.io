@@ -3,7 +3,7 @@ title: Finding Inspiration
 author: Ben Wilson
 description: How choosey should you be when picking a role-model?
 categories: ['diary']
-tags: [humor]
+tags: [Humor]
 photo:
   image: darth-support.jpg
   creator: Public Domain

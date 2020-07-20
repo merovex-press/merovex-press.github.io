@@ -22,11 +22,11 @@ tags:
 - Bad Advice
 ---
 <!--Lead Paragraph-->
-An article on [quiet rituals of successful people](http://www.marcandangel.com/2014/07/06/12-quiet-rituals-of-enormously-successful-humans/) made me think of my own efforts at successful writing.
+An article on [quiet rituals of successful people](https://web.archive.org/web/20190911045810/https://www.marcandangel.com/2014/07/06/12-quiet-rituals-of-enormously-successful-humans/) made me think of my own efforts at successful writing.
 
 <!-- more -->
 
-To summarize the [article's 12 rituals](http://www.marcandangel.com/2014/07/06/12-quiet-rituals-of-enormously-successful-humans/):
+To summarize the [article's 12 rituals](https://web.archive.org/web/20190911045810/https://www.marcandangel.com/2014/07/06/12-quiet-rituals-of-enormously-successful-humans/):
 
 1. Calm, consistent morning routine
 2. Eliminate Busyness work
@@ -41,7 +41,7 @@ To summarize the [article's 12 rituals](http://www.marcandangel.com/2014/07/06/1
 11. Welcome honest feedback and criticism
 12. Keep their pride in check
 
-When you look over that list, how many of those do you feel apply to you? 
+When you look over that list, how many of those do you feel apply to you?
 
 **1. Morning Routine.** I wake up before the dawn on most work days. This time of year I can start and finish work without seeing the Sun. I argue that I have a calm morning routine. When I try to add writing to it, it loses consistency. I find most work days I have a problem writing in the morning. Beyond that, I'm also fairly worn out by day's end and have a hard time writing in the evening.
 

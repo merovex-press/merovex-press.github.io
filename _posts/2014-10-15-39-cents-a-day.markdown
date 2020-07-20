@@ -1,8 +1,8 @@
 ---
 photo:
-  image: snl_39_cents.png
+  image: snl_39_cents.jpg
   creator: NBC
-  url: 
+  url:
   license: RR
   caption: "SNL 39 Cents Video"
   hidden: true
@@ -12,7 +12,7 @@ created_at: 2014-10-15 17:36
 modified_at: 2014-10-15 17:36
 published_at: 2014-10-15 17:36
 date: 2014-10-15 17:36:00 -04:00
-image: snl_39_cents.png
+image: snl_39_cents.jpg
 category: Diary
 description: Thirty-nine cents is all it takes to meet the basic needs of these poor villagers.
 author: Ben Wilson

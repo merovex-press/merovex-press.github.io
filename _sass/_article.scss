@@ -5,8 +5,20 @@ article {
   margin: 0 auto;
   padding: 80px 10px 10px 10px;
   font-family: var(--font-sans);
+  .metadata {
+    font-size: 80%;
+    opacity: 80%;
+    .tags {
+      a {
+        &+a:before {
+          content: "\b7\a0";
+          color: var(--foreground);
+        }
+      }
+    }
+  }
   &.page {
-    max-width: 960px;
+    max-width: 70ch;
   }
   &+ article {
     padding: 10px;
@@ -51,5 +63,10 @@ article {
         text-align: right;
       }
     }
+  }
+}
+.post-item {
+  .svg-inline--fa {
+    color: var(--primary);
   }
 }

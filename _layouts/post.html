@@ -6,7 +6,7 @@ layout: default
  {%include related-posts.html %}
   <header>
     <div class="ghost">
-      {{ page.title | slice: 0 }}
+      {{ page.title | truncate: 6, "" }}
     </div>
     <h1 itemprop="headline">{{ page.title }}</h1>
     <figure>
@@ -18,17 +18,24 @@ layout: default
         <span class="license">{{page.photo['license']}}</span>
       </figcaption>
     </figure>
-    <p>
-      Ben Wilson &middot;
+    <div class="metadata">
+      {% include icon.html icon='fad fa-user-circle' -%}
+      <span>Ben Wilson</span>
+      {% include icon.html icon='fad fa-calendar-day' -%}
       <time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">
         {{ page.date | date: "%e %B %Y" }}
       </time>
-      <span class="tags">
-        {% for tag in page.tags %}
-          {%- include tag-link.html %}
-        {%- endfor %}
+      <span>
+        {% include icon.html icon='fad fa-popcorn' -%}
+        {%- include read-time.html content=post.content -%}
       </span>
-    </p>
+      <div class="tags">
+        {% include icon.html icon='fad fa-tags' -%}
+        {% for tag in page.tags %}
+          {%- include tag-link.html tag=tag %}
+        {%- endfor %}
+      </div>
+    </div>
   </header>
   {{content}}
   {%include related-posts.html %}

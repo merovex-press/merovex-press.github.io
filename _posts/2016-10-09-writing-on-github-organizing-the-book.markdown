@@ -9,8 +9,8 @@ tags:
  - GitHub as an Author
  - Publishing
 photo:
-    license: "Public Domain"
     image: Rimsky-Korsakov_Serow_crop.jpg
+    license: "Public Domain"
     creator: Public Domain
     url: https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov#/media/File:Rimsky-Korsakov_Serow_crop.png
     caption: "Portrait of Nikolai Rimsky-Korsakov in 1898"

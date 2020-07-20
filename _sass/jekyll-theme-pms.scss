@@ -7,15 +7,6 @@
 @import "navbar";
 html {
   scroll-behavior: smooth;
-  // .fa-w-18, .fa-w-14, .fa-w-16 {
-  //   display: inline-block;
-  //   // border: 1px solid red;
-  //   width: 1.3em;
-  //   &::before {
-  //     content: '\00a0';
-  //     border: 1px solid red;
-  //   }
-  // }
 }
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
@@ -37,7 +28,7 @@ html {
 @media screen {
   body {
     font-family: var(--font-system);
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(20px, 2vw, 24px);
     display: flex;
     flex-direction: column;
     background: var(--background) !important;
@@ -91,23 +82,26 @@ main {
     top: 10vh;
     left: 5vw;
     color: rgba(#808080,0.1);
+    white-space: nowrap;
+    overflow-x: hidden;
     font-family: "Merriweather Sans";
     z-index: -500;
   }
+  @import "blockquote/quote";
   h1, h2, h3 {
     line-height: 1.2;
     padding: 1em 0 0.5em 0;
   }
-  h1 {
+  h1, h2 {
   font-family: Oswald, var(--font-heading);
   }
-  h2, h3 {
+  h3 {
     font-family: var(--font-heading);
   }
-  h1 {font-size: clamp(2.0rem, 3.5vw, 2.5rem);}
-  h2 {font-size: clamp(1.5rem, 3.5vw, 2.0rem);}
-  h3 {font-size: clamp(1.3rem, 3.5vw, 1.7rem);}
-  h4 {font-size: clamp(1.2rem, 2.5vw, 1.5rem);}
+  h1 {font-size: clamp(3.0rem, 4.0vw, 3.5rem);}
+  h2 {font-size: clamp(2.0rem, 3.5vw, 2.5rem);}
+  h3 {font-size: clamp(1.5rem, 3.5vw, 2.0rem);}
+  h4 {font-size: clamp(1.3rem, 2.5vw, 1.7rem);}
   h5, h6 { font-size: 1.0rem; }
   .zebra {
     padding-bottom: 3em;
@@ -182,19 +176,24 @@ main {
 }
 
 .posts {
+  display: flex;
+  // justify-content: center;
+  flex-flow: column;
+  align-items: center;
   li {
-    @extend .flex;
-    @extend .three-600;
-    @extend .one;
-    @extend .center;
     list-style-type: none;
+    display: flex;
     time {
-      @extend .third-600;
       font-size: 0.9em;
+      display: inline-block;
+      width: 20ch;
+      // background: var(--red);
       font-family: var(--font-system)
     }
     a {
-      @extend .two-third-600;
+      display: inline-block;
+      width: 40ch;
+      // background: var(--orange);
       padding-left: 1em;
     }
   }

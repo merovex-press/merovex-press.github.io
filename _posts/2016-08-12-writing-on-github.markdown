@@ -8,8 +8,8 @@ tags:
  - GitHub as an Author
  - Publishing
 photo:
-    license: "CC BY 2.0"
     image: 28385505785_aea1413a6a_k.jpg
+    license: "CC BY 2.0"
     creator: fredisonfire/Flickr
     url: https://www.flickr.com/photos/29442760@N00/28385505785/
     caption: "Exile on Ontario St"

@@ -1,43 +1,43 @@
-@import 'contrast';
+@import 'functions';
 
 $system-fonts: -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
 $serif-fonts: Georgia, Cambria, "Times New Roman", Times, serif;
 
-// $primary: #4C586F;
 // https://www.canva.com/learn/brand-color-palette/
 // Morning mist
-$gray-300: #2E323C;
 $primary: #45415E;
-$purple: #45415E;
-$blue: #2E4661;
-$green: #234C3E;
-$hsl: 245;
+// $primary: #4C586F;
+// $primary: #2B3151;
+// $primary: #577D87;
+// French Connection
+// $primary: #4C586F;
+$primary: #44318D;
+
+$hue: hue($primary);
+$sat: saturation($primary);
+$light: lightness($primary);
+$offset: $hue % 10;
+// @debug $hue;
+// @debug $sat;
+// @debug $light;
+// @debug $offset;
 // Nordic Woods
 // $gray-300: #3C455C;
 // $primary: #B37C57;
 // $blue: lighten($gray-300, 40%);
 
-$primary:  hsl($hsl, 30, 40);
-$primary-drk:  hsl($hsl, 20, 15);
-$black:    hsl($hsl, 8, 5);
-$gray-100: hsl($hsl, 8, 10); // darken($gray-300, 15%);
-$gray-200: hsl($hsl, 8, 20); // darken($gray-300, 10%);
-$gray-300: hsl($hsl, 8, 30); // darken($gray-300, 10%);
-$gray-400: hsl($hsl, 8, 40); // lighten($gray-300, 20%);
-$gray-500: hsl($hsl, 8, 50); // lighten($gray-300, 30%);
-$gray-600: hsl($hsl, 8, 60); // lighten($gray-300, 40%);
-$gray-700: hsl($hsl, 8, 70); // lighten($gray-300, 50%);
-$gray-800: hsl($hsl, 8, 80); // lighten($gray-300, 60%);
-$gray-900: hsl($hsl, 8, 94); // lighten($gray-300, 70%);
-$white:    hsl($hsl, 8, 97);
-
-$red:      hsl(338, 40, 45) !default;
-$orange:   hsl(28,  60, 45) !default;
-$yellow:   hsl(48,  60, 45) !default;
-$green:    hsl(128, 20, 45) !default;
-$blue:     hsl(218, 20, 45) !default;
-$indigo:   hsl(228, 20, 45) !default;
-$violet:   hsl(268, 20, 45) !default;
+$primary:      hsl($hue, $sat, $light);
+$primary-drk:  hsl($hue, 20, 15);
+$gray:         hsl($hue, 8, 50);
+$red:          hsl(340+$offset, $sat, $light);
+$orange:       hsl(20+$offset,  $sat, $light);
+$yellow:       hsl(40+$offset,  $sat, $light);
+$green:        hsl(120+$offset, $sat, $light);
+$blue:         hsl(210+$offset, $sat, $light);
+$indigo:       hsl(220+$offset, $sat, $light);
+$violet:       hsl(260+$offset, $sat, $light);
+@debug $green;
+@import 'colors-extra';
 
 $lite-bg: $gray-900;
 $dark-bg: $gray-200;
@@ -45,7 +45,7 @@ $dark-bg: $gray-200;
 :root {
   --font-heading: "Merriweather Sans",#{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  --font-sans: "Source Sans Pro",#{$system-fonts};
+  --font-sans:  "Source Sans Pro",#{$system-fonts};
   --font-serif: "Source Serif Pro",#{$serif-fonts};
   --font-system: #{$system-fonts};
 
@@ -66,21 +66,24 @@ $dark-bg: $gray-200;
   --violet-text:      #{contrast($violet,   $lite-bg,0)};
 
   --primary:          #{contrast($primary,  $lite-bg,4)};
-  --foreground:       #{contrast($gray-500, $lite-bg,7)};
-  --gray:             #{$gray-300};
-  --silver:           #{$gray-700};
-  --mono-2:           #{$gray-600};
+  --foreground:       #{contrast(#808080, $lite-bg,7)};
+
   --background:       #{$white};
-  --navbar-bg:        #{$gray-900};
-  --card-bg:          #{$gray-800};
   --midnight:         #{$gray-100};
   --black:            #{$gray-200};
+  --gray:             #{$gray-300};
   --highlight:        #{$gray-500};
+  --mono-2:           #{$gray-600};
+  --silver:           #{$gray-700};
   --white:            #{$white};
+  --navbar-bg:        #{$gray-900};
+  --card-bg:          #{$gray-800};
   --button-text:      #{$gray-900};
-  --hero-button:      #{contrast($blue,    $dark-bg, 4)};;
-  --hero-success:     #{contrast($green,   $dark-bg, 4)};
+  --hero-button:      #{contrast($blue,  $dark-bg, 4)};
+  --hero-success:     #{contrast($green, $dark-bg, 4)};
   --hero-button-text: #{$black};
+  // Buttons
+  // Success, Warn, Fail, Info, with Text contrast
   --zebra-bg:         #{$gray-900};
   --footer-bg:        #{$gray-900};
   --footer-fg:        #{contrast(#777, $gray-900, 7)};

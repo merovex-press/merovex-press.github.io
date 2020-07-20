@@ -2,12 +2,11 @@
 layout: page
 permalink: /posts/
 title: News & Random Thoughts
+regenerate: true
 ---
 
-<article id='page'>
-  <ul class="posts">
-    {% for post in site.posts %}
-{% include post-item.html %}
-    {%- endfor -%}
-  </ul>
-</article>
+<ul class='posts'>
+  {%- for post in site.posts -%}
+  {% include post-list-item.html %}
+  {%- endfor -%}
+</ul>

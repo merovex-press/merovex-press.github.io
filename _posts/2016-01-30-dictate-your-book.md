@@ -8,7 +8,7 @@ tags:
 published: True
 created_at: 2016-01-30 10:56:46
 photo:
-  image: "4125488159_6f16dd9c31_o.jpg"
+  image: 4125488159_6f16dd9c31_o.jpg
   caption: "Dragonfly on the Mic"
   url: https://www.flickr.com/photos/40648743@N00/4125488159/
   creator: Jitze Couperus/Flickr

@@ -1,8 +1,13 @@
 nav {
   background: var(--navbar-bg);
+  box-shadow: 0 0 0.5rem var(--primary);
   .brand {
     font-family: Oswald;
     font-size: 1.5em;
+    .subtitle {
+      color: var(--primary);
+      opacity: 0.4;
+    }
     svg {
       height: 30px;
       transition: 0.4s;
