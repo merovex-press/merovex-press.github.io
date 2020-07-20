@@ -5,6 +5,7 @@
 @import "privacy-notice";
 @import "book-summary";
 @import "navbar";
+@import "posts";
 html {
   scroll-behavior: smooth;
 }
@@ -171,34 +172,6 @@ main {
     li { text-align: center;}
   }
 }
-@media all and (min-width: 60em) {
-  ul.posts { time { text-align: right; } }
-}
-
-.posts {
-  display: flex;
-  // justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  li {
-    list-style-type: none;
-    display: flex;
-    time {
-      font-size: 0.9em;
-      display: inline-block;
-      width: 20ch;
-      // background: var(--red);
-      font-family: var(--font-system)
-    }
-    a {
-      display: inline-block;
-      width: 40ch;
-      // background: var(--orange);
-      padding-left: 1em;
-    }
-  }
-}
-
 
 #merovex-privacy-notice {
   background: var(--primary) !important;
