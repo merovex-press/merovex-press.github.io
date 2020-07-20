@@ -1,10 +1,10 @@
       <aside class="related">{% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">&laquo;
+        <a class="prev" href="{{page.previous.post_url}}/">&laquo;
           Previous: {{page.previous.title}}
         </a>
         {%- endif -%}
         {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">
+        <a class="next" href="{{page.next.post_url}}/">
           Next: {{page.next.title}} &raquo;
         </a>
       {% endif %}</aside>

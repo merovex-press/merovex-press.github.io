@@ -24,13 +24,13 @@ With another NaNoWriMo looming, plotting authors should be well on the way to or
 <!-- more -->
 
 I'm about to take a hard right turn in my writing, postponing the Postal Marine series to take on a different project to try to reprime my pump. This includes using NaNoWriMo to give me a deadline.
-I have previously discussed [GitHub for organizing a novel series](/posts/writing-on-github/) and my use of a Ruby gem [Verku for converting Markdown text files into paperback and Kindle formats](/posts/unsharpening-the-axe/).
+I have previously discussed [GitHub for organizing a novel series]({%post_url 2016-08-12-writing-on-github %}) and my use of a Ruby gem [Verku for converting Markdown text files into paperback and Kindle formats]({%post_url 2016-06-18-unsharpening-the-axe %}).
 
 **But what about the single novel?**
 
 GitHub's best practices provides me as an author all I need to organize my project. I started with the Verku project structure, then added a few folders outside the project's content (/text) file. To keep track of my TODOs, I used the project's Issues.
 
-I remain a fan of the [Snowflake Method](http://www.advancedfictionwriting.com/art/snowflake.php), and this will be revealed in this post. I also break my stories into [four acts](/posts/its-not-really-three-acts/). Beyond showing how I'm organizing this book, there's not much more to say. Let me know if you find this helpful.
+I remain a fan of the [Snowflake Method](http://www.advancedfictionwriting.com/art/snowflake.php), and this will be revealed in this post. I also break my stories into [four acts]({%post_url 2012-07-03-its-not-really-three-acts %}). Beyond showing how I'm organizing this book, there's not much more to say. Let me know if you find this helpful.
 
 **README.md**
 : GitHub has built-in features that are designed for organization. The basic one is the README.md file. If you look at any GitHub repository, you will see that the README.md file is displayed right below the file listing. This is intended to be the summary of the entire project. It's written in Markdown and compiled into HTML. I won't explain this file as there are many who have done a better job than I can. Below I provide a sample of what I'm using for my book.
@@ -42,7 +42,7 @@ I remain a fan of the [Snowflake Method](http://www.advancedfictionwriting.com/a
 : Snowflake 3, 5 and 7 focus on Character development. I created a folder for the characters and one file for each one named character. From the README.md, I linked to the (/characters/character-name.md). If you have other aspects of your novel (settings, etc.) that you want to track, you can do it this way as well.
 
 **Issues**
-: As I said above, I used the Issues to track my TODOs. I created Milestones for each of the major phases of the project (design, first & subsequent drafts). I created an issue for each of the Snowflake plot steps (1,2,4,6,8), and three steps for each of character steps (3,5,7). I previously discussed [Korektu](/posts/korektu/), my way of soliciting feedback from readers. This all dovetails together.
+: As I said above, I used the Issues to track my TODOs. I created Milestones for each of the major phases of the project (design, first & subsequent drafts). I created an issue for each of the Snowflake plot steps (1,2,4,6,8), and three steps for each of character steps (3,5,7). I previously discussed [Korektu]({%post_url 2016-08-26-introducing-korektu %}), my way of soliciting feedback from readers. This all dovetails together.
 
 ## README.md
 

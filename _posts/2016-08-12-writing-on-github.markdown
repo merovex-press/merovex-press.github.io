@@ -18,7 +18,7 @@ created_at: 2016-08-12 10:04:55
 modified_at: 2016-08-12 10:04:55
 ---
 
-If you scan the blog posts, you'll see my vacillating between different toolchains for producing novels. As recently as [Unsharpening the Axe](/posts/unsharpening-the-axe/), I have moved back to writing using an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) and other techniques reminiscent of software development. To further discuss the approach, I wanted to offer a few tips on using Github as a writer that I'm adopting.
+If you scan the blog posts, you'll see my vacillating between different toolchains for producing novels. As recently as [Unsharpening the Axe]({%post_url 2016-06-18-unsharpening-the-axe %}), I have moved back to writing using an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) and other techniques reminiscent of software development. To further discuss the approach, I wanted to offer a few tips on using Github as a writer that I'm adopting.
 
 <!-- more -->
 
@@ -28,9 +28,9 @@ When writing a novel series, there are a few challenges. First, how do you keep 
 
 Managing the series project is done via the Series Notebook or Series Bible, depending on what you want to call it. Perhaps I'll write about this in a later post. There has been plenty said on this topic by others, so the question for myself is whether I have any value to add to this topic.
 
-How to manage the project content? With Github, there are a couple ways to do this. I have previously written on how to do so when using [Scrivener](/posts/automating-scrivener-github-commit/). However, when using my custom tool "[Verku](/posts/unsharpening-the-axe/)," more opportunities abound.
+How to manage the project content? With Github, there are a couple ways to do this. I have previously written on how to do so when using Scrivener. However, when using my custom tool "[Verku]({%post_url 2016-06-18-unsharpening-the-axe %})," more opportunities abound.
 
-Github recently changed its billing policy. In the "old days" (before Summer 2016) a personal account had a limited set of private repositories. As an author, [protecting your work product](/posts/copyright-work-product/) is important in intellectual property disputes. With the limited repositories, the wise move for an author would be to have one massive repository for the entire series. The Series Notebook and Novels would be tightly coupled. The disadvantage is if you opt to use Git's features for tracking your changes then you will get into a quagmire of branch management.
+Github recently changed its billing policy. In the "old days" (before Summer 2016) a personal account had a limited set of private repositories. As an author, protecting your work product is important in intellectual property disputes. With the limited repositories, the wise move for an author would be to have one massive repository for the entire series. The Series Notebook and Novels would be tightly coupled. The disadvantage is if you opt to use Git's features for tracking your changes then you will get into a quagmire of branch management.
 
 In Summer of 2016, Github opted to offer unlimited repositories for paying customers. The downside is the cost is a tad under $90/year. The upside is it is much easier to manage via submodules. A [Git Submodule](https://git-scm.com/docs/git-submodule) is essentially a method for co-locating multiple independent Git repositories inside another "Series" repository. Thus, I can use a couple commands to clone the series repository and the submodulized Book repositories. The Series Notebook could be the Series Repository, within the Series repository, or another submodule. I have it as a part of the Series repository right now.
 

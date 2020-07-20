@@ -67,7 +67,9 @@ David Lean was a prolific screenplay writer, known for such movies as *Lawrence 
 
 ## Applying Snowflake & Story Equation to Segments
 
-A few years ago I wrote that a story is [not three acts but four](/posts/its-not-really-three-acts/), in part because there's always that "sagging middle" that punctuates the middle of the second act, which is itself twice as long as the first or last act. The problem is the three verses four acts is not sufficiently informative. It also ignores the lower-level structure. Lean's Eight Segments gets down to a sufficiently atomic level that helps sustain both plot and story.
+A few years ago I wrote that a story is
+[not three acts but four]({% post_url 2012-07-03-its-not-really-three-acts %})
+  , in part because there's always that "sagging middle" that punctuates the middle of the second act, which is itself twice as long as the first or last act. The problem is the three verses four acts is not sufficiently informative. It also ignores the lower-level structure. Lean's Eight Segments gets down to a sufficiently atomic level that helps sustain both plot and story.
 
 <table class='table table-striped table-sm'>
   <caption>Lean's Eight Segments Mashed with Randy's Snowflake and Susie May's Story Equation</caption>

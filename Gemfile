@@ -9,6 +9,9 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "nokogiri"
 gem "jekyll", "~> 4.0.0"
+gem "stringex"
+gem "ra11y"
+gem "html-proofer"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

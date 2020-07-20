@@ -29,8 +29,7 @@ There's a quote where Lincoln is said to have said that if he was given six hour
 
 For a quick update on my randomness in this area:
 
-* [Going Back to Scrivener](/posts/going-back-to-scrivener/)
-* [My Toolchain Using Bookmaker](/posts/toolchain/)
+* [Going Back to Scrivener]({%post_url 2015-09-26-going-back-to-scrivener %})
 
 **Problems with Bookmaker.** In *My Toolchain Using Bookmaker*, I recount how I fell upon <abbr title='pronounced Lai-tech'>LaTeX</abbr> while in law school. I loved how it makes such a well-laid PDF. Way back in 10th grade I was trained in typesetting, and the markup is unconcerning. The problem with LaTeX is it is primarily intended for print, and converting LaTeX to ePUB (and MOBI by extension) is a real pain.
 

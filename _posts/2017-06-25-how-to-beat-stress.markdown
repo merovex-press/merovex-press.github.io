@@ -8,7 +8,7 @@ tags: [Bad Advice]
 photo:
   image: iStock_000006257367_PrayingTooHard.jpg
   creator: princessdlaf/iStockphoto
-  url: '"http://www.istockphoto.com/stock-photo-6257367-praying-really-hard.php"'
+  url: http://www.istockphoto.com/stock-photo-6257367-praying-really-hard.php
   license: Rights Reserved, Under License
   caption: "Pray Smarter, Not Harder"
 date: 2017-06-25 13:48
@@ -24,7 +24,7 @@ Stress is defined as a state of mental tension and worry caused by problems in y
 
 Before proceeding, I admit to being stressed a lot. This essay comes at a time when I am feeling acutely stressed, and is the effect of reflecting on that stress. That is, I am not asserting a position of teacher, but of fellow student.
 
-Stress in the modern life comes from all the variety that life hits us. Via social and multimedia, we are barraged by information; and we feel a need to process it less we miss out on something important. At work, we struggle against conflicting interests (both internal and external to the company) and are stressed when our interests are in tension. This occurs in our homes, in our workplace, among friends, on the city streets and in our churches. We feel stress in our political world, and in international relations. Perhaps at its root, the issue is one of self-rightness. That is, our belief that what we think we want and need are right and should prevail over others. 
+Stress in the modern life comes from all the variety that life hits us. Via social and multimedia, we are barraged by information; and we feel a need to process it less we miss out on something important. At work, we struggle against conflicting interests (both internal and external to the company) and are stressed when our interests are in tension. This occurs in our homes, in our workplace, among friends, on the city streets and in our churches. We feel stress in our political world, and in international relations. Perhaps at its root, the issue is one of self-rightness. That is, our belief that what we think we want and need are right and should prevail over others.
 
 With that statement, I point two fingers in the mirror. I am the source of my mental tension at work, at home and elsewhere. I know that I am aggressive in pursuit of what I view are important goals, and I will compete. It is what I am known for. In that competition there is stress.
 

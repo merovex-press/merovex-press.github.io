@@ -1,0 +1,10 @@
+#!/Users/merovex/.rvm/rubies/ruby-2.6.3/bin/ruby
+
+tag = ARGV.shift
+
+c = `ls _posts/*#{tag}*`.split(/\n/)
+
+c.each do |x|
+  puts File.basename(x,'.*')
+end
+

@@ -12,4 +12,4 @@ title: Uses
 
 ## Site License
 
-Copyright &copy; Ben Wilson - 1997-2020. [Rights Reserved](./LICENSE.md)
+Copyright &copy; Ben Wilson - 1997-2020. [Rights Reserved](/permissions/)

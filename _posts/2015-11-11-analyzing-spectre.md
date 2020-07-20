@@ -17,7 +17,7 @@ description: "As we saw in Skyfall, in Spectre we see sophisticated storytelling
 
 ---
 
-As I did with [Skyfall](/posts/skyfall-plot-analysis/), I wanted to offer a few story observations on Spectre. I hope to avoid spoilers, but in case I fail, consider yourself warned. Again we see sophisticated storytelling with a clear moral theme.
+As I did with [Skyfall]({%post_url 2012-12-15-skyfall-plot-analysis %}), I wanted to offer a few story observations on Spectre. I hope to avoid spoilers, but in case I fail, consider yourself warned. Again we see sophisticated storytelling with a clear moral theme.
 
 <!-- more -->
 
