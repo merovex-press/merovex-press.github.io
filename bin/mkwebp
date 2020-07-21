@@ -1,8 +1,0 @@
-#!/Users/merovex/.rvm/rubies/ruby-2.6.3/bin/ruby
-
-Dir["assets/images/articles/*.*"].each do |s|
-  # next if s.include?("webp")
-  w = s.gsub(File.extname(s),'.webp')
-  next if File.exist?(w)
-  puts `convert #{s} #{w}`
-end
