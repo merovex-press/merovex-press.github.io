@@ -82,7 +82,7 @@ main {
     position: absolute;
     top: 10vh;
     left: 5vw;
-    color: rgba(#808080,0.1);
+    color: rgba($gray-500,0.1);
     white-space: nowrap;
     overflow-x: hidden;
     font-family: "Merriweather Sans";
@@ -95,9 +95,13 @@ main {
   }
   h1, h2 {
   font-family: Oswald, var(--font-heading);
+  font-weight: 600;
   }
   h3 {
     font-family: var(--font-heading);
+  }
+  h2, h3 {
+    border-bottom: 1px solid rgba($black,0.1);
   }
   h1 {font-size: clamp(3.0rem, 4.0vw, 3.5rem);}
   h2 {font-size: clamp(2.0rem, 3.5vw, 2.5rem);}
@@ -106,7 +110,7 @@ main {
   h5, h6 { font-size: 1.0rem; }
   .zebra {
     padding-bottom: 3em;
-    background: rgba(#808080,0.1);
+    background: rgba($gray-500,0.1);
   }
   .lost {
     min-height: 65vh;

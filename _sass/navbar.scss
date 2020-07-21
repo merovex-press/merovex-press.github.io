@@ -18,9 +18,9 @@ nav {
     background: var(--primary) !important;
   }
   &.transparent {
-    background: rgba(#000, 0.8);
+    background: rgba($black, 0.8);
     box-shadow: none;
-    color: rgba(#FFF, 0.7);
+    color: rgba($white, 0.7);
     svg {
       fill: var(--white);
     }
