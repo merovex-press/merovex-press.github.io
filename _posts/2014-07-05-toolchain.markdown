@@ -1,6 +1,6 @@
 ---
 photo:
-  image: 5060103696_625ba60116_z-chain.jpg
+  image: 5060103696_0b20e682fd_o.jpg
   creator: aspis7/Flickr
   url: https://www.flickr.com/photos/aspis7/5060103696/
   license: under CC BY 2.0
@@ -11,7 +11,7 @@ created_at: 2014-07-05 10:29
 modified_at: 2014-07-05 10:29
 published_at: 2014-07-05 10:29
 date: 2014-07-05 10:29:21.000000000 -04:00
-image: 5060103696_625ba60116_z-chain.jpg
+image: 5060103696_0b20e682fd_o.jpg
 category: Technology
 description: Ben Wilson, author, discusses how he writes, edits and publishes a novel.
 author: Ben Wilson

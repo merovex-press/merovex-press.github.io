@@ -1,6 +1,6 @@
 ---
 photo:
-  image: amazon-kindle.jpg
+  image: 3394121594_6bdb342e15_k.jpg
   creator: JblyBerg/Flickr
   url: http://www.flickr.com/photos/jblyberg/3394121594/sizes/m/
   license: under CC BY 2.0

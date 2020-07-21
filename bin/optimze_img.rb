@@ -47,7 +47,10 @@ def addRow(b,a)
   ]
 end
 
-Dir["assets/images/**/*.*"].sort.each do |img_file|
+target = ARGV.shift || Dir["assets/images/**/*.*"].sort
+target = [target] if target.is_a? String
+
+target.each do |img_file|
   next if img_file.include?("_converted")
   next if img_file.include?(".rb")
   next if img_file.include?(".webp")
@@ -75,6 +78,7 @@ Dir["assets/images/**/*.*"].sort.each do |img_file|
     `convert #{img_file} #{wfile}`
   end
   if bigger?(wfile, img_file) || img_file.include?('hero')
+    break if img_file.include?('article')
     puts "..WEBP too big"
     FileUtils.rm(wfile)
   end
