@@ -44,7 +44,7 @@ html {
 (min-resolution: 192dpi) {
     /* Retina-specific stuff here */
   body {
-    font-weight: 450;
+    // font-weight: 450;
   }
 }
 main {
@@ -90,18 +90,20 @@ main {
   }
   @import "blockquote/quote";
   h1, h2, h3 {
-    line-height: 1.2;
-    padding: 1em 0 0.5em 0;
+    line-height: 0.0;
+    margin: 1.5em 0 1.0em 0;
   }
   h1, h2 {
-  font-family: Oswald, var(--font-heading);
+  font-family: var(--font-heading);
   font-weight: 600;
   }
   h3 {
     font-family: var(--font-heading);
   }
-  h2, h3 {
-    border-bottom: 1px solid rgba($grey-500,0.1);
+  .post, .page {
+    h2, h3 {
+      border-bottom: 1px solid rgba($gray-500,0.5);
+    }
   }
   h1 {font-size: clamp(3.0rem, 4.0vw, 3.5rem);}
   h2 {font-size: clamp(2.0rem, 3.5vw, 2.5rem);}
@@ -110,7 +112,7 @@ main {
   h5, h6 { font-size: 1.0rem; }
   .zebra {
     padding-bottom: 3em;
-    background: rgba($gray-500,0.1);
+    background: rgba($gray-500,0.2);
   }
   .lost {
     min-height: 65vh;

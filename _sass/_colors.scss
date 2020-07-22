@@ -36,16 +36,16 @@ $green:        hsl(120+$offset, $sat, $light);
 $blue:         hsl(210+$offset, $sat, $light);
 $indigo:       hsl(220+$offset, $sat, $light);
 $violet:       hsl(260+$offset, $sat, $light);
-@debug $green;
+// @debug $green;
 @import 'colors-extra';
 
 $lite-bg: $gray-900;
 $dark-bg: $gray-200;
 
 :root {
-  --font-heading: #{$system-fonts};
+  --font-heading: "Merriweather Sans", #{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  --font-sans:  #{$system-fonts};
+  --font-sans: #{$system-fonts};
   --font-serif: #{$serif-fonts};
   --font-system: #{$system-fonts};
 
