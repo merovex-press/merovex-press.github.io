@@ -2,8 +2,9 @@
 photo:
   image: bellicose-redo-wallpaper.jpg
   creator: DHM Designs
-  url: "#"
-  license: Rights Reserved
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Bellicose Novel Cover
 title: 'Work in Progress: Bellicose'
 created_at: 2012-07-15 15:26

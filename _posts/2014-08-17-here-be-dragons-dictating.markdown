@@ -2,8 +2,9 @@
 photo:
   image: 164361902_cae775b4c7_z-microphone.jpg
   creator: Julián Rodriguez Orihuela/Flickr
-  url: https://www.flickr.com/photos/17513020@N00/164361902/
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/17513020@N00/
+  source_url: https://www.flickr.com/photos/17513020@N00/164361902/
+  license: BY
   caption: puppet holding desk microphone.
 layout: post
 title: Here Be Dragons, Dictating

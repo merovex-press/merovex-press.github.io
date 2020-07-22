@@ -2,8 +2,9 @@
 photo:
   image: 15020291797_c93308380b_z-worldbuilding.jpg
   creator: Erika Gilraen Loss/Flickr
-  url: https://www.flickr.com/photos/gilraenm/15020291797/
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/gilraenm/
+  source_url: https://www.flickr.com/photos/gilraenm/15020291797/
+  license: BY
   caption: A Brave New World
 layout: post
 title: Building a Brave New World

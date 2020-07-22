@@ -2,8 +2,9 @@
 photo:
   image: 5060103696_0b20e682fd_o.jpg
   creator: aspis7/Flickr
-  url: https://www.flickr.com/photos/aspis7/5060103696/
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/aspis7/
+  source_url: https://www.flickr.com/photos/aspis7/5060103696/
+  license: BY
   caption: Rusty chain
 layout: post
 title: My Toolchain Using Bookmaker

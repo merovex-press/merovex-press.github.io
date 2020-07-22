@@ -5,7 +5,8 @@ tags:
 photo:
   image: 35056889503_801fb426f8_o.jpg
   creator: Benbenben11/Flickr
-  url: https://flic.kr/p/VpRHTn
+  creator_url: https://www.flickr.com/photos/benbenben11/
+  source_url: https://www.flickr.com/photos/benbenben11/35056889503/
   license: BY-2.0
   caption: Screenshot of Scrivener Series
 layout: post

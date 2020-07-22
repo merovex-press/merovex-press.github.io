@@ -2,8 +2,9 @@
 photo:
   image: 503020765_94aa31f8aa_o.jpg
   creator: notsogoodphotography/Flickr
+  creator_url: http://www.flickr.com/photos/49512158@N00/
   url: http://www.flickr.com/photos/49512158@N00/503020765/
-  license: under CC BY 2.0
+  license: BY
   caption: Friends at Sunset
 title: When Friends Take a Turn for the Worse
 created_at: 2011-08-05 14:54

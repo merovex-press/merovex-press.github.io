@@ -2,8 +2,9 @@
 photo:
   image: 5705122218_550e9d5f83-Heroes.jpg
   creator: Cåsbr/Flickr
+  creator_url: http://www.flickr.com/photos/69275268@N00/
   url: http://www.flickr.com/photos/69275268@N00/5705122218/
-  license: under CC BY 2.0
+  license: BY
   caption: Heroes Mask
 layout: post
 title: Heroes for More than One Season

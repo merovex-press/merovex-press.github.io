@@ -2,8 +2,9 @@
 photo:
   image: scintilla-wallpaper.jpg
   creator: DHM Designs
-  url: "#"
-  license: Rights Reserved
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Scintilla Cover
 title: A Little About the Core Series
 created_at: 2011-07-19 15:00

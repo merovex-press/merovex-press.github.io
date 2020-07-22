@@ -11,9 +11,10 @@ tags:
  - Writing
 photo:
     image: 27885942080_8ee02f5187_o.jpg
-    license: "CC BY 2.0"
+    license: BY
     creator: Tseen Khoo/Flickr
-    url: https://www.flickr.com/photos/144965429@N03/27885942080/
+    creator_url: https://www.flickr.com/photos/144965429@N03
+    source_url: https://www.flickr.com/photos/144965429@N03/27885942080/
     caption: "It's not chaos but creation"
 description: "While trying to work back into the Postal Marine series, Ben takes a turn at worldbuilding."
 created_at: 2016-07-23 13:51:07

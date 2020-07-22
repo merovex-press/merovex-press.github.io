@@ -8,8 +8,9 @@ tags: [Scrivener, GitHub as an Author]
 photo:
   image: 5171765778_239c899bfd_o.png
   creator: Morten Oddvik/Flickr
-  url: https://www.flickr.com/photos/97522422@N00/5171765778/
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/97522422@N00/ 
+  source_url: https://www.flickr.com/photos/97522422@N00/5171765778/
+  license: BY
   caption: Scrivener 2.0 for Mac. Screenshot of corkboard overview.
 comments: true
 sharing: true

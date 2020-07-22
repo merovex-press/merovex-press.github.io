@@ -2,8 +2,9 @@
 photo:
   image: 2843144877-fd9593fdca-b.jpg
   creator: Benjamin A. Smith/Flickr
+  creator_url: 
   url: "#"
-  license: under CC BY-SA 2.0
+  license: BY-SA
   caption: Listening
 title: A Year of Audible, 2014
 created_at: 2014-11-28 17:32

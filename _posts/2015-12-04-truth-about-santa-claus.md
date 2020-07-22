@@ -7,8 +7,9 @@ tags: [Truth, Christmas, Naughty, Humor, Holiday]
 photo:
   image: 3137198786_896818213a_o.jpg
   creator: Seattleye/Flickr
-  url: "#"
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/10368024@N04/
+  url: https://www.flickr.com/photos/10368024@N04/3137198786/
+  license: BY
   caption: "Is It That BAD Santa?"
 date: 2015-12-04T17:15:00-05:00
 created_at: 2015-10-26 15:48

@@ -2,8 +2,9 @@
 photo:
   image: bellicose-redo-wallpaper.jpg
   creator: DHM Designs
-  url: "#"
-  license: Rights Reserved
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Bellicose Cover
 layout: post
 title: 'Finished Bellicose Draft'

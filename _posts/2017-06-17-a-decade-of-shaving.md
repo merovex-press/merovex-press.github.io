@@ -7,8 +7,9 @@ tags: [Life Hacks, Bad Advice]
 photo:
   image: blade-2328705_1920.jpg
   creator: eroyka-3731342/Pixabay
-  url: https://pixabay.com/photos/blade-shaving-foam-brush-shave-2328705/
-  license: Public Domain
+  creator_url: https://pixabay.com/users/eroyka-3731342/
+  source_url: https://pixabay.com/photos/blade-shaving-foam-brush-shave-2328705/
+  license: CC0
   caption: Classic Safety Razor
 date: 2017-06-17T13:42:00-04:00
 created_at: 2017-06-17 11:28

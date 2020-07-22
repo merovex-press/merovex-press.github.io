@@ -2,8 +2,9 @@
 photo:
   image: scintilla-wallpaper.jpg
   creator: DHM Designs
-  url: "#"
-  license: Rights Reserved
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Scintilla Cover
 title: After Action Review on Scintilla's First Draft
 created_at: 2010-12-21 15:24

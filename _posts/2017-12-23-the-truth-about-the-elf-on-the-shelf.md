@@ -8,8 +8,9 @@ tags: [Truth, Christmas, Humor, Holiday]
 photo:
   image: 23872259931_bbc1ff5f9b_k.jpg
   creator: Michel Curi/Flickr
-  url: https://www.flickr.com/photos/119886413@N05/23872259931
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/119886413@N05/
+  source_url: https://www.flickr.com/photos/119886413@N05/23872259931
+  license: BY
   caption: "Reggie - Elf on Shelf"
 ---
 

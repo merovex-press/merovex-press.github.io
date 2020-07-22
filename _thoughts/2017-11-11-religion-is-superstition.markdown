@@ -8,7 +8,7 @@ tags: []
 photo:
   image: StockSnap_9T69JHWUK5.jpg
   creator: "Michael Bennett"
-  url: https://stocksnap.io/photo/9T69JHWUK5
+  source_url: https://stocksnap.io/photo/9T69JHWUK5
   license: under CC BY 2.0
   caption: Spinning a Web of Reality
 comments: true

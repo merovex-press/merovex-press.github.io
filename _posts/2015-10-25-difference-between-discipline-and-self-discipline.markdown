@@ -8,8 +8,9 @@ tags: []
 photo:
   image: 11384364343_b000dbdb8b_k.jpg
   creator: Raw Herring/Flickr
-  url: https://www.flickr.com/photos/42096237@N00/11384364343/
-  license: under CC BY-SA 2.0
+  creator_url: https://www.flickr.com/photos/42096237@N00/ 
+  source_url: https://www.flickr.com/photos/42096237@N00/11384364343/
+  license: BY-SA
   caption: Men like war because women like warriors
 date: 2015-10-25 19:24
 modified_at: 2015-10-25 19:24

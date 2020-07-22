@@ -2,8 +2,9 @@
 photo:
   image: 3394121594_6bdb342e15_k.jpg
   creator: JblyBerg/Flickr
+  creator_url: http://www.flickr.com/photos/jblyberg/3394121594/
   url: http://www.flickr.com/photos/jblyberg/3394121594/sizes/m/
-  license: under CC BY 2.0
+  license: BY
   caption: Balancing a Kindle
 layout: post
 title: Amazon Defines Novel Length

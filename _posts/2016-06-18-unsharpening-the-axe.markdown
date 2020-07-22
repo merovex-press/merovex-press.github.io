@@ -12,9 +12,10 @@ tags:
  - Markdown
 photo:
     image: 27265564416_850881998f_k.jpg
-    license: "CC BY 2.0"
+    license: BY
     creator: Alan Levine/Flickr
-    url: https://www.flickr.com/photos/37996646802@N01/27265564416/
+    creator_url: https://www.flickr.com/photos/37996646802@N01/
+    source_url: https://www.flickr.com/photos/37996646802@N01/27265564416/
     caption: "Rusted Scout Axe"
 description: "Ben shares his semi-reluctant return to his Bookmaker toolchain now called 'Verku'"
 created_at: 2016-06-18 14:07:10

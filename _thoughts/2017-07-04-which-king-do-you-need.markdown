@@ -8,7 +8,7 @@ tags: ['Church History']
 photo:
   image: king-george-turd.jpg
   creator: Allan Ramsay
-  url: https://en.wikipedia.org/wiki/File:Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg
+  source_url: https://en.wikipedia.org/wiki/File:Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg
   license: Public Domain
   caption: "King George III in coronation robes"
 comments: true

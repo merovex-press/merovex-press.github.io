@@ -10,9 +10,10 @@ tags:
  - Publishing
 photo:
     image: Rimsky-Korsakov_Serow_crop.jpg
-    license: "Public Domain"
+    license: PD
     creator: Public Domain
-    url: https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov#/media/File:Rimsky-Korsakov_Serow_crop.png
+    creator_url: https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov#/media/File:Rimsky-Korsakov_Serow_crop.png
+    source_url: https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov#/media/File:Rimsky-Korsakov_Serow_crop.png
     caption: "Portrait of Nikolai Rimsky-Korsakov in 1898"
 description: "GitHub best practices work perfectly for organizing a novel."
 created_at: 2016-10-09 13:49:00

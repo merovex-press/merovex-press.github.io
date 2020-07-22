@@ -9,10 +9,11 @@ tags:
  - Jekyll
  - Publishing
 photo:
-    license: "Rights Reserved"
+    license: RR
     image: korektu_screenshot.png
     creator: Ben Wilson
-    url: http://dausha.net
+    creator_url:  https://benwilsonwrites.com
+    url: https://benwilsonwrites.com
     caption: "Screenshot of GitHub Issues List"
 description: "Korektu helps #self-published #authors with howto get reader feedback into private #GitHub repo issues."
 created_at: 2016-08-26 10:31:07

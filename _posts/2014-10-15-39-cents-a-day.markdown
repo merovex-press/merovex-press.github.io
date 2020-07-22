@@ -2,7 +2,8 @@
 photo:
   image: snl_39_cents.jpg
   creator: NBC
-  url:
+  creator_url: https://nbc.com
+  url: https://nbc.com
   license: RR
   caption: "SNL 39 Cents Video"
   hidden: true

@@ -8,8 +8,9 @@ tags: [Bad Advice]
 photo:
   image: iStock_000006257367_PrayingTooHard.jpg
   creator: princessdlaf/iStockphoto
+  creator_url: http://www.istockphoto.com/stock-photo-6257367-praying-really-hard.php
   url: http://www.istockphoto.com/stock-photo-6257367-praying-really-hard.php
-  license: Rights Reserved, Under License
+  license: RR
   caption: "Pray Smarter, Not Harder"
 date: 2017-06-25 13:48
 modified_at: 2017-06-25 13:48

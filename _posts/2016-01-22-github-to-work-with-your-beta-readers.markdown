@@ -8,8 +8,9 @@ tags: [Scrivener, GitHub as an Author]
 photo:
   image: 2959200147_3661ed086e_b.jpg
   creator: Nick Quaranto/Flickr
-  url: https://www.flickr.com/photos/31679616@N08/2959200147/
-  license: under CC BY-SA 2.0
+  creator_url: https://www.flickr.com/photos/31679616@N08/
+  source_url: https://www.flickr.com/photos/31679616@N08/2959200147/
+  license: BY-SA
   caption: GitHub Squid Cat
 comments: true
 sharing: true
@@ -29,7 +30,7 @@ For the purpose of this article, issue and task management are synonymous.
 
 ## GitHub for Author Task Management
 
-I won't get into too much detail on how to use GitHub for task tracking. If you look at the [GitHub Features](https://github.com/features), they already do a find job of explaining the capability. 
+I won't get into too much detail on how to use GitHub for task tracking. If you look at the [GitHub Features](https://github.com/features), they already do a find job of explaining the capability.
 
 ## GitHub for Beta Reader Collaboration
 

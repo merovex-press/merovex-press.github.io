@@ -2,8 +2,9 @@
 photo:
   image: luctation.jpg
   creator: Ben Wilson
-  url: http://dausha.net
-  license: Rights Reserved, created by Donna Murillo
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Bophendze in Luctation.
 title: Jonaldy Ammonett
 author: Ben Wilson

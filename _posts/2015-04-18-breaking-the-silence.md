@@ -2,8 +2,9 @@
 photo:
   image: 3400504522_a4ddba3d3d_o.jpg
   creator: swimfinfan/Flickr
-  url: https://www.flickr.com/photos/12842055@N03/3400504522/
-  license: under CC BY-SA 2.0
+  creator_url: https://www.flickr.com/photos/12842055@N03/
+  source_url: https://www.flickr.com/photos/12842055@N03/3400504522/
+  license: BY-SA
   caption: Guardian of Silence
 title: Breaking the Silence
 author: Ben Wilson

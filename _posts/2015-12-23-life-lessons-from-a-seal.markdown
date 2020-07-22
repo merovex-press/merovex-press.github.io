@@ -8,8 +8,9 @@ tags: []
 photo:
   image: SealCommander.png
   creator: UT Austin
-  url: https://www.youtube.com/watch?v=yaQZFhrW0fU
-  license: Rights Reserved
+  creator_url: https://www.youtube.com/watch?v=yaQZFhrW0fU
+  source_url: https://www.youtube.com/watch?v=yaQZFhrW0fU
+  license: RR
   caption: McRaven Shares Life Lessons to UT Austin
   hidden: true
 comments: true

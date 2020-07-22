@@ -8,9 +8,10 @@ tags:
   - Technique
 photo:
   image: 2017-09-11-06-30-53.jpg
-  creator: Unknown
-  url: https://pixnio.com/nature-landscapes/snow/frost-snow-dusk-winter-nature-snow-snowflake-atmosphere-sky
-  license: Public Domain
+  creator: Pixnio
+  creator_url: https://pixnio.com/
+  source_url: https://pixnio.com/nature-landscapes/snow/frost-snow-dusk-winter-nature-snow-snowflake-atmosphere-sky
+  license: PD
   caption: "Winter's Snowglobe"
 date: 2017-12-15 09:45:49
 modified_at: 2017-12-15 09:45:49

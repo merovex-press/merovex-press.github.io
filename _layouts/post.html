@@ -13,9 +13,14 @@ layout: default
       {%- assign image = page.photo['image'] %}
       {%- include picture.html klass='articles' image=image %}
       <figcaption>
-        {{page.photo['caption']}},
-        <a href='{{page.photo['url']}}'>{{page.photo['creator']}}</a>,
-        <span class="license">{{page.photo['license']}}</span>
+        <a href='{{page.photo['source_url']}}'>{{page.photo['caption']}}</a>
+        by
+        <a href='{{page.photo['creator_url']}}'>{{page.photo['creator']}}</a>
+        {%- capture key %}{{page.photo['license']}}{% endcapture %}
+        is licensed under
+        <a href="{{site.licenses[key]['url']}}" class="license">
+          {{site.licenses[key]['tag']}}
+        </a>
       </figcaption>
     </figure>
     <div class="metadata">

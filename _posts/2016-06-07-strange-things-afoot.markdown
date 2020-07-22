@@ -8,8 +8,9 @@ tags: [Website]
 photo:
   image: 25073539962_6fa58058d3_o.jpg
   creator: DC Master/Flickr
-  url: https://www.flickr.com/photos/76224602@N00/25073539962/
-  license: under CC BY-SA 2.0
+  creator_url: https://www.flickr.com/photos/76224602@N00/
+  source_url: https://www.flickr.com/photos/76224602@N00/25073539962/
+  license: BY-SA
   caption: Strange Clouds Adrift
 comments: true
 sharing: true

@@ -7,8 +7,9 @@ tags: [Humor]
 photo:
   image: darth-support.jpg
   creator: Public Domain
+  creator_url: 
   url: "#"
-  license: Public Domain
+  license: PD
   caption: Darth Mentoring
 date: 2018-04-18T20:13:00-04:00
 created_at: 2018-04-18 19:47

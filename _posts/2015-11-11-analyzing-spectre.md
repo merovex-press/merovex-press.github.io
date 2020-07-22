@@ -9,9 +9,10 @@ author: Ben Wilson
 modified_at: 2015-11-11 13:51:07
 photo:
     image: spectre.jpg
-    license: Rights Reserved
+    license: RR
     creator: Eon Productions
-    url: https://en.wikipedia.org/wiki/Eon_Productions
+    creator_url: "#"
+    source_url: https://en.wikipedia.org/wiki/Eon_Productions
     caption: Spectre Wallpaper
 description: "As we saw in Skyfall, in Spectre we see sophisticated storytelling with a clear moral theme."
 

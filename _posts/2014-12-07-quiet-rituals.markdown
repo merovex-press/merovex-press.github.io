@@ -2,8 +2,9 @@
 photo:
   image: 288389345_f31156f5d6_o.jpg
   creator: dariuszka/Flickr
-  url: https://www.flickr.com/photos/83394598@N00/288389345/
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/83394598@N00/
+  source_url: https://www.flickr.com/photos/83394598@N00/288389345/
+  license: BY
   caption: Serenity Now
 layout: post
 title: Quiet Rituals of a Negligibly Successful Writer

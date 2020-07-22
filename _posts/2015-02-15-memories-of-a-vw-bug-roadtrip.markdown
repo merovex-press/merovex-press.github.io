@@ -2,8 +2,9 @@
 photo:
   image: 10311138444_c61af6d054.jpg
   creator: Digo Souza/Flickr
-  url: https://www.flickr.com/photos/9783357@N08/10311138444/
-  license: under CC BY-ND 2.0
+  creator_url: https://www.flickr.com/photos/9783357@N08/
+  source_url: https://www.flickr.com/photos/9783357@N08/10311138444/
+  license: BY-ND
   caption: End of a Era
 layout: post
 title: Memories of a VW Bug Roadtrip

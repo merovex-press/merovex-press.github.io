@@ -2,8 +2,9 @@
 photo:
   image: 8401726003_e980bab730.jpg
   creator: Tambako the Jaguar/Flickr
+  creator_url: http://www.flickr.com/photos/tambako/
   url: http://www.flickr.com/photos/tambako/8401726003/sizes/m/
-  license: under BY-ND
+  license: BY-ND
   caption: Three Mongeese
 layout: post
 title: It's Not Really Three Acts

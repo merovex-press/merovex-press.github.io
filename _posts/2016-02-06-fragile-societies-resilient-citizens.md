@@ -9,9 +9,10 @@ date: 2016-02-06T14:53:31-05:00
 author: Ben Wilson
 photo:
     image: 14552700184_d0e048446f_o.jpg
-    license: "CC BY 2.0"
+    license: BY
     creator: Daquella manera/Flickr
-    url: https://www.flickr.com/photos/62518311@N00/14552700184/
+    creator_url: https://www.flickr.com/photos/62518311@N00/
+    source_url: https://www.flickr.com/photos/62518311@N00/14552700184/
     caption: "Packard Automotive Plant, Detroit"
 description: "Here are my notes from a recent David Brin lecture I had the pleasure of listening to."
 ---

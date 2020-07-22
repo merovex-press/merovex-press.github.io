@@ -10,8 +10,9 @@ created_at: 2016-01-30 10:56:46
 photo:
   image: 4125488159_6f16dd9c31_o.jpg
   caption: "Dragonfly on the Mic"
-  url: https://www.flickr.com/photos/40648743@N00/4125488159/
+  source_url: https://www.flickr.com/photos/40648743@N00/4125488159/
   creator: Jitze Couperus/Flickr
+  creator_url: https://www.flickr.com/photos/40648743@N00/
   license: BY
 author: Ben Wilson
 description: A nickle's worth of free advice on how to dictate your book using Dragon NaturallySpeaking or Dragon Dictate.

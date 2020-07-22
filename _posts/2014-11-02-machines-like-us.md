@@ -2,8 +2,9 @@
 photo:
   image: 3318600273_4ba2ef83e3_o.jpg
   creator: brewbooks/Flickr
-  url: https://www.flickr.com/photos/93452909@N00/3318600273/
-  license: under CC BY 2.0
+  creator_url: https://www.flickr.com/photos/93452909@N00/
+  source_url: https://www.flickr.com/photos/93452909@N00/3318600273/
+  license: BY
   caption: ALT TEXT
 title: Machines Like Us
 created_at: 2014-11-02 12:30

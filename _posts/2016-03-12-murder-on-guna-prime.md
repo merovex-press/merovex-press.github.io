@@ -2,13 +2,14 @@
 author: Ben Wilson
 title: Murder on Gunio Prime
 categories: ["postal marine series"]
-tags: 
+tags:
   - Forbearance
 photo:
   image: luctation.jpg
   creator: Ben Wilson
-  url: http://dausha.net
-  license: Rights Reserved, created by Donna Murillo
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Bophendze in Luctation.
 description: "On the live-fire training planet of Gunio, Keius Minjen witnesses the murder of his friend. Prelude to the Forebearance Series."
 date: 2016-03-16T13:51:07-04:00
@@ -34,12 +35,12 @@ Once inside, he felt more relaxed. The canteen was much darker inside than out. 
 
 Bophendze bought a drink at the bar. Sipping his drink, he drifted through each of the canteen's rooms. He finally settled on a room where they were playing cards. Four sat around one table, looking very intense as they did. Each had varying piles of chips scattered about. The one with his back to the wall had the largest pile. Bophendze watched the four play for several beats, sipping his drink. He had no idea what they were playing.
 
-`$- It's called Batalo, or Militado, depending on which part of the Core 
+`$- It's called Batalo, or Militado, depending on which part of the Core
 you hail from. You should play.`
 
 *No way. You see the chips? They're gambling. I don't know the first thing about Batulo, so they'd fleece me. There's no way I'm going to risk what little I have on chance.*
 
-`$- It's Batalo, Puppet, not Batulo. Batulo is the Keicahn word for something 
+`$- It's Batalo, Puppet, not Batulo. Batulo is the Keicahn word for something
 inappropriate you do with your sister. Batalo's either played with one or two decks.`
 
 Bophendze watched the game closely as Smee explained the rules. Over the next few beats, a few turns were played. As they were, Smee superimposed the rules in Bophendze's vision. He felt like he was starting to understand.
@@ -68,7 +69,7 @@ Keius hesitated. He looked at his cards then at Sablaroki's. "Fold."
 
 *That's cheating.*
 
-`$- If you're not cheating you're not trying, eitehr in this game or in life. Come on. This will be fun. Just play a few hands and make a few dozen quid and we can get out of here.` 
+`$- If you're not cheating you're not trying, eitehr in this game or in life. Come on. This will be fun. Just play a few hands and make a few dozen quid and we can get out of here.`
 
 Bophendze weighed the options in his mind. Fine, but if I end up losing my shirt you won't hear the end of it. "Mind if I join in?"
 
@@ -108,7 +109,7 @@ Smee posted "17 percent" in Bophendze's vision with the heading: "victory." Smee
 
 *Only if they deserve it.*
 
-`$- A man sitting at a card game is just as deserving being beaten as an  adversary does at being killed. He chose to be a combatant. All we're doing is teaching him the consequences of his actions in a way that earns you more drinking money.` 
+`$- A man sitting at a card game is just as deserving being beaten as an  adversary does at being killed. He chose to be a combatant. All we're doing is teaching him the consequences of his actions in a way that earns you more drinking money.`
 
 *Fair enough.*
 
@@ -159,7 +160,7 @@ Bophendze looked at his cards, planning to fold.
 
 *That's all I have left.* Bophendze sighed, then pushed in all his chips. "Fourteen."
 
-The player on the left looked at his cards, then at Bophendze's cards. He seemed to be trying to read the numbers through the opaque backing. 
+The player on the left looked at his cards, then at Bophendze's cards. He seemed to be trying to read the numbers through the opaque backing.
 
 Bophendze's card display showed the other player's hand was fairly strong but would probably not win.
 
@@ -225,7 +226,7 @@ Keius was angry. "We're going to let this postie waltz in here, win a big hand a
 
 *My kind? I'm not an anthorph.*
 
-`$- They don't know that. Appearances can be deceiving. And to answer the  question you're not asking, I beat him down. He had a baton in his hand he was about to use on you.` 
+`$- They don't know that. Appearances can be deceiving. And to answer the  question you're not asking, I beat him down. He had a baton in his hand he was about to use on you.`
 
 Bophendze bent down and picked up Sablaroki's hand. The baton was still collapsed. He pried it out of Sablaroki's hand. "He was going to use this on me. I'm going to take it, okay?"
 

@@ -2,8 +2,9 @@
 photo:
   image: bellicose-redo-wallpaper.jpg
   creator: DHM Designs
-  url: "#"
-  license: Rights Reserved
+  creator_url: https://benwilsonwrites.com
+  url: https://benwilsonwrites.com
+  license: RR
   caption: Bellicose Novel Cover
 title: Inspiration for the Postal Marines
 created_at: 2014-11-16 10:11

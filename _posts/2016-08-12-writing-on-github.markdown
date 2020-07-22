@@ -9,9 +9,10 @@ tags:
  - Publishing
 photo:
     image: 28385505785_aea1413a6a_k.jpg
-    license: "CC BY 2.0"
+    license: BY
     creator: fredisonfire/Flickr
-    url: https://www.flickr.com/photos/29442760@N00/28385505785/
+    creator_url: https://www.flickr.com/photos/29442760@N00/
+    source_url: https://www.flickr.com/photos/29442760@N00/28385505785/
     caption: "Exile on Ontario St"
 description: "As a developer, I find using Github as a writer soothing. Here are a few tips I've picked up."
 created_at: 2016-08-12 10:04:55

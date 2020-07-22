@@ -8,8 +8,9 @@ tags: [Scrivener, GitHub as an Author]
 photo:
   image: Kempelen_chess1.jpg
   creator: Jan.Kamenicek
+  creator_url: "https://en.wikipedia.org/wiki/The_Turk#/media/File:Kempelen_chess1.jpg"
   url: "https://en.wikipedia.org/wiki/The_Turk#/media/File:Kempelen_chess1.jpg"
-  license: under CC BY-SA 2.0
+  license: BY-SA
   caption: Photo of the reconstruction of the Turk
 comments: true
 sharing: true
