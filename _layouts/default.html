@@ -55,19 +55,19 @@
         <label for="bmenub" class="burger pseudo button">&#8801;<span class='sr-only'>menu</span></label>
         <div class="menu">
           <a class='pseudo' href="/#featured" id='home-link'>
-            {% include icon.html icon='fad fa-home' %}            Home
+            {% include icon.html icon='fad fa-home' %} Home
           </a>
           <a class='pseudo' href="{{ '/#books' | relative_url }}">
-            {% include icon.html icon='fad fa-books' %}            Books
+            {% include icon.html icon='fad fa-books' %} Books
           </a>
           <a class='pseudo' href="{{ '/#bio' | relative_url }}">
-            {% include icon.html icon='fad fa-id-card' %}            Bio
+            {% include icon.html icon='fad fa-id-card' %} Bio
           </a>
           <a class='pseudo' href="{{ '/posts/' | relative_url }}">
-            {% include icon.html icon='fad fa-newspaper' %}            Blog
+            {% include icon.html icon='fad fa-newspaper' %} Blog
           </a>
           <a href="{{ '/subscribe/' | relative_url }}" class="subscribe">
-            {% include icon.html icon='fad fa-inbox-in' %}            Become an Insider
+            {% include icon.html icon='fad fa-inbox-in' %} Become an Insider
           </a>
         </div>
       </nav>
@@ -83,7 +83,7 @@
       {%- endif %}
       <div><a href='{{'/privacy/' | relative_url}}'>Privacy</a></div>
       <div><a href='{{'/permissions/' | relative_url}}'>Terms of Use</a></div>
-      <div>{% include icon.html icon='far fa-copyright' %} 1998&ndash;2020 Ben Wilson</div>
+      <div>{% include icon.html icon='far fa-copyright' %} 1998&ndash;{{ site.time | date: '%Y' }} Ben Wilson</div>
     </footer>
     <div id="merovex-privacy-notice" class=''>
       <span>We use cookies to improve your experience on our website</span>

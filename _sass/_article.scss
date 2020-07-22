@@ -1,10 +1,30 @@
 article {
+  .ghost {
+    font-size: 40vw;
+    line-height: 1;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    padding-left: 5vw;
+    color: rgba($gray-500,0.1);
+    white-space: nowrap;
+    overflow-x: hidden;
+    font-family: "Merriweather Sans";
+    z-index: -500;
+    width: 100%;
+  }
   text-align: left;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 10px 10px 10px;
   font-family: var(--font-sans);
+  strong {
+    color: var(--strong-fg);
+  }
+  em {
+    color: var(--emphasis-fg);
+  }
   .metadata {
     font-size: 80%;
     opacity: 80%;

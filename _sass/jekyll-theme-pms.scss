@@ -76,21 +76,9 @@ main {
   .pseudo {
     background: var(--mono-2);
   }
-  .ghost {
-    font-size: 40vw;
-    line-height: 1;
-    position: absolute;
-    top: 10vh;
-    left: 5vw;
-    color: rgba($gray-500,0.1);
-    white-space: nowrap;
-    overflow-x: hidden;
-    font-family: "Merriweather Sans";
-    z-index: -500;
-  }
   @import "blockquote/quote";
   h1, h2, h3 {
-    line-height: 0.0;
+    line-height: 1.2;
     margin: 1.5em 0 1.0em 0;
   }
   h1, h2 {
