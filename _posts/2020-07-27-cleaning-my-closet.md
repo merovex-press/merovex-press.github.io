@@ -2,7 +2,7 @@
 photo:
   image: office-4598772_1920.jpg
   creator: Peter Herrmann
-  creator_url: ttps://pixabay.com/users/Tama66-1032521/
+  creator_url: https://pixabay.com/users/Tama66-1032521/
   source_url: https://pixabay.com/photos/office-space-desk-business-room-4598772/
   license: CC0
   caption: Clutter is a Sign of Genius?
