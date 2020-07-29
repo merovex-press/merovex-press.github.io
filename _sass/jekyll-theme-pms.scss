@@ -36,10 +36,6 @@ html {
     flex-direction: column;
     background: var(--background) !important;
     color: var(--foreground);
-    .fadeIn {
-      opacity: 0;
-      transition: opacity 2s;
-    }
     a {
       color: var(--blue);
     }
@@ -136,7 +132,7 @@ main {
     padding-top: 56.25%;
     position: relative;
     border-radius: 3px;
-    background-size: contain;
+    background-size: cover;
     img {
       position: absolute;
       top: 50%;
