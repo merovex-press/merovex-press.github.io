@@ -24,14 +24,13 @@ data_file = "_data/imgopt.yml"
 def make_responsive(img,type,width)
   dir = File.dirname(img).sub("/images","/images/#{type}")
   tgt = File.join(dir,File.basename(img)).sub(File.extname(img), ".webp")
-  # return if File.exist?(tgt)
+  return if File.exist?(tgt)
   FileUtils.mkdir_p(dir) unless File.exist?(dir)
-  puts ".. #{type}"
+  puts "..#{type}"
   `convert #{img} -resize 'x#{width}' #{tgt}`
-  `convert #{img} -resize 'x#{width * 2}>' #{tgt.gsub('.webp','2x.webp')}`
+  `convert #{img} -resize 'x#{width * 2}>' #{tgt.gsub('.webp','@2x.webp')}`
 end
 def make_low(img)
-
   dir = File.dirname(img).sub("/images","/images/low")
   low = File.join(dir,File.basename(img)).sub('png','jpg')
   return if File.exist?(low)
@@ -90,30 +89,25 @@ target.each do |img_file|
       "-sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB"
   end
   # Convert to Converted
-  if (false)
-    puts "..optimizing"
-    `convert #{img_file} #{bits} #{cfile}` unless File.exist?(cfile)
+  puts "..optimizing"
+  `convert #{img_file} #{bits} #{cfile}` unless File.exist?(cfile)
 
-    # puts "..webp"
-    if bigger?(img_file, cfile)
-      # `convert #{cfile} #{wfile}`
-      FileUtils.mv(cfile, img_file)
-    else
-      FileUtils.rm(cfile)
-      # `convert #{img_file} #{wfile}`
-    end
-    if bigger?(wfile, img_file) || img_file.include?('hero')
-      break if img_file.include?('article')
-      puts "..WEBP too big"
-      FileUtils.rm(wfile)
-    end
+  if bigger?(img_file, cfile)
+    FileUtils.mv(cfile, img_file)
+  else
+    FileUtils.rm(cfile)
   end
+    # if bigger?(wfile, img_file) || img_file.include?('hero')
+    #   break if img_file.include?('article')
+    #   puts "..WEBP too big"
+    #   FileUtils.rm(wfile)
+    # end
+  # end
 
   make_low(img_file)
   make_responsive(img_file,'mobile',768)
   make_responsive(img_file,'tablet',1366)
   make_responsive(img_file,'desktop',1920)
-
 end
 
 # output = <<OUT
