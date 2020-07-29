@@ -1,6 +1,16 @@
 {%- assign ext = include.image | split: "." | last %}
+{%- assign webp = include.image | replace: ext, "webp"  %}
     <picture class='fade-in'>
-      <source srcset="/assets/images/{{include.klass}}/{{include.image | replace: ext, "webp" }}" type="image/webp">
-      <source srcset="/assets/images/{{include.klass}}/{{include.image }}" type="image/{{ext | replace: 'jpg', 'jpeg'}}">
+      <source srcset="/assets/images/{{include.klass}}/{{webp}}"
+      media="(min-width: 1023px)"
+       type="image/webp">
+      <!-- Support Mobile -->
+      <source srcset="/assets/images/mobile/{{include.klass}}/{{webp}}"
+        media="(max-width: 639px)"
+        type="image/webp">
+      <!-- Support Tablet -->
+      <source srcset="/assets/images/tablet/{{include.klass}}/{{webp}}"
+        media="(min-width: 640px) and (max-width: 1023px)"
+        type="image/webp">
       <img src="/assets/images/{{include.klass}}/{{include.image}}" alt="" />
     </picture>

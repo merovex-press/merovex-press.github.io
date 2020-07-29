@@ -15,10 +15,27 @@ data_file = "_data/imgopt.yml"
   "| Name | Before | After | WebP |",
   "| ---  | ------:| -----:| ----:|"
 ]
+# 1920px (this covers FullHD screens and up)
+# 1600px (this will cover 1600px desktops and several tablets in portrait mode, for example iPads at 768px width, which will request a 2x image of 1536px and above)
+# 1366px (it is the most widespread desktop resolution)
+# 1024px (1024x768 screens, excluding iPads which are hi-density anyway, are rarer, but I think you need some image size in between, not to leave too big a gap between pixel sizes, in case the market changes)
+# 768px (useful for 2x 375px mobile screens, as well as any device that actually requests something close to 768px)
+# 640px (for smartphones)
+def make_responsive(img,type,width)
+  dir = File.dirname(img).sub("/images","/images/#{type}")
+  tgt = File.join(dir,File.basename(img)).sub(File.extname(img), ".webp")
+  # return if File.exist?(tgt)
+  FileUtils.mkdir_p(dir) unless File.exist?(dir)
+  puts ".. #{type}"
+  `convert #{img} -resize 'x#{width}' #{tgt}`
+  `convert #{img} -resize 'x#{width * 2}>' #{tgt.gsub('.webp','2x.webp')}`
+end
 def make_low(img)
+
   dir = File.dirname(img).sub("/images","/images/low")
   low = File.join(dir,File.basename(img)).sub('png','jpg')
-  puts "MK: #{dir} / #{low}"
+  return if File.exist?(low)
+  puts "..low"
   FileUtils.mkdir_p(dir) unless File.exist?(dir)
   bits = "-filter Gaussian -resize 20% -interlace JPEG -colorspace sRGB -blur 0x8"
   `convert #{img} #{bits} #{low}`
@@ -77,13 +94,13 @@ target.each do |img_file|
     puts "..optimizing"
     `convert #{img_file} #{bits} #{cfile}` unless File.exist?(cfile)
 
-    puts "..webp"
+    # puts "..webp"
     if bigger?(img_file, cfile)
-      `convert #{cfile} #{wfile}`
+      # `convert #{cfile} #{wfile}`
       FileUtils.mv(cfile, img_file)
     else
       FileUtils.rm(cfile)
-      `convert #{img_file} #{wfile}`
+      # `convert #{img_file} #{wfile}`
     end
     if bigger?(wfile, img_file) || img_file.include?('hero')
       break if img_file.include?('article')
@@ -91,20 +108,23 @@ target.each do |img_file|
       FileUtils.rm(wfile)
     end
   end
-  puts "..low"
+
   make_low(img_file)
-  # addRow(img_file,cfile)
+  make_responsive(img_file,'mobile',768)
+  make_responsive(img_file,'tablet',1366)
+  make_responsive(img_file,'desktop',1920)
+
 end
 
-output = <<OUT
----
-title: Image Optimization
-permalink: /imgopt/
-layout: default
----
-
-#{@rows.join("\n")}
-OUT
+# output = <<OUT
+# ---
+# title: Image Optimization
+# permalink: /imgopt/
+# layout: default
+# ---
+#
+# #{@rows.join("\n")}
+# OUT
 
 # fn = File.open(report_file,'w')
 # fn.write(output)
