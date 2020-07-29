@@ -15,7 +15,14 @@ data_file = "_data/imgopt.yml"
   "| Name | Before | After | WebP |",
   "| ---  | ------:| -----:| ----:|"
 ]
-
+def make_low(img)
+  dir = File.dirname(img).sub("/images","/images/low")
+  low = File.join(dir,File.basename(img)).sub('png','jpg')
+  puts "MK: #{dir} / #{low}"
+  FileUtils.mkdir_p(dir) unless File.exist?(dir)
+  bits = "-filter Gaussian -resize 20% -interlace JPEG -colorspace sRGB -blur 0x8"
+  `convert #{img} #{bits} #{low}`
+end
 def bigger?(b,a)
   b_size = File.size(b)
   a_size = (File.exist?(a)) ? File.size(a) : b_size
@@ -47,13 +54,13 @@ def addRow(b,a)
   ]
 end
 
-target = ARGV.shift || Dir["assets/images/**/*.*"].sort
+target = ARGV.shift || Dir["assets/images/**/*.{png,jpg}"].sort
 target = [target] if target.is_a? String
 
 target.each do |img_file|
   next if img_file.include?("_converted")
   next if img_file.include?(".rb")
-  next if img_file.include?(".webp")
+  next if img_file.include?("/low")
 
   type = File.extname(img_file)
   cfile = img_file.gsub(type, "_converted#{type}")
@@ -66,23 +73,26 @@ target.each do |img_file|
       "-sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB"
   end
   # Convert to Converted
-  puts "..optimizing"
-  `convert #{img_file} #{bits} #{cfile}` unless File.exist?(cfile)
+  if (false)
+    puts "..optimizing"
+    `convert #{img_file} #{bits} #{cfile}` unless File.exist?(cfile)
 
-  puts "..webp"
-  if bigger?(img_file, cfile)
-    `convert #{cfile} #{wfile}`
-    FileUtils.mv(cfile, img_file)
-  else
-    FileUtils.rm(cfile)
-    `convert #{img_file} #{wfile}`
+    puts "..webp"
+    if bigger?(img_file, cfile)
+      `convert #{cfile} #{wfile}`
+      FileUtils.mv(cfile, img_file)
+    else
+      FileUtils.rm(cfile)
+      `convert #{img_file} #{wfile}`
+    end
+    if bigger?(wfile, img_file) || img_file.include?('hero')
+      break if img_file.include?('article')
+      puts "..WEBP too big"
+      FileUtils.rm(wfile)
+    end
   end
-  if bigger?(wfile, img_file) || img_file.include?('hero')
-    break if img_file.include?('article')
-    puts "..WEBP too big"
-    FileUtils.rm(wfile)
-  end
-
+  puts "..low"
+  make_low(img_file)
   # addRow(img_file,cfile)
 end
 
@@ -96,9 +106,9 @@ layout: default
 #{@rows.join("\n")}
 OUT
 
-fn = File.open(report_file,'w')
-fn.write(output)
-fn.close
+# fn = File.open(report_file,'w')
+# fn.write(output)
+# fn.close
 
 fn = File.open(data_file,'w')
 fn.write(YAML.dump(@data))
