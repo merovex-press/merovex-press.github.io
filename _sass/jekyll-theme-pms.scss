@@ -6,6 +6,7 @@
 @import "book-summary";
 @import "navbar";
 @import "posts";
+@import "fadeIn";
 html {
   scroll-behavior: smooth;
 }
@@ -26,6 +27,7 @@ html {
   text-align: center !important;
   display: block;
 }
+
 @media screen {
   body {
     font-family: var(--font-system);
@@ -34,6 +36,10 @@ html {
     flex-direction: column;
     background: var(--background) !important;
     color: var(--foreground);
+    .fadeIn {
+      opacity: 0;
+      transition: opacity 2s;
+    }
     a {
       color: var(--blue);
     }
