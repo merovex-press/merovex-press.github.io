@@ -1,20 +1,15 @@
 #!/usr/bin/env ruby
+
+# This script crawls the Image directory and makes the graphics more render-worthy.
+# This includes creating a low-resolution (20% size) JPEG that can be used as
+# The background, and WEBP files for 3 sizes (Mobile, Tablet, Desktop) with 2x for UHD.
+#
+# I probably don't need to optimize the PNG or JPEG since the goal is to share the Webp
+# but I do anyway to reduce the size of the repository.
+
 require 'yaml'
-require "humanize-number"
 require 'fileutils'
 
-# now =
-@today = Time.now.strftime("%Y-%d-%m")
-report_file = "image-opt-#{@today}.md"
-
-data_file = "_data/imgopt.yml"
-@data = YAML.load(File.open(data_file).read) || {}
-
-@template = "| %s | %s | %s (%3.1f%%) | %s (%3.1f%%) |"
-@rows = [
-  "| Name | Before | After | WebP |",
-  "| ---  | ------:| -----:| ----:|"
-]
 # 1920px (this covers FullHD screens and up)
 # 1600px (this will cover 1600px desktops and several tablets in portrait mode, for example iPads at 768px width, which will request a 2x image of 1536px and above)
 # 1366px (it is the most widespread desktop resolution)
@@ -22,108 +17,76 @@ data_file = "_data/imgopt.yml"
 # 768px (useful for 2x 375px mobile screens, as well as any device that actually requests something close to 768px)
 # 640px (for smartphones)
 def make_responsive(img,type,width)
-  dir = File.dirname(img).sub("/images","/images/#{type}")
-  tgt = File.join(dir,File.basename(img)).sub(File.extname(img), ".webp")
-  return if File.exist?(tgt)
-  FileUtils.mkdir_p(dir) unless File.exist?(dir)
-  puts "..#{type}"
-  `convert #{img} -resize 'x#{width}' #{tgt}`
-  `convert #{img} -resize 'x#{width * 2}>' #{tgt.gsub('.webp','@2x.webp')}`
+  [
+    ["-resize 'x#{width}>'", ".webp"],
+    ["-resize 'x#{width * 2}>'", "@2x.webp"],
+  ].each do |i|
+    convert(type, img, i.first, i.last)
+  end
+  # convert(type, img,"-resize 'x#{width}>'",    ".webp"))
+  # convert(type, img,"-resize 'x#{width * 2}>'","@2x.webp"))
 end
-def make_low(img)
-  dir = File.dirname(img).sub("/images","/images/low")
-  low = File.join(dir,File.basename(img)).sub('png','jpg')
-  return if File.exist?(low)
-  puts "..low"
-  FileUtils.mkdir_p(dir) unless File.exist?(dir)
+def make_lowres(img)
+  dest =
   bits = "-filter Gaussian -resize 20% -interlace JPEG -colorspace sRGB -blur 0x8"
-  `convert #{img} #{bits} #{low}`
+  convert("low",img,bits,".jpg")
 end
 def bigger?(b,a)
   b_size = File.size(b)
   a_size = (File.exist?(a)) ? File.size(a) : b_size
   return ((1.0 - (a_size.to_f / b_size.to_f)) * 100.0).positive?
 end
-def addRow(b,a)
-  fname = b.sub("assets/images/","")
-  b_size = File.size(b)
-  a_size = (File.exist?(a)) ? File.size(a) : b_size
-  w_size = File.size(b.gsub(File.extname(b), ".webp"))
-  d_perc = (1.0 - (a_size.to_f / b_size.to_f)) * 100.0
-  w_perc = (1.0 - (w_size.to_f / b_size.to_f)) * 100.0
-  # puts [b,fname].inspect
-  # begin
-  @data[fname] = {
-    "changed_on" => @today,
-    "original" => b_size,
-    "optimize" => a_size,
-    "webp"     => w_size
-  } if bigger?(b,a)
+def convert(type,origin,bits,dest_ext)
+  dir = File.dirname(origin)
+  dir.sub!("/images","/images/#{type}") unless type == "optimize"
+  FileUtils.mkdir_p(dir) unless File.exist?(dir)
 
-  @rows << @template % [
-    fname,
-    HumanizeNumber.humanize(b_size),
-    HumanizeNumber.humanize(a_size),
-    d_perc,
-    HumanizeNumber.humanize(w_size),
-    w_perc
-  ]
+  dest = File.join(dir,File.basename(origin)).sub(File.extname(origin), dest_ext)
+# puts "    #{type} #{dest}"
+# return dest
+  if File.exist?(dest)
+    puts "..#{type} -- skipped"
+    return
+  end
+  puts "..#{type}"
+  `convert #{origin} #{bits} #{dest}`
+  return dest
 end
 
+# MAIN:
+# Enable single-file optimization.
 target = ARGV.shift || Dir["assets/images/**/*.{png,jpg}"].sort
 target = [target] if target.is_a? String
 
 target.each do |img_file|
-  next if img_file.include?("_converted")
-  next if img_file.include?(".rb")
-  next if img_file.include?("/low")
+  next if ['_converted','.rb','/low'].any? { |word| img_file.include?(word) }
 
-  type = File.extname(img_file)
-  cfile = img_file.gsub(type, "_converted#{type}")
-  wfile = img_file.gsub(type, ".webp")
-  puts "#{img_file}"
-  bits = case type
-    when ".png"
-      "-strip"
-    when ".jpg"
-      "-sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB"
+  puts "Processing '#{img_file}'"
+
+  # Optimize the original, and decide which should be retained.
+  type  = File.extname(img_file)
+  # cfile = img_file.sub(type, "_converted#{type}")
+  bits  = {
+    ".png" => "-strip",
+    ".jpg" => "-sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB"
+  }[type]
+
+  cfile = convert("optimizing", img_file,bits,"_converted#{type}")
+
+  if File.exist?(cfile)
+    if bigger?(img_file, cfile)
+      FileUtils.mv(cfile, img_file)
+    else
+      FileUtils.rm(cfile)
+    end
   end
-  # Convert to Converted
-  puts "..optimizing"
-  `convert #{img_file} #{bits} #{cfile}` unless File.exist?(cfile)
 
-  if bigger?(img_file, cfile)
-    FileUtils.mv(cfile, img_file)
-  else
-    FileUtils.rm(cfile)
-  end
-    # if bigger?(wfile, img_file) || img_file.include?('hero')
-    #   break if img_file.include?('article')
-    #   puts "..WEBP too big"
-    #   FileUtils.rm(wfile)
-    # end
-  # end
+  # Making low resolution for blocking.
+  make_lowres(img_file)
 
-  make_low(img_file)
+  # Converting to Webp with responsive formats.
+  next if img_file.include?("/hero") # Leave my hero backgs alone
   make_responsive(img_file,'mobile',768)
   make_responsive(img_file,'tablet',1366)
   make_responsive(img_file,'desktop',1920)
 end
-
-# output = <<OUT
-# ---
-# title: Image Optimization
-# permalink: /imgopt/
-# layout: default
-# ---
-#
-# #{@rows.join("\n")}
-# OUT
-
-# fn = File.open(report_file,'w')
-# fn.write(output)
-# fn.close
-
-fn = File.open(data_file,'w')
-fn.write(YAML.dump(@data))
-fn.close
