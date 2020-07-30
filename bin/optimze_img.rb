@@ -52,7 +52,16 @@ end
 
 # MAIN:
 # Enable single-file optimization.
-target = ARGV.shift || Dir["assets/images/**/*.{png,jpg}"].sort
+sha = `git log origin/master | head -1`.split.last
+files = `git diff-tree -r --name-only --no-commit-id #{sha}`.split.map do |f|
+  (['jpg','png'].any? { |word| f.include?(word) }) ? f : nil
+end.compact.map do |f|
+  (['low', '_converted'].any? { |word| f.include?(word) }) ? nil : f
+end.compact.map do |f|
+  File.exist?(f) ? f : nil
+end.compact
+
+target = ARGV.shift || files #Dir["assets/images/**/*.{png,jpg}"].sort
 target = [target] if target.is_a? String
 
 target.each do |img_file|
