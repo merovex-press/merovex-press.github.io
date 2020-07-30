@@ -69,7 +69,7 @@ article {
   pre, code {
     white-space: pre-wrap;
     word-wrap: break-word;
-    background: rgba(#808080,0.2);
+    background: rgba($gray-500,0.4);
   }
   .footnotes {
     border-top: 2px solid var(--red);
