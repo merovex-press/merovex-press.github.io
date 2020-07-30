@@ -23,13 +23,11 @@ def make_responsive(img,type,width)
   ].each do |i|
     convert(type, img, i.first, i.last)
   end
-  # convert(type, img,"-resize 'x#{width}>'",    ".webp"))
-  # convert(type, img,"-resize 'x#{width * 2}>'","@2x.webp"))
 end
 def make_lowres(img)
   dest =
   bits = "-filter Gaussian -resize 20% -interlace JPEG -colorspace sRGB -blur 0x8"
-  convert("low",img,bits,".jpg")
+  convert("low", img, bits, ".jpg")
 end
 def bigger?(b,a)
   b_size = File.size(b)
@@ -42,11 +40,10 @@ def convert(type,origin,bits,dest_ext)
   FileUtils.mkdir_p(dir) unless File.exist?(dir)
 
   dest = File.join(dir,File.basename(origin)).sub(File.extname(origin), dest_ext)
-# puts "    #{type} #{dest}"
-# return dest
+
   if File.exist?(dest)
     puts "..#{type} -- skipped"
-    return
+    return dest
   end
   puts "..#{type}"
   `convert #{origin} #{bits} #{dest}`
@@ -65,13 +62,12 @@ target.each do |img_file|
 
   # Optimize the original, and decide which should be retained.
   type  = File.extname(img_file)
-  # cfile = img_file.sub(type, "_converted#{type}")
   bits  = {
     ".png" => "-strip",
     ".jpg" => "-sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB"
   }[type]
 
-  cfile = convert("optimizing", img_file,bits,"_converted#{type}")
+  cfile = convert("optimizing", img_file, bits, "_converted#{type}")
 
   if File.exist?(cfile)
     if bigger?(img_file, cfile)
