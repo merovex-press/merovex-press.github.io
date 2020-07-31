@@ -13,7 +13,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Merriweather+Sans&display=swap">
       <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     </noscript>
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css?family=Oswald|Merriweather+Sans&display=swap">
     <title>{{page.title}}</title>
     {% include favicon.html %}
@@ -65,10 +66,10 @@
           <a class='pseudo' href="{{ '/#bio' | relative_url }}">
             {% include icon.html icon='fad fa-id-card' %} Bio
           </a>
-          <a class='pseudo' href="{{ '/posts/' | relative_url }}">
+          <a class='pseudo' rel="prefetch" href="{{ '/posts/' | relative_url }}">
             {% include icon.html icon='fad fa-newspaper' %} Blog
           </a>
-          <a href="{{ '/subscribe/' | relative_url }}" class="subscribe">
+          <a rel="prefetch" href="{{ '/subscribe/' | relative_url }}" class="subscribe">
             {% include icon.html icon='fad fa-inbox-in' %} Become an Insider
           </a>
         </div>
