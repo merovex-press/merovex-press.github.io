@@ -9,6 +9,7 @@
 @import "fadein";
 html {
   scroll-behavior: smooth;
+  font-display:optional;
 }
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
