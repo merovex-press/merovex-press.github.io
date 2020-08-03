@@ -1,4 +1,11 @@
 article {
+  &.page {
+    p {
+      font-family: var(--font-serif);
+      letter-spacing: -0.03;
+      line-height: 1.58;
+    }
+  }
   .ghost {
     font-size: 40vw;
     line-height: 1;

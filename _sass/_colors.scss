@@ -1,7 +1,7 @@
 @import 'functions';
 
-$system-fonts: -apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-$serif-fonts: Georgia, Cambria, "Times New Roman", Times, serif;
+$system-fonts: -apple-system, system-ui, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+$serif-fonts: Cambria, Georgia, "Times New Roman", Times, serif;
 
 // https://www.canva.com/learn/brand-color-palette/
 // Morning mist
@@ -46,7 +46,7 @@ $dark-bg: $gray-200;
   --font-heading: "Merriweather Sans", #{$system-fonts};
   --font-monospace: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   --font-sans: #{$system-fonts};
-  --font-serif: #{$serif-fonts};
+  --font-serif: Lora, #{$serif-fonts};
   --font-system: #{$system-fonts};
 
   --red:              #{$red};
