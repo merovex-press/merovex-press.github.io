@@ -28,9 +28,9 @@ regenerate: true
   </article>
 </section>
 <section id='bio'>
-{% capture bio %}{% include_relative about.md %}{% endcapture %}
+{% capture bio %}{% include_relative about.html %}{% endcapture %}
 <article>
-  {{ bio |markdownify }}
+  {{ bio }}
 </article>
 </section>
 <section class="zebra">

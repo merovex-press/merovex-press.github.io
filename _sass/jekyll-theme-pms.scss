@@ -108,6 +108,31 @@ main {
     padding-bottom: 3em;
     background: rgba($gray-500,0.2);
   }
+  .bowb {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    h2, h3 {
+      min-width: 400px;
+      flex: 0 0 33%;
+    }
+    div, p,ul {
+      flex: 0 0 66%;
+      min-width: 400px;
+      list-style-type: none;
+      li {
+        display: flex;
+        align-items: center;
+        a {
+          margin: 0 0.2em;
+        }
+      }
+      svg {
+        font-size: 3rem;
+        margin-right: 0.2em;
+      }
+    }
+  }
   .lost {
     min-height: 65vh;
     display: flex;
