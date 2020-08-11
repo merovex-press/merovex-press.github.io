@@ -1,14 +1,14 @@
-$black:    hsl($hue, 8, 5);
-$gray-100: hsl($hue, 8, 10); // darken($gray-300, 15%);
-$gray-200: hsl($hue, 8, 20); // darken($gray-300, 10%);
-$gray-300: hsl($hue, 8, 30); // darken($gray-300, 10%);
-$gray-400: hsl($hue, 8, 40); // lighten($gray-300, 20%);
-$gray-500: hsl($hue, 8, 50); // lighten($gray-300, 30%);
-$gray-600: hsl($hue, 8, 60); // lighten($gray-300, 40%);
-$gray-700: hsl($hue, 8, 70); // lighten($gray-300, 50%);
-$gray-800: hsl($hue, 8, 80); // lighten($gray-300, 60%);
-$gray-900: hsl($hue, 8, 94); // lighten($gray-300, 70%);
-$white:    hsl($hue, 8, 97);
+$black:    hsl($hue, 6, 5); // from 8
+$gray-100: hsl($hue, 6, 10); // darken($gray-300, 15%);
+$gray-200: hsl($hue, 6, 20); // darken($gray-300, 10%);
+$gray-300: hsl($hue, 6, 30); // darken($gray-300, 10%);
+$gray-400: hsl($hue, 6, 40); // lighten($gray-300, 20%);
+$gray-500: hsl($hue, 6, 50); // lighten($gray-300, 30%);
+$gray-600: hsl($hue, 6, 60); // lighten($gray-300, 40%);
+$gray-700: hsl($hue, 6, 70); // lighten($gray-300, 50%);
+$gray-800: hsl($hue, 6, 80); // lighten($gray-300, 60%);
+$gray-900: hsl($hue, 6, 94); // lighten($gray-300, 70%);
+$white:    hsl($hue, 6, 97);
 $red-100: tint-color($red, 8) !default;
 $red-200: tint-color($red, 6) !default;
 $red-300: tint-color($red, 4) !default;
