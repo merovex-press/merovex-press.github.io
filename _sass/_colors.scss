@@ -111,13 +111,13 @@ $dark-bg: $gray-200;
 
     --primary:     #{contrast($primary,  $dark-bg,4)};
     --foreground:  #{contrast($gray-500, $dark-bg,7)};
-    --white:       #{$gray-900};
+    --white:       #{$white};
     --silver:      #{$gray-700};
     --gray:        #{$gray-400};
     --mono-2:      #{$gray-500};
     --highlight:   #{$gray-500};
-    --background:  #{$gray-200};
-    --black:       #{$gray-100};
+    --background:  #{$gray-100};
+    --black:       #{$black};
     --button-text: #{$gray-100};
 
     --zebra-bg:    #{$gray-300};
