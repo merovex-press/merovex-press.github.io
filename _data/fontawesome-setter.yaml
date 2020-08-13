@@ -1,0 +1,35 @@
+projectName: Unsaved Project
+version: 5.14.0
+icons:
+  - book-open:
+      - duotone
+  - tablet-android-alt:
+      - duotone
+  - audible:
+      - brands
+  - calendar-day:
+      - duotone
+  - popcorn:
+      - duotone
+  - at:
+      - duotone
+  - facebook:
+      - brands
+  - newspaper:
+      - duotone
+  - user-circle:
+      - duotone
+  - tags:
+      - duotone
+  - home:
+      - duotone
+  - books:
+      - duotone
+  - id-card:
+      - duotone
+  - inbox-in:
+      - duotone
+  - copyright:
+      - regular
+  - laugh:
+      - regular

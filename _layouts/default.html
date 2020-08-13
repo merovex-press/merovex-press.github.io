@@ -12,9 +12,11 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Literata|&display=swap">
       <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+      <link rel="stylesheet" href="{{ '/assets/css/fontawesome.min.css' | relative_url }}">
     </noscript>
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="screen" onload="this.media='all'">
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Literata&display=swap">
     <title>{{page.title}}</title>
     {% include favicon.html %}
@@ -142,5 +144,5 @@
     <script src="{{site.cdn_url}}/d/main.js"></script>
   {%else%} <!-- No Diceware --> {%endif%}
   {% include privacy-notice.html %}
-  <script src="https://kit.fontawesome.com/2f758798a8.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/2f758798a8.js" crossorigin="anonymous"></script> -->
 </html>
