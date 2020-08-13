@@ -4,7 +4,7 @@ https://gs.statcounter.com/screen-resolution-stats/all/united-states-of-america
 {%- assign ext = include.image | split: "." | last %}
 {%- assign webp = include.image | replace: ext, "webp"  %}
 {%- assign webxp = webp | replace: ".webp", "@2x.webp"  %}
-    <picture class='fade-in'>
+    <picture class='xfade-in'>
       <!-- Support Desktop -->
       <source srcset="/assets/images/desktop/{{include.klass}}/{{webp}} 1920w,
                       /assets/images/desktop/{{include.klass}}/{{webxp}} 2x"
