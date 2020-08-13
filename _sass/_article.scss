@@ -5,6 +5,8 @@ article {
       letter-spacing: -0.03;
       line-height: 1.58;
     }
+    padding: 80px 10px 10px 10px;
+    max-width: 70ch;
   }
   .ghost {
     font-size: 40vw;
@@ -24,7 +26,6 @@ article {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 10px 10px 10px;
   font-family: var(--font-sans);
   strong {
     color: var(--strong-fg);
@@ -44,9 +45,6 @@ article {
         }
       }
     }
-  }
-  &.page {
-    max-width: 70ch;
   }
   &+ article {
     padding: 10px;
