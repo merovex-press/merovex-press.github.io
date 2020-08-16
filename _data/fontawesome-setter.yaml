@@ -1,4 +1,4 @@
-projectName: Unsaved Project
+projectName: fontawesome-setter
 version: 5.14.0
 icons:
   - book-open:
@@ -33,3 +33,7 @@ icons:
       - regular
   - laugh:
       - regular
+  - envelope:
+      - duotone
+  - paper-plane:
+      - duotone
