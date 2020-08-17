@@ -127,5 +127,9 @@ $dark-bg: $gray-200;
     --footer-fg:   #{contrast(#777, $gray-100, 7)};
     --strong-fg:   #{contrast($orange, $dark-bg,4.5)};
     --emphasis-fg: #{contrast($purple, $dark-bg,5.5)};
+    --image-filter: grayscale(60%);
   }
+}
+img:not([src*=".svg"]) {
+  filter: var(--image-filter);
 }
