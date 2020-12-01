@@ -11,11 +11,11 @@
     <link rel="canonical" href="{{site.url}}"/>
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@900&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-      <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-      <link rel="stylesheet" href="{{ '/assets/css/fontawesome.min.css' | relative_url }}">
+      <link rel="stylesheet" href="{{ '/assets/css/2020.css' }}">
+      <link rel="stylesheet" href="{{ '/assets/css/fontawesome.min.css' }}">
     </noscript>
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/assets/css/2020.css">
+    <link rel="stylesheet" href="/assets/css/2020.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="screen" onload="this.media='all'">
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <title>{{page.title}}</title>
@@ -26,7 +26,7 @@
   <body>
     <header>
       <nav>
-        <a href="{{ '/#featured' | relative_url }}" class="brand">
+        <a href="{{ '/#featured' }}" class="brand">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 450.000000 450.000000"
              preserveAspectRatio="xMidYMid meet" style="height: 1em;">
@@ -63,16 +63,16 @@
           <a class='pseudo' href="/#featured" id='home-link'>
             {% include icon.html icon='fad fa-home' %} Home
           </a>
-          <a class='pseudo' href="{{ '/#books' | relative_url }}">
+          <a class='pseudo' href="{{ '/#books' }}">
             {% include icon.html icon='fad fa-books' %} Books
           </a>
-          <a class='pseudo' href="{{ '/#bio' | relative_url }}">
+          <a class='pseudo' href="{{ '/#bio' }}">
             {% include icon.html icon='fad fa-id-card' %} Bio
           </a>
-          <a class='pseudo' rel="prefetch" href="{{ '/posts/' | relative_url }}">
+          <a class='pseudo' rel="prefetch" href="{{ '/posts/' }}">
             {% include icon.html icon='fad fa-newspaper' %} Blog
           </a>
-          <a rel="prefetch" href="{{ '/subscribe/' | relative_url }}" class="subscribe">
+          <a rel="prefetch" href="{{ '/subscribe/' }}" class="subscribe">
             {% include icon.html icon='fad fa-envelope' %} Become an Insider
           </a>
         </div>
