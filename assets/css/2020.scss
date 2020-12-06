@@ -22,8 +22,8 @@ $mero-grid-offpart-sizes: (
   none: 0
 );
 
-$system-fonts: Hind, -apple-system, system-ui, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
-$serif-fonts: "CrimsonText", Cambria, Georgia, "Times New Roman", Times, serif;
+$system-fonts: "Source Sans Pro", -apple-system, system-ui, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+$serif-fonts: "Source Serif Pro", Cambria, Georgia, "Times New Roman", Times, serif;
 $heading-fonts: IMFellEnglish, $serif-fonts;
 $mono-fonts: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $table-fonts: $system-fonts;
@@ -88,10 +88,10 @@ $mero-background-image: '/assets/images/backgrounds/beige-paper.png';
 
 @include font('IMFellEnglish',          '../fonts/IMFellEnglish-Regular');
 @include font('IMFellEnglish-Italic',   '../fonts/IMFellEnglish-Italic');
-@include font('CrimsonText-Regular',    '../fonts/CrimsonText-Regular');
-@include font('CrimsonText-Italic',     '../fonts/CrimsonText-Italic');
-@include font('CrimsonText-Bold',       '../fonts/CrimsonText-Bold');
-@include font('CrimsonText-BoldItalic', '../fonts/CrimsonText-BoldItalic');
+@include font('SourceSerifPro-Regular',    '../fonts/SourceSerifPro-Regular');
+@include font('SourceSerifPro-Italic',     '../fonts/SourceSerifPro-Italic');
+@include font('SourceSerifPro-Bold',       '../fonts/SourceSerifPro-Bold');
+@include font('SourceSerifPro-BoldItalic', '../fonts/SourceSerifPro-BoldItalic');
 @include font('Hind-Regular',           '../fonts/Hind-Regular');
 
 .page-copyright {
