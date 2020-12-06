@@ -22,8 +22,8 @@ $mero-grid-offpart-sizes: (
   none: 0
 );
 
-$system-fonts: Hind, -apple-system, system-ui, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
-$serif-fonts: "CrimsonText", Cambria, Georgia, "Times New Roman", Times, serif;
+$system-fonts: "MerovexSans", -apple-system, system-ui, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+$serif-fonts: "MerovexSerif", Cambria, Georgia, "Times New Roman", Times, serif;
 $heading-fonts: IMFellEnglish, $serif-fonts;
 $mono-fonts: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $table-fonts: $system-fonts;
@@ -77,22 +77,27 @@ $mero-footer-bg: clr('iron-gall');
 $article-font: $serif-fonts;
 $brand-font: $heading-fonts;
 
-$mero-brand: clr('brand',100);
-$mero-primary: $mero-brand;
+$mero-brand:     clr('brand',100);
+$mero-primary:   $mero-brand;
 $mero-navbar-bg: clr('iron-gall', 700);
-$mero-code-bg: clr('gray',500);
+$mero-code-bg:   clr('gray',500);
 $mero-background-image: '/assets/images/backgrounds/beige-paper.png';
 
 @import 'mero';
 @import 'posts';
 
-@include font('IMFellEnglish',          '../fonts/IMFellEnglish-Regular');
-@include font('IMFellEnglish-Italic',   '../fonts/IMFellEnglish-Italic');
-@include font('CrimsonText-Regular',    '../fonts/CrimsonText-Regular');
-@include font('CrimsonText-Italic',     '../fonts/CrimsonText-Italic');
-@include font('CrimsonText-Bold',       '../fonts/CrimsonText-Bold');
-@include font('CrimsonText-BoldItalic', '../fonts/CrimsonText-BoldItalic');
-@include font('Hind-Regular',           '../fonts/Hind-Regular');
+@include font('IMFellEnglish',             '../fonts/IMFellEnglish-Regular');
+@include font('IMFellEnglish-Italic',      '../fonts/IMFellEnglish-Italic');
+
+@include font('MerovexSans',             '../fonts/SourceSansPro-Regular');
+@include font('MerovexSans-Italic',      '../fonts/SourceSansPro-Italic');
+@include font('MerovexSans-Bold',        '../fonts/SourceSansPro-Bold');
+@include font('MerovexSans-BoldItalic',  '../fonts/SourceSansPro-BoldItalic');
+
+@include font('MerovexSerif',            '../fonts/SourceSerifPro-Regular');
+@include font('MerovexSerif-Italic',     '../fonts/SourceSerifPro-Italic');
+@include font('MerovexSerif-Bold',       '../fonts/SourceSerifPro-Bold');
+@include font('MerovexSerif-BoldItalic', '../fonts/SourceSerifPro-BoldItalic');
 
 .page-copyright {
   font-family: $system-fonts;
