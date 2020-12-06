@@ -5,5 +5,6 @@
 layout: home
 title: Ben Wilson, Author
 regenerate: true
+klass: home
 underlay: black-felt.png
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section id="feature" class="invert">
+<section id="featured" class="invert">
   <img class='underlay' src="/assets/images/hero/{{page.underlay}}" alt="">
   <img src="/assets/images/hero/oil-underlay.jpg" alt="" class="fnord">
   {% assign books = site.books | sort: 'series' %}
@@ -17,7 +17,7 @@ layout: default
   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
   occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </section>
-<section class='body'>
+<section class='body' id='books'>
   <article>
     <h2>Books in the Strand Series</h2>
     {%- for book in books -%}
@@ -25,20 +25,12 @@ layout: default
     {%- endfor -%}
   </article>
 </section>
-<section class='body'>
+<section class='body' id='bio'>
+  {% capture bio %}{% include_relative about.html %}{% endcapture %}
+  {% assign entry = bio | split: '<!-- more -->' %}
+  
   <article>
-    <h2 id='bio'>About Horatio</h2>
-    <p>Horatio Beech is the author of the Strand Series; a low fantasy, Type-X alternative-history series. What would
-      happen
-      if
-      America did not separate from England because of advanced technology?
-      Horatio is a fond student of history, and loves deep intellectual exercises. When not writing or working, he plays
-      computer games that require tactical and strategic application of technical expertise.
-      Horatio Beech lives in Northern Virginia with his wife, three of his four children (the other grown) and two
-      vicious
-      guard cats.
-      <a href="/about/#long-form-bio">Read more about Horatio Beech.</a>
-    </p>
+  {{ entry | first }}
   </article>
 </section>
 <section class='body center' >

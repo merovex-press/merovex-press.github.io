@@ -10,22 +10,19 @@
     <meta name="description" content="Website for author Ben Wilson">
     <link rel="canonical" href="{{site.url}}"/>
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@900&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap">
       <link rel="stylesheet" href="{{ '/assets/css/2020.css' }}">
       <link rel="stylesheet" href="{{ '/assets/css/fontawesome.min.css' }}">
     </noscript>
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/assets/css/2020.css">
     <link rel="stylesheet" href="/assets/css/2020.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="screen" onload="this.media='all'">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <title>{{page.title}}</title>
     {% include favicon.html %}
     {% include social-applications.html %}
-    <link xhref="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     {% include header.html %}
-    <main>
+    <main{%if page.klass %} class='{{ page.klass }}'{%endif%}>
       {{ content }}
     </main>
     {% include footer.html %}

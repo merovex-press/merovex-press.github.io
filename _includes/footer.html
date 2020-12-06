@@ -1,4 +1,4 @@
-<footer>
+<footer{%if page.klass == "home" %} style="margin-bottom: 0in;"{%endif%}>
     {%- if site.venue %}
     <div>
     {% include icon.html icon='far fa-laugh' %} Hello from <a href="/uses">{{site.venue}}</a>.

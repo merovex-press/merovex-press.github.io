@@ -1,7 +1,11 @@
     <header>
       <a href="/" class="navbar-brand">
         {{ config.extra.brand | safe }}
+        {% include logo.svg %}
         <span>{{site.title}}</span>
+        {%- if site.subtitle %}
+        <span class='subtitle'>{{site.subtitle}}</span>
+        {% endif %}
       </a>
       <nav>
         <input id="bmenub" type="checkbox" class="show">
