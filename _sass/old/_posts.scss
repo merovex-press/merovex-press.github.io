@@ -1,0 +1,36 @@
+.posts {
+  display: flex;
+  // justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  li {
+    list-style-type: none;
+    display: flex;
+    time {
+      font-size: 0.9em;
+      display: inline-block;
+      font-family: var(--font-system);
+      width: 15ch;
+      text-align: right;
+    }
+    a {
+      display: inline-block;
+      text-align: left;
+      width: 40ch;
+      padding-left: 1em;
+    }
+  }
+}
+@media all and (max-width: 60em) {
+  .desktop {
+    display: none;
+  }
+}
+@media all and (min-width: 60em) {
+  .desktop {
+    display: inline-block;
+  }
+  .mobile {
+    display: none;
+  }
+}
