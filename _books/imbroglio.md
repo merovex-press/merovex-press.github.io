@@ -3,7 +3,8 @@ title: Imbroglio
 link: imbroglio
 full-title: "Book 3: Imbroglio"
 release: 2014
-series: pms-3
+series: Postal Marines
+order: 3
 featured: false
 released: false
 hidden: true

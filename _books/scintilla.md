@@ -3,10 +3,11 @@ title: Scintilla
 link: scintilla
 full-title: "Book 4: Scintilla"
 release: 2014
-series: pms-4
+series: Postal Marines
+order: 4
 featured: false
 released: false
-hidden: true
+hidden: false
 repo: "Merovex/postal-marine-series.verki"
 amazon:
   ebook: http://amzn.to/1hAocWl

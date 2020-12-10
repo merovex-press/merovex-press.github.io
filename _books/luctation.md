@@ -3,10 +3,11 @@ title: Luctation
 link: luctation
 full-title: "Book 2: Luctation"
 release: 2014
-series: pms-2
+series: Postal Marines
+order: 2
 featured: false
 released: false
-hidden: true
+hidden: false
 repo: "Merovex/postal-marine-series.verki"
 amazon:
   ebook: http://amzn.to/1PpTfSi

@@ -21,25 +21,22 @@ layout: default
   {{ content }}
 </section>
 <section class='body' id='books'>
-  <article>
-  
-    <h2>Books in the Strand Series</h2>
+  <div>
     {% assign library = site.books | group_by: 'series' %}
     {% for series in library %}
-        <h2>{{ series.name }}</h2>
+    <h2>Books in the {{ series.name }} Series</h2>
         {% assign books = series.items | sort: 'order' %}
         {% for book in books %}
             {% unless book.hidden == true or book.released == false %}
-                {% include book-summary.html %}
+    {% include book-summary.html %}
             {% endunless %}
         {%endfor%}
     {%endfor%}
-  </article>
+  </div>
 </section>
 <section class='body' id='bio'>
   {% capture bio %}{% include_relative about.html %}{% endcapture %}
   {% assign entry = bio | split: '<!-- more -->' %}
-  
   <article>
   {{ entry | first }}
   </article>
