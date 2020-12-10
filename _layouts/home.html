@@ -1,27 +1,39 @@
 ---
 layout: default
 ---
+
+
+{% assign books = site.books | sort: 'series' %}
+  {%- for book in books -%}
+  {%- if book.featured -%}
+  {% assign featured = book %}
+  {%- endif -%}
+  {%- endfor -%}
+{%- unless featured == null %}
 <section id="featured" class="invert">
   <img class='underlay' src="/assets/images/hero/{{page.underlay}}" alt="">
   <img src="/assets/images/hero/oil-underlay.jpg" alt="" class="fnord">
-  {% assign books = site.books | sort: 'series' %}
-  {%- for book in books -%}
-  {%- if book.featured -%}
+  {% assign book = featured %}
   <div class="container">{% include book-summary.html %}</div>
-  {%- endif -%}
-  {%- endfor -%}
 </section>
+{%- endunless -%}
 <section class="statistics">
   {{ content }}
 </section>
 <section class='body' id='books'>
   <article>
+  
     <h2>Books in the Strand Series</h2>
-    {%- for book in books -%}
-      {% unless book.hidden == true or book.released == false %}
-      {% include book-summary.html %}
-      {% endunless %}
-    {%- endfor -%}
+    {% assign library = site.books | group_by: 'series' %}
+    {% for series in library %}
+        <h2>{{ series.name }}</h2>
+        {% assign books = series.items | sort: 'order' %}
+        {% for book in books %}
+            {% unless book.hidden == true or book.released == false %}
+                {% include book-summary.html %}
+            {% endunless %}
+        {%endfor%}
+    {%endfor%}
   </article>
 </section>
 <section class='body' id='bio'>
