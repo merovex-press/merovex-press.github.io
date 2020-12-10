@@ -4,7 +4,7 @@ link: discovery
 letter: B
 full-title: "Book 1: Discovery"
 release: 2014
-series: Stranded
+series: Postal Marines
 order: 1
 featured: false
 released: false
