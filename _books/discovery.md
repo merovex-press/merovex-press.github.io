@@ -6,9 +6,9 @@ full-title: "Book 1: Discovery"
 release: 2014
 series: Stranded
 order: 1
-featured: true
-released: true
-hidden: false
+featured: false
+released: false
+hidden: true
 repo: "Merovex/postal-marine-series.verki"
 editions:
   - 2014-07-23
