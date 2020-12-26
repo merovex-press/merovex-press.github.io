@@ -1,111 +1,111 @@
----
-  - 
-  year: 2018
+--- 
+- 
+  length: 5.0
   title: "Find Your Why"
   url: "https://www.audible.com/pd/Find-Your-Why-Audiobook/B074F3SNZY"
-  length: 5.0
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 6.5
   title: "Turn the Ship Around"
   url: "https://www.audible.com/pd/Turn-the-Ship-Around-Audiobook/B00CQ9O36A"
-  length: 6.5
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 1.5
   title: "How to Fight the Hydra"
   url: "https://www.audible.com/pd/How-to-Fight-a-Hydra-Audiobook/B07HS2M778"
-  length: 1.5
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 16
   title: "Engineers of Victory"
   url: "https://www.audible.com/pd/Engineers-of-Victory-Audiobook/B00IYQTMRO"
-  length: 16
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 9.3
   title: "A Seat at the Table"
   url: "https://www.audible.com/pd/A-Seat-at-the-Table-Audiobook/B0767PHFYR"
-  length: 9.3
-    - 
-    year: 2018
-  title: "Meditations"
-  url: "https://www.audible.com/pd/Meditations-Audiobook/B004IBRMZS"
+  year: 2018
+- 
   length: ~8
-    - 
-    year: 2018
+  title: Meditations
+  url: "https://www.audible.com/pd/Meditations-Audiobook/B004IBRMZS"
+  year: 2018
+- 
+  length: 10.5
   title: "Sam Walton: Made in America"
   url: "https://www.audible.com/pd/Sam-Walton-Audiobook/B078RPW8GM"
-  length: 10.5
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 8.2
   title: "The Productivity Project"
   url: "https://www.audible.com/pd/The-Productivity-Project-Audiobook/B018WINMJM"
-  length: 8.2
-    - 
-    year: 2018
-  title: "Winning"
-  url: "https://www.audible.com/pd/Winning-Audiobook/B002V5D60S"
+  year: 2018
+- 
   length: 11.4
-    - 
-    year: 2018
-  title: "Boyd"
-  url: "https://www.audible.com/pd/Boyd-Audiobook/B01I5OKXKO"
+  title: Winning
+  url: "https://www.audible.com/pd/Winning-Audiobook/B002V5D60S"
+  year: 2018
+- 
   length: 19.7
-    - 
-    year: 2018
+  title: Boyd
+  url: "https://www.audible.com/pd/Boyd-Audiobook/B01I5OKXKO"
+  year: 2018
+- 
+  length: 11.4
   title: "The Player of Games"
   url: "https://www.audible.com/pd/The-Player-of-Games-Audiobook/B004ZLBFZ4"
-  length: 11.4
-    - 
-    year: 2018
-  title: "Switch"
-  url: "https://www.audible.com/pd/Switch-Audiobook/B0035C6SMO"
+  year: 2018
+- 
   length: 7.6
-    - 
-    year: 2018
+  title: Switch
+  url: "https://www.audible.com/pd/Switch-Audiobook/B0035C6SMO"
+  year: 2018
+- 
+  length: 7.2
   title: "If You Can Keep It"
   url: "https://www.audible.com/pd/If-You-Can-Keep-It-Audiobook/B01FCS7JAS"
-  length: 7.2
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 12.2
   title: "The Rise of Rome"
   url: "https://www.audible.com/pd/The-Rise-of-Rome-Audiobook/B078HDSHQJ"
-  length: 12.2
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 1.7
   title: "5000 Words per Hour"
   url: "https://www.audible.com/pd/5000-Words-Per-Hour-Audiobook/B01BPB5Q24"
+  year: 2018
+- 
   length: 1.7
-    - 
-    year: 2018
   title: "Self-Disciplined Producer"
   url: "https://www.audible.com/pd/Self-Disciplined-Producer-Develop-a-Powerful-Work-Ethic-Improve-Your-Focus-and-Produce-Better-Results-Audiobook/B07BKPN1PT"
-  length: 1.7
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 12.3
   title: "Caesar's Legions"
   url: "https://www.audible.com/pd/Caesars-Legion-Audiobook/B002VAEU4O"
-  length: 12.3
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 20.9
   title: "Leviathan Wakes"
   url: "https://www.audible.com/pd/Leviathan-Wakes-Audiobook/B073H9PF2D"
-  length: 20.9
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 11.5
   title: "Love Thy Body"
   url: "https://www.audible.com/pd/Love-Thy-Body-Audiobook/B078NG97HN"
-  length: 11.5
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 19.8
   title: "American Warlords"
   url: "https://www.audible.com/pd/American-Warlords-Audiobook/B00WF8MB6G"
-  length: 19.8
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 8.5
   title: "Hearing God"
   url: "https://www.audible.com/pd/Hearing-God-Audiobook/B002V8MGTM"
-  length: 8.5
-    - 
-    year: 2018
+  year: 2018
+- 
+  length: 7.3
   title: "Church History, Vol 1"
   url: "https://www.audible.com/pd/Church-History-Volume-One-Audio-Lectures-Audiobook/B0757TK5FX"
-  length: 7.3
+  year: 2018
