@@ -52,13 +52,30 @@ $colors: ( // "Cranberry"
   'orange':   #ED8B00,
   'yellow':   #A69219,
   'green':    #009a15,
-  'blue':     #00389a,
+  'blue':     #141516,
   'indigo':   #49516D,
   'violet':   #62009a,
   'gray':     #594d55,
   'black':    #231d21,
   'iron-gall':#3E353B,
   'white':    #fff7e9,
+);
+
+$colors: ( // "Sherwin Williams American Heritage Color Collection"
+  'brand':    #234058,
+  'secondary':#826F5E,
+  'ternary':  #c8bba3,
+  'red':      #a0473e,
+  'orange':   #de6b05,
+  'yellow':   #8d844d,
+  'green':    #3a8f62,
+  'blue':     #3a678f,
+  'indigo':   #49516D,
+  'violet':   #623a8f,
+  'gray':     #636562,
+  'black':    #2f2f30,
+  'iron-gall':#343b36,
+  'white':    #e5e2da,
 );
 
 @import 'mero/functions';
@@ -79,7 +96,7 @@ $brand-font: $heading-fonts;
 
 $mero-brand:     clr('brand',100);
 $mero-primary:   $mero-brand;
-$mero-navbar-bg: clr('iron-gall', 700);
+$mero-navbar-bg: clr('black', 900);
 $mero-code-bg:   clr('gray',500);
 $mero-background-image: '/assets/images/backgrounds/beige-paper.png';
 
