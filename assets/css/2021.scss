@@ -1,9 +1,5 @@
 ---
-# front matter for Jekyll recognition
 --- 
-
-@tailwind base;
-@tailwind components;
 
 /* custom rules here */
 @mixin font($font-family, $font-file) {
@@ -40,4 +36,3 @@
 .mobile {
   @apply flex sm:hidden;
 }
-@tailwind utilities;

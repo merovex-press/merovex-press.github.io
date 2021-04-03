@@ -62,8 +62,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo
-  - jekyll-postcss
-  - jekyll-purgecss
 
 # Markdown Processing
 kramdown:
@@ -77,11 +75,11 @@ kramdown:
   syntax_highlighter_opts:
     disable               : true
 
-exclude:
-  - node_modules/
-  - yarn.lock
-  - postcss.config.js
-  - tailwind.config.js
-  - purgecss.config.js
-  - package.json
-  - assets/css-old
+# exclude:
+#   - node_modules/
+#   - yarn.lock
+#   - postcss.config.js
+#   - tailwind.config.js
+#   - purgecss.config.js
+#   - package.json
+#   - assets/css-old
