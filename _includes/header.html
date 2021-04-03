@@ -1,31 +1,15 @@
-    <header>
-      <a href="/" class="navbar-brand">
+    <header class="bg-brand-500 dark:bg-brand-600 text-white relative flex flex-wrap items-center justify-between px-4 py-2">
+      <a href="/" class="flex font-display text-4xl">
         {{ config.extra.brand | safe }}
-        {% include logo.svg %}
+        <span class="opacity-50 mr-4">{% include logo.svg %}</span>
         <span>{{site.title}}</span>
         {%- if site.subtitle %}
-        <span class='subtitle'>{{site.subtitle}}</span>
+        <span class='opacity-50'>{{site.subtitle}}</span>
         {% endif %}
       </a>
       <nav>
         <input id="bmenub" type="checkbox" class="show">
         <label for="bmenub" class="burger pseudo button">&#9776;</label>
-        <div class="menu">
-          <a class='pseudo' href="/#featured" id='home-link'>
-            {% include icon.html icon='fad fa-home' %} Home
-          </a>
-          <a class='pseudo' href="/#books">
-            {% include icon.html icon='fad fa-books' %} Books
-          </a>
-          <a class='pseudo' href="/#bio">
-            {% include icon.html icon='fad fa-id-card' %} Bio
-          </a>
-          <a class='pseudo' rel="prefetch" href="/posts/">
-            {% include icon.html icon='fad fa-newspaper' %} Blog
-          </a>
-          <a rel="prefetch" href="/subscribe/" class="subscribe">
-            {% include icon.html icon='fad fa-envelope' %} Subscribe
-          </a>
-        </div>
+        {% include nav.html %}
       </nav>
     </header>

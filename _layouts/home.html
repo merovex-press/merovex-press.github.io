@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-
 {% assign books = site.books | sort: 'series' %}
   {%- for book in books -%}
   {%- if book.featured -%}
@@ -10,21 +8,29 @@ layout: default
   {%- endif -%}
   {%- endfor -%}
 {%- unless featured == null %}
-<section id="featured" class="invert">
-  <img class='underlay' src="/assets/images/hero/{{page.underlay}}" alt="">
-  <img src="/assets/images/hero/oil-underlay.jpg" alt="" class="fnord">
-  {% assign book = featured %}
-  <div class="container">{% include book-summary.html %}</div>
+<section id='featured'>
+  <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height:75vh">
+    <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image:url(&#x27;/assets/images/hero/{{page.underlay}}&#x27;)">
+    <div class="absolute top-0 opacity-75 w-full h-full bg-center bg-cover" 
+    style="xbackground-image:url(&#x27;<%= image_url('backgrounds/oil-underlay.jpg')%>&#x27;)"></div>
+    <span id="blackOverlay" class="w-full h-full absolute opacity-80 bg-brand-600"></span>
+  </div>
+  <div class="container relative mx-auto text-white md:text-2xl max-w-screen-lg p-4">
+    {% assign book = featured %}
+  <div class="max-w-4xl mx-auto">{% include book-summary.html %}</div>
+  </div>
 </section>
 {%- endunless -%}
-<section class="statistics">
+<section class="py-20 bg-brand-300 text-white">
+  <div class="max-w-4xl mx-auto text-2xl text-center">
   {{ content }}
+  </div>
 </section>
-<section class='body' id='books'>
+<section class='max-w-4xl mx-auto py-8' id='books'>
   <div>
     {% assign library = site.books | group_by: 'series' %}
     {% for series in library %}
-    <h2>Books in the {{ series.name }} Series</h2>
+    <h2 class="font-display text-4xl pt-12 pb-6">Books in the {{ series.name }} Series</h2>
         {% assign books = series.items | sort: 'order' %}
         {% for book in books %}
             {% unless book.hidden == true or book.released == false %}
@@ -34,16 +40,18 @@ layout: default
     {%endfor%}
   </div>
 </section>
-<section class='body' id='bio'>
-  {% capture bio %}{% include_relative about.html %}{% endcapture %}
-  {% assign entry = bio | split: '<!-- more -->' %}
-  <article>
-  {{ entry | first }}
-  </article>
-</section>
-<section class='body center' >
-  <div>
-    <h2>News</h2>
+<div class='bg-opacity-50 bg-gray-500 py-8'>
+  <section class='max-w-4xl mx-auto' id='bio'>
+    {% capture bio %}{% include_relative about.html %}{% endcapture %}
+    {% assign entry = bio | split: '<!-- more -->' %}
+    <article class='prose prose-xl font-serif mx-auto'>
+    {{ entry | first }}
+    </article>
+  </section>
+</div>
+<section class='body' >
+  <div class='max-w-3xl mx-auto'>
+    <h2 class="font-display text-4xl pt-12 pb-6">News</h2>
     {%include post-preview-items.html%}
   </div>
 </section>

@@ -1,10 +1,10 @@
-<article class="book-summary">
+<article class="book-summary test flex items-center">
   <aside>
     {% include picture.html klass='covers' image=book.cover.image%}
   </aside>
-  <section>
-    <h3>{{ book.title }}</h3>
-    <p>
+  <section class="pl-4">
+    <h3 class='text-4xl font-display'>{{ book.title }}</h3>
+    <p class='prose prose-xl'>
       {{ book.excerpt | remove: '<p>' | remove: "</p>"}}
     </p>
     {% if book.released %}

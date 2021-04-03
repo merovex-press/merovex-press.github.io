@@ -1,10 +1,18 @@
-  <li>
-    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
-      <span class='desktop'>{{- post.date | date: "%e %B %Y" -}}</span>
-      <span class='mobile'>{{- post.date | date: "%e %b %Y" -}}</span>
-    </time>
-    <div>
-      <a href="{{post.url}}">
+  <li class="flex mb-8 text-xl">
+    <div class="w-1/4">
+      <div class='desktop text-right ml-auto'>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="">
+          {{- post.date | date: "%e %B %Y" -}}
+        </time>
+      </div>
+      <div class='mobile'>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="">
+          {{- post.date | date: "%e %b %Y" -}}
+        </time>
+      </div>
+    </div>
+    <div class='w-3/4 pl-8'>
+      <a href="{{post.url}}" class='font-display text-3xl text-blue-500 dark:text-blue-200 hover:underline'>
         {{- post.title -}}
       </a>
       <p>{{- post.description-}}</p>
