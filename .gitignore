@@ -4,3 +4,7 @@ _site
 .jekyll*
 sub
 diff.rb
+node_modules
+sass-old
+yarn-error.log
+assets/css-old
